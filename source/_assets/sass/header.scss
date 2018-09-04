@@ -1,0 +1,80 @@
+.the-header {
+    transition: all .5s ease;
+    &.fixed {
+        background: #333538;
+        top: 0;
+        &.hide {
+            top: -150px;
+        }
+    }
+}
+
+.header-nav--pages {
+    color: white;
+    font-size: 1.45em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    > li:hover {
+        color: #fa4616;
+    }
+
+    .current {
+        color: #fa4616;
+    }
+
+    .btn {
+        font-size: 1.45rem;
+        font-weight: 600;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .header-nav--button {
+        width: 2rem;
+        border: none;
+        padding: 0;
+        height: 2rem;
+        background: transparent;
+        font-weight: bold;
+        transform: scale(3) rotate(90deg);
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+        cursor: pointer;
+        color: #fa4616;
+    }
+    .header-nav--logo img {
+        max-height: 6rem;
+    }
+    .header-nav--pages {
+        position: absolute;
+        left: -180vw;
+        top: 100%;
+        background: #333538;
+        margin: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .header-nav--pages.show {
+        left: 0;
+    }
+
+    .header-nav {
+        position: static;
+    }
+
+    .header-nav--pages > li {
+        width: 100%;
+        padding: 1.5rem !important;
+        border-top: 1px solid black;
+        text-align: center;
+        transition: all .3s ease-in;
+    }
+    .header-nav--pages > li:hover {
+        background: black;
+        color: #fa4616;
+    }
+}
