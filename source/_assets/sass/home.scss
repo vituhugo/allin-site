@@ -2,7 +2,7 @@
 .section-main {
     height: 100vh;
 
-    background-image: url("/assets/images/home/banner.jpg");
+    background-image: url("/new_site/assets/images/home/banner.jpg");
     background-position-y: bottom;
     background-position-x: calc((1900px - 100vw) / 7 * -1);
     background-size: cover;
@@ -87,7 +87,7 @@
 
 /*[SECTION] COMPREENDA */
 .section-compreenda {
-    background-image: url("/assets/images/home/bg-aresta.png"), url("/assets/images/home/bg-2.jpg");
+    background-image: url("/new_site/assets/images/home/bg-aresta.png"), url("/new_site/assets/images/home/bg-2.jpg");
     background-repeat: no-repeat, repeat;
     background-position: top right, top left;
     background-size: auto, 100% auto;
@@ -95,7 +95,7 @@
 
 @media(max-width: 767px) {
     .section-compreenda {
-        background-image:  url("/assets/images/home/bg-aresta.png"), url(/assets/images/home/bg-2-mobile.jpg);
+        background-image:  url("/new_site/assets/images/home/bg-aresta.png"), url(/assets/images/home/bg-2-mobile.jpg);
         background-position-y: top, 100px;
     }
 }
@@ -167,7 +167,7 @@
 
 .section-compreenda--list > li:before {
     content: "";
-    background-image: url("/assets/images/icons/ico-list-item.png");
+    background-image: url("/new_site/assets/images/icons/ico-list-item.png");
     width: 2rem;
     height: 2rem;
     background-size: contain;
@@ -250,7 +250,7 @@
 .section-recomende {
     position: relative;
 
-    background-image: url("/assets/images/home/bg-cinza.jpg");
+    background-image: url("/new_site/assets/images/home/bg-cinza.jpg");
 
     color: white;
 }
@@ -578,7 +578,7 @@
 
 .section-blog--recorte-inferior:before {
     position: absolute;
-    content: url("/assets/images/home/blog-recorte-inferior.png");
+    content: url("/new_site/assets/images/home/blog-recorte-inferior.png");
     left: -14px;
     top: 0;
 }
@@ -593,7 +593,7 @@
 
 .section-blog--recorte-superior:after {
     position: absolute;
-    content: url("/assets/images/home/blog-recorte-superior.png");
+    content: url("/new_site/assets/images/home/blog-recorte-superior.png");
     left: -.8em;
     bottom: 0;
 }
@@ -601,13 +601,13 @@
 .section-blog--content:before {
     content: "";
     position: absolute;
-    background: url("/assets/images/home/blog-recorte-superior.png");
+    background: url("/new_site/assets/images/home/blog-recorte-superior.png");
 }
 
 .section-blog--content:after {
     content: "";
     position: absolute;
-    background: url("/assets/images/home/blog-recorte-inferior.png");
+    background: url("/new_site/assets/images/home/blog-recorte-inferior.png");
 }
 
 .section-blog--content--article--data {
@@ -651,7 +651,7 @@
 
 /** SECTION CONTACT */
 .section-contact {
-    background: url("/assets/images/home/bg-contact.jpg") no-repeat;
+    background: url("/new_site/assets/images/home/bg-contact.jpg") no-repeat;
     background-size: cover;
     color: white;
     position: relative;

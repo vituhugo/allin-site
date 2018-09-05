@@ -1,7 +1,7 @@
 <header class="fixed-top the-header container-fluid">
     <div class="row justify-content-between py-3">
         <div class="header-nav--logo col-auto">
-            <img src="/assets/images/logo.png"/>
+            <img src="/new_site/assets/images/logo.png"/>
         </div>
         <nav class="header-nav col-lg-8 offset-lg-2 d-flex justify-content-center flex-column">
             <button class="header-nav--button d-lg-none" onclick="toggleMenu()">|||</button>

@@ -23,8 +23,8 @@
         </div>
     </noscript>
 
-    <link rel="stylesheet" href="/assets/build/css/main.css">
-    <script src="/assets/build/js/main.js"></script>
+    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
+    <script src="/new_site/assets/build/js/main.js"></script>
     @yield('scripts')
 </section>
 </body>
