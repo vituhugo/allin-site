@@ -115,7 +115,7 @@
                                                                                               class="active">AlliN<span
                                     class="hidden-xs"> Marketing Cloud</span></a></div>
                 </nav>
-                <div id="site-branding" class="col col-xs-12 col-sm-2 col-md-2"><h1 id="site-title"
+                <div id="site-branding" class="col col-xs-12 col-sm-2"><h1 id="site-title"
                                                                                     style="text-indent: -99999px;">
                         E-mail Marketing Líder de Mercado</h1>
                     <div class="textwidget"><p>E-mail Marketing Tradicional</p></div>
@@ -133,54 +133,46 @@
                         </button>
                     </div>
                 </div>
-                <nav id="site-navigation" role="navigation" class="col col-xs-12 col-sm-6 col-md-5">
+                <nav id="site-navigation" role="navigation" class="col col-xs-12 col-sm-6">
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
-                                <li id="menu-item-40"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
-                                            href="https://allin.com.br/solucoes/" itemprop="url">Soluções</a></li>
-                                <li id="menu-item-39"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
-                                            href="https://allin.com.br/parceria/" itemprop="url">Parceria</a></li>
-                                <li id="menu-item-38"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a
-                                            href="https://allin.com.br/news/" itemprop="url">News</a></li>
-                                <li id="menu-item-37"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"></li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/solucoes/">
+                                        Soluções
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/parceria/">
+                                        Parceria
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/news/">
+                                        News
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="/#plataforma">
+                                        Plataforma
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="/#recursos">
+                                        Recursos
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4 col-md-5"><a id="cabecalho_extra_link_email"
+                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4"><a id="cabecalho_extra_link_email"
                                                                                      class="icone icone-email"
                                                                                      href="http://allin.com.br/suporte/#formulario"
                                                                                      title="Contato">Contato</a> <a
                             id="cabecalho_extra_busca" class="icone icone-busca" href="#" title="Busca">Busca</a> <a
                             id="cabecalho_extra_link_busca" class="btn btn-simples btn-teste" href="/#contato"><span>Contato </span><i
                                 class="icone icone-teste"></i></a></div>
-            </div>
-        </div>
-        <div id="sub_cabecalho">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4"><span class="hidden">slogan_cabecalho_vermelho</span><a
-                                href="http://allin.com.br/" target="_self" class="widget_sp_image-image-link"
-                                title="Marketing Cloud"><img width="122" height="16" alt="Marketing Cloud"
-                                                             class="attachment-full" style="max-width: 100%;"
-                                                             src="https://allin.com.br/wp-content/uploads/2016/02/slogan_cabecalho_vermelho.png"></a>
-                    </div>
-                    <div id="sub_cabecalho_menu_col" class="col-xs-12 col-sm-8">
-                        <nav class="collapse navbar-collapse navbar-ex2-collapse">
-                            <ul id="sub_cabecalho_menu" class="menu">
-                                <li class="menu-item"><a id="sub_cabecalho_menu_link_interno2" href="#plataforma"
-                                                         class="menu-link">plataforma</a></li>
-                                <li class="menu-item"><a id="sub_cabecalho_menu_link_interno3" href="#recursos"
-                                                         class="menu-link">recursos</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </div>
         <aside id="sub_busca" class="row" style="display: none;">
@@ -508,8 +500,6 @@
         }
 
         .old .navbar-collapse {
-            padding-right: 15px;
-            padding-left: 15px;
             overflow-x: visible;
             -webkit-overflow-scrolling: touch;
             border-top: 1px solid transparent;
@@ -559,7 +549,7 @@
         }
 
         #masthead {
-            top: 36px;
+            top: 34px;
         }
         #masthead {
             position: fixed;
@@ -847,13 +837,19 @@
 
         @media (min-width: 768px) {
             .old .col-sm-2 {
+                width: 8.333333335%;
+            }
+
+            .old .col-sm-2 {
                 width: 16.66666667%;
             }
-        }
 
-        @media (min-width: 768px) {
             .old .col-sm-4 {
                 width: 33.33333333%;
+            }
+
+            .old .col-sm-6 {
+                width: 50%;
             }
         }
 
