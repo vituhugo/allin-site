@@ -1,44 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);@font-face {
-  font-family: 'Univers LT Std';
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.eot);
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.svg#UniversLTStd-Regular) format("svg");
-  font-weight: 400;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
-}
-
-@font-face {
-  font-family: 'Univers LT Std';
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.eot);
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.svg#UniversLTStd-Obl) format("svg");
-  font-weight: 400;
-  font-style: italic;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
-}
-
-@font-face {
-  font-family: 'Univers LT Std';
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.eot);
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.svg#UniversLTStd-Light) format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
-  unicode-range: U+0020-25CA;
-}
-
-@font-face {
-  font-family: 'Univers LT Std';
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.eot);
-  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
-  font-weight: 300;
-  font-style: normal;
-  font-stretch: condensed;
-  unicode-range: U+0020-25CA;
-}
-
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -4004,6 +3964,38 @@ a:hover .ico, a.ico:hover {
     background: black;
     color: #fa4616;
   }
+}
+
+.sub-header li {
+  display: inline-block;
+  margin-right: 1.6em;
+}
+
+.sub-header {
+  background-color: #fa4616;
+}
+
+.sub-header li a {
+  color: black;
+  font-weight: bolder;
+  vertical-align: bottom;
+}
+
+.sub-header li {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.sub-header li:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.sub-header--container {
+  padding-top: .75em;
+  padding-bottom: .55em;
+  text-align: center;
+  font-size: 1.13em;
 }
 
 /* [SECTION] MAIN */
