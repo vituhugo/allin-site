@@ -1,4 +1,44 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);@font-face {
+  font-family: 'Univers LT Std';
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.eot);
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd.svg#UniversLTStd-Regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.eot);
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Obl.svg#UniversLTStd-Obl) format("svg");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.eot);
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-Light.svg#UniversLTStd-Light) format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+
+@font-face {
+  font-family: 'Univers LT Std';
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.eot);
+  src: url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.eot?#iefix) format("embedded-opentype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.woff) format("woff"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.ttf) format("truetype"), url(https://allin.com.br/wp-content/themes/ms/fontes/UniversLTStd-LightCn.svg#UniversLTStd-LightCn) format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: condensed;
+  unicode-range: U+0020-25CA;
+}
+
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -3784,104 +3824,104 @@ a:hover .ico, a.ico:hover {
 .ico-play {
   width: 2.42em;
   height: 2.42em;
-  background-image: url("../../../assets/images/icons/ico-play.png");
+  background-image: url("/new_site/assets/images/icons/ico-play.png");
 }
 
 .ico-monitor-click {
   width: 2.5em;
   height: 2.5em;
-  background-image: url("../../../assets/images/icons/ico-monitor-click.png");
+  background-image: url("/new_site/assets/images/icons/ico-monitor-click.png");
 }
 
 .ico-cart {
   width: 4.5em;
   height: 4.5em;
-  background-image: url("../../../assets/images/icons/ico-cart.png");
+  background-image: url("/new_site/assets/images/icons/ico-cart.png");
 }
 
 .ico-letter {
   width: 3.92em;
   height: 3.92em;
-  background-image: url("../../../assets/images/icons/ico-letter.png");
+  background-image: url("/new_site/assets/images/icons/ico-letter.png");
 }
 
 .ico-phone {
   width: 3.92em;
   height: 3.92em;
-  background-image: url("../../../assets/images/icons/ico-phone.png");
+  background-image: url("/new_site/assets/images/icons/ico-phone.png");
 }
 
 .ico-go {
   width: 1.5em;
   height: 1.5em;
-  background-image: url("../../../assets/images/icons/ico-go.png");
+  background-image: url("/new_site/assets/images/icons/ico-go.png");
   vertical-align: sub;
 }
 
 .ico-facebook {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-facebook.png");
+  background-image: url("/new_site/assets/images/icons/ico-facebook.png");
 }
 
 .ico-tweet {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-tweet.png");
+  background-image: url("/new_site/assets/images/icons/ico-tweet.png");
 }
 
 .ico-instagram {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-instagram.png");
+  background-image: url("/new_site/assets/images/icons/ico-instagram.png");
 }
 
 .ico-google-plus {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-google-plus.png");
+  background-image: url("/new_site/assets/images/icons/ico-google-plus.png");
 }
 
 .ico-youtube {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-youtube.png");
+  background-image: url("/new_site/assets/images/icons/ico-youtube.png");
 }
 
 .ico-linkedin {
   width: 1.5rem;
   height: 1.5rem;
-  background-image: url("../../../assets/images/icons/ico-linkedin.png");
+  background-image: url("/new_site/assets/images/icons/ico-linkedin.png");
 }
 
 .ico-question {
   width: 2rem;
   height: 2.5rem;
-  background-image: url("../../../assets/images/icons/ico-question.png");
+  background-image: url("/new_site/assets/images/icons/ico-question.png");
 }
 
 .ico-cart-2 {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../../assets/images/icons/ico-cart-2.png");
+  background-image: url("/new_site/assets/images/icons/ico-cart-2.png");
 }
 
 .ico-heart-2 {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../../assets/images/icons/ico-heart-2.png");
+  background-image: url("/new_site/assets/images/icons/ico-heart-2.png");
 }
 
 .ico-baixo-custo {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../../assets/images/icons/ico-baixo-custo.png");
+  background-image: url("/new_site/assets/images/icons/ico-baixo-custo.png");
 }
 
 .ico-click {
   width: 2rem;
   height: 2rem;
-  background-image: url("../../../assets/images/icons/ico-click.png");
+  background-image: url("/new_site/assets/images/icons/ico-click.png");
 }
 
 .the-header {
@@ -3966,48 +4006,22 @@ a:hover .ico, a.ico:hover {
   }
 }
 
-.sub-header li {
-  display: inline-block;
-  margin-right: 1.6em;
-}
-
-.sub-header {
-  background-color: #fa4616;
-}
-
-.sub-header li a {
-  color: black;
-  font-weight: bolder;
-  vertical-align: bottom;
-}
-
-.sub-header li {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-}
-
-.sub-header li:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-.sub-header--container {
-  padding-top: .75em;
-  padding-bottom: .55em;
-  text-align: center;
-  font-size: 1.13em;
-}
-
 /* [SECTION] MAIN */
 .section-main {
   height: 100vh;
-  background-image: url("../../../assets/images/home/banner.jpg");
+  background-image: url("/new_site/assets/images/home/banner.jpg");
   background-position-y: bottom;
   background-position-x: calc((1900px - 100vw) / 7 * -1);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #545655;
   color: white;
+}
+
+@media (min-width: 1025px) {
+  .section-main {
+    min-height: 660px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4084,7 +4098,7 @@ a:hover .ico, a.ico:hover {
 
 /*[SECTION] COMPREENDA */
 .section-compreenda {
-  background-image: url("../../../assets/images/home/bg-aresta.png"), url("../../../assets/images/home/bg-2.jpg");
+  background-image: url("/new_site/assets/images/home/bg-aresta.png"), url("/new_site/assets/images/home/bg-2.jpg");
   background-repeat: no-repeat, repeat;
   background-position: top right, top left;
   background-size: auto, 100% auto;
@@ -4092,7 +4106,7 @@ a:hover .ico, a.ico:hover {
 
 @media (max-width: 767px) {
   .section-compreenda {
-    background-image: url("../../../assets/images/home/bg-aresta.png"), url(/assets/images/home/bg-2-mobile.jpg);
+    background-image: url("/new_site/assets/images/home/bg-aresta.png"), url(/assets/images/home/bg-2-mobile.jpg);
     background-position-y: top, 100px;
   }
 }
@@ -4158,7 +4172,7 @@ a:hover .ico, a.ico:hover {
 
 .section-compreenda--list > li:before {
   content: "";
-  background-image: url("../../../assets/images/icons/ico-list-item.png");
+  background-image: url("/new_site/assets/images/icons/ico-list-item.png");
   width: 2rem;
   height: 2rem;
   background-size: contain;
@@ -4232,7 +4246,7 @@ a:hover .ico, a.ico:hover {
 /* SECTION RECOMENDE */
 .section-recomende {
   position: relative;
-  background-image: url("../../../assets/images/home/bg-cinza.jpg");
+  background-image: url("/new_site/assets/images/home/bg-cinza.jpg");
   color: white;
 }
 
@@ -4561,7 +4575,7 @@ a:hover .ico, a.ico:hover {
 
 .section-blog--recorte-inferior:before {
   position: absolute;
-  content: url("../../../assets/images/home/blog-recorte-inferior.png");
+  content: url("/new_site/assets/images/home/blog-recorte-inferior.png");
   left: -14px;
   top: 0;
 }
@@ -4576,7 +4590,7 @@ a:hover .ico, a.ico:hover {
 
 .section-blog--recorte-superior:after {
   position: absolute;
-  content: url("../../../assets/images/home/blog-recorte-superior.png");
+  content: url("/new_site/assets/images/home/blog-recorte-superior.png");
   left: -.8em;
   bottom: 0;
 }
@@ -4584,13 +4598,13 @@ a:hover .ico, a.ico:hover {
 .section-blog--content:before {
   content: "";
   position: absolute;
-  background: url("../../../assets/images/home/blog-recorte-superior.png");
+  background: url("/new_site/assets/images/home/blog-recorte-superior.png");
 }
 
 .section-blog--content:after {
   content: "";
   position: absolute;
-  background: url("../../../assets/images/home/blog-recorte-inferior.png");
+  background: url("/new_site/assets/images/home/blog-recorte-inferior.png");
 }
 
 .section-blog--content--article--data {
@@ -4635,7 +4649,7 @@ a:hover .ico, a.ico:hover {
 
 /** SECTION CONTACT */
 .section-contact {
-  background: url("../../../assets/images/home/bg-contact.jpg") no-repeat;
+  background: url("/new_site/assets/images/home/bg-contact.jpg") no-repeat;
   background-size: cover;
   color: white;
   position: relative;
@@ -4777,6 +4791,7 @@ select.form-control:not([size]):not([multiple]) {
           box-shadow: none;
   font-size: 1.4em;
   text-align: left;
+  font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 300;
   color: #fff;
   line-height: 33px;
