@@ -12,6 +12,12 @@
     color: white;
 }
 
+@media(min-width: 1025px) {
+    .section-main {
+        min-height: 660px;
+    }
+}
+
 @media(max-width:  768px) {
     .section-main {
         background-position-x: calc((1900px - 100vw) / 8 * -1);
