@@ -78,3 +78,35 @@
         color: #fa4616;
     }
 }
+
+.sub-header li {
+    display: inline-block;
+    margin-right: 1.6em;
+}
+
+.sub-header--container {
+}
+
+.sub-header {
+    background-color: #fa4616;
+}
+
+.sub-header li a {
+    color: black;
+    font-weight: bolder;
+    vertical-align: bottom;
+}
+
+.sub-header li {
+    transition: all .2s ease-in-out;
+}
+.sub-header li:hover {
+    transform: scale(1.05);
+}
+
+.sub-header--container {
+    padding-top: .75em;
+    padding-bottom: .55em;
+    text-align: center;
+    font-size: 1.13em;
+}

@@ -23,9 +23,52 @@
         </div>
     </noscript>
 
-    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
-    <script src="/new_site/assets/build/js/main.js"></script>
+    <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css">
+    <script src="{{ $page->baseUrl }}/assets/build/js/main.js"></script>
     @yield('scripts')
+
+    <script src="//i.btg360.com.br/wf.js" type="text/javascript"></script> <!-- Integração TAG envio de contato allin -->
+    <script>
+        $(document).ready(function() {
+
+            $('#form-assunto').submit(function(event) {
+                event.preventDefault();
+                var email = jQuery("input[name='email']").val();
+                if (navigator.sendBeacon) ga('set', 'transport', 'beacon');
+
+                ga('send', 'event', 'enviar_mensagem', $("#form-assunto").val(), email);
+
+                $.post(this.action, $(this).serialize(), function(response) {
+                    alert(response.mensagem || "Sua solicitação não pode ser completada.");
+
+                    __blc['id'] = "ff703a43d4ffa579f2cadb456b7ad142";
+                    try {
+                        lc.sendData({
+                            evento: "Novo Cadastro",
+                            nm_email: email,
+                            vars: {},
+                            lista: {}
+                        });
+                    } catch (e) {}
+
+                }).fail(function() {
+                    alert("Sua solicitação não pode ser completada.");
+                });
+
+
+            });
+
+            $('.sml_subscribe').submit(function(event) {
+                event.preventDefault();
+
+                $.post(this.action, $(this).serialize(), function(response) {
+                    alert(response.mensagem || "Sua solicitação não pode ser completada.");
+                });
+
+                return false;
+            });
+        })
+    </script>
 </section>
 </body>
 </html>
