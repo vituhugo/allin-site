@@ -1,5 +1,4 @@
 <?php
-die('oi');
 $to = "Mayara Oliveira <mayara.oliveira@allin.com.br>, Financeiro <financeiro@allin.com.br>, Spam <spamcontrol@allin.com.br>, Jurídico <juridico@allin.com.br>, Comercial <comercial@allin.com.br>, Parcerias <comercial@allin.com.br>, Suporte <helpdesk@allin.com.br>, Outros <contato@allin.com.br>";
 
 $subject = "";
