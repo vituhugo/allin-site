@@ -2,7 +2,7 @@
     <div class="row mx-0 px-3">
         <div class="col-md-3 col-12 text-md-left text-center">
             <div class="footer--logo mb-4">
-                <img src="/new_site/assets/images/logo.png" />
+                <img src="{{ $page->baseUrl }}/assets/images/logo.png" />
             </div>
             <p class="footer--paragraph">
                 Plataforma brasileira líder em marketing
@@ -56,7 +56,7 @@
             </div>
             <div class="row mt-4 justify-content-md-end justify-content-center mx-0 mb-5 mt-md-0 mt-5">
                 <div class="mt-5">
-                    <img src="/new_site/assets/images/selo.png" style="width: 200px" />
+                    <img src="{{ $page->baseUrl }}/assets/images/selo.png" style="width: 200px" />
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
         </form>
         <div class="col-12 d-flex justify-content-md-between flex-md-row flex-column">
             <div class="footer--logo-locaweb text-center text-md-left">
-                <img src="/new_site/assets/images/logo-locaweb.png" style="max-width: 170px" />
+                <img src="{{ $page->baseUrl }}/assets/images/logo-locaweb.png" style="max-width: 170px" />
             </div>
             <p class="footer--policy">
                 @2018 All iN Marketing Cloud e/ou Locaweb. Política de Privacidade / Política Anti-Spam.

@@ -2,6 +2,5 @@
 /node_modules/
 /vendor/
 /.idea/
-/build_local/
 /source/assets/build/*
 /npm-debug.log

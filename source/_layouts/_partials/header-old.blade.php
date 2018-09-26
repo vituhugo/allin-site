@@ -11,17 +11,16 @@
                                                                                               class="active">AlliN<span
                                     class="hidden-xs"> Marketing Cloud</span></a></div>
                 </nav>
-                <div id="site-branding" class="col col-xs-12 col-sm-2 col-md-2"><h1 id="site-title"
+                <div id="site-branding" class="col col-xs-12 col-sm-2"><h1 id="site-title"
                                                                                     style="text-indent: -99999px;">
                         E-mail Marketing Líder de Mercado</h1>
                     <div class="textwidget"><p>E-mail Marketing Tradicional</p></div>
                     <span class="hidden">logo_cabecalho_laranja</span><a href="http://allin.com.br/" target="_self"
                                                                          class="widget_sp_image-image-link"
-                                                                         title="Allin"><img width="73" height="30"
-                                                                                            alt="Allin"
+                                                                         title="Allin"><img alt="Allin"
                                                                                             class="attachment-full"
-                                                                                            style="max-width: 100%;"
-                                                                                            src="https://allin.com.br/wp-content/uploads/2016/02/logo_cabecalho_laranja.png"></a>
+                                                                                            style="width: 120px"
+                                                                                            src="{{ $page->baseUrl }}/assets/images/logo-allin.png"></a>
                     <div class="navbar-header visible-xs-block">
                         <button type="button" class="navbar-toggle" data-toggle="collapse"
                                 data-target=".navbar-ex1-collapse" title="Acessar menu"><span class="sr-only">Acessar menu</span>
@@ -29,54 +28,42 @@
                         </button>
                     </div>
                 </div>
-                <nav id="site-navigation" role="navigation" class="col col-xs-12 col-sm-6 col-md-5">
+                <nav id="site-navigation" role="navigation" class="col col-xs-12 col-sm-6">
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
-                                <li id="menu-item-40"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40"><a
-                                            href="https://allin.com.br/solucoes/" itemprop="url">Soluções</a></li>
-                                <li id="menu-item-39"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39"><a
-                                            href="https://allin.com.br/parceria/" itemprop="url">Parceria</a></li>
-                                <li id="menu-item-38"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38"><a
-                                            href="https://allin.com.br/news/" itemprop="url">News</a></li>
-                                <li id="menu-item-37"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"></li>
+
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="/#plataforma">
+                                        Plataforma
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/solucoes/">
+                                        Soluções
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/parceria/">
+                                        Parceria
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                    <a href="https://allin.com.br/news/">
+                                        News
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </nav>
-                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4 col-md-5"><a id="cabecalho_extra_link_email"
+                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4"><a id="cabecalho_extra_link_email"
                                                                                      class="icone icone-email"
                                                                                      href="http://allin.com.br/suporte/#formulario"
                                                                                      title="Contato">Contato</a> <a
                             id="cabecalho_extra_busca" class="icone icone-busca" href="#" title="Busca">Busca</a> <a
-                            id="cabecalho_extra_link_busca" class="btn btn-simples btn-teste" href="/#contato"><span>Contato </span><i
-                                class="icone icone-teste"></i></a></div>
-            </div>
-        </div>
-        <div id="sub_cabecalho">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-4"><span class="hidden">slogan_cabecalho_vermelho</span><a
-                                href="http://allin.com.br/" target="_self" class="widget_sp_image-image-link"
-                                title="Marketing Cloud"><img width="122" height="16" alt="Marketing Cloud"
-                                                             class="attachment-full" style="max-width: 100%;"
-                                                             src="https://allin.com.br/wp-content/uploads/2016/02/slogan_cabecalho_vermelho.png"></a>
-                    </div>
-                    <div id="sub_cabecalho_menu_col" class="col-xs-12 col-sm-8">
-                        <nav class="collapse navbar-collapse navbar-ex2-collapse">
-                            <ul id="sub_cabecalho_menu" class="menu">
-                                <li class="menu-item"><a id="sub_cabecalho_menu_link_interno2" href="#plataforma"
-                                                         class="menu-link">plataforma</a></li>
-                                <li class="menu-item"><a id="sub_cabecalho_menu_link_interno3" href="#recursos"
-                                                         class="menu-link">recursos</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+                            id="cabecalho_extra_link_busca" class="btn btn-simples btn-teste" href="/#contato"><span style="vertical-align: sub;">Contato </span>
+                        <i class="icone icone-teste"></i></a></div>
             </div>
         </div>
         <aside id="sub_busca" class="row" style="display: none;">
@@ -95,10 +82,23 @@
                 </div>
             </div>
         </aside>
+        @if(!empty($subheader))
+            <div class="sub-header">
+                <ul class="sub-header--container container list-unstyled">
+                    @foreach($subheader as $item)
+                        <li>
+                            <a href="{{$item[0]}}">
+                                @if(isset($item[2]))<img src="{{$item[2]}}">@endif
+                                {{ $item[1] }}
+                            </a>
+                        </li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
     </header>
     <style>
         .old {
-            font-family: "Univers LT Std",UniversLTStd,sans-serif !important;
             font-size: 16px;
             line-height: 1.42857143;
         }
@@ -224,7 +224,6 @@
             display: inline-block;
             text-transform: uppercase;
             font-style: normal;
-            font-family: "Univers LT Std",UniversLTStd,sans-serif;
         }
 
         .old .btn.btn-simples {
@@ -235,7 +234,7 @@
             border-radius: 0;
             box-shadow: none;
             padding: 0 15px;
-            line-height: 50px;
+            line-height: 61px;
             text-transform: uppercase;
             text-align: left;
             font-weight: 300;
@@ -257,7 +256,7 @@
         .old #cabecalho_extra>.icone {
             position: relative;
             top: 0;
-            margin-top: 11px;
+            margin-top: 5px;
             margin-right: 35px;
         }
 
@@ -310,7 +309,6 @@
             background-color: transparent;
             padding: 0;
             text-transform: uppercase;
-            font-family: "Univers LT Std",UniversLTStd,sans-serif;
             font-size: 16px;
             font-weight: 300;
             font-stretch: condensed;
@@ -319,6 +317,7 @@
         }
         .old #menu-interno>li>a, .old #menu-menu-principal>li>a {
             color: #fa4616;
+            font-weight: 500;
         }
         @media (min-width: 768px) {
             .old .navbar-nav>li>a {
@@ -404,8 +403,6 @@
         }
 
         .old .navbar-collapse {
-            padding-right: 15px;
-            padding-left: 15px;
             overflow-x: visible;
             -webkit-overflow-scrolling: touch;
             border-top: 1px solid transparent;
@@ -426,8 +423,14 @@
             position: relative;
             min-height: 0;
             background: 0 0;
-            padding-top: 21px;
+            padding-top: 26px;
             z-index: 1;
+        }
+
+        @media(max-width: 767px) {
+            .old #site-navigation {
+                padding-top: 0;
+            }
         }
 
         .old .hidden {
@@ -445,7 +448,8 @@
         }
 
         .old #site-branding {
-            padding-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
             text-align: left;
             font-size: 0;
         }
@@ -455,7 +459,7 @@
         }
 
         #masthead {
-            top: 36px;
+            top: 34px;
         }
         #masthead {
             position: fixed;
@@ -613,8 +617,13 @@
 
         @media only screen and (max-width: 580px) {
             .old nav.locaweb-group-business a {
-                padding: 12px 10px;
-                font-size: 9px;
+                padding: 12px 5px;
+                font-size: 8px;
+            }
+
+            .old .locaweb-group-business .container {
+                display: flex;
+                justify-content: space-between;
             }
         }
 
@@ -679,7 +688,7 @@
         @media screen and (max-width: 767px) {
             .old #menu-interno>li, .old #menu-menu-principal>li {
                 display: block;
-                padding: 8px 0;
+                padding: 15px 0 10px;
                 text-align: center;
             }
         }
@@ -743,13 +752,19 @@
 
         @media (min-width: 768px) {
             .old .col-sm-2 {
+                width: 8.333333335%;
+            }
+
+            .old .col-sm-2 {
                 width: 16.66666667%;
             }
-        }
 
-        @media (min-width: 768px) {
             .old .col-sm-4 {
                 width: 33.33333333%;
+            }
+
+            .old .col-sm-6 {
+                width: 50%;
             }
         }
 

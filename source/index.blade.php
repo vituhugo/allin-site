@@ -60,7 +60,7 @@
                 <ul class="offset-2 col-10 offset-md-0 col-md-6 col-lg-5 list-unstyled section-compreenda--items py-4">
                     <li>
                         <div class="section-compreenda--ico mb-2">
-                            <img src="/new_site/assets/images/icons/ico-brain.png" />
+                            <img src="{{ $page->baseUrl }}/assets/images/icons/ico-brain.png" />
                         </div>
                         <h3 class="section-compreenda--title">
                             <strong>Compr</strong>eenda
@@ -76,7 +76,7 @@
                     </li>
                     <li>
                         <div class="section-compreenda--ico mb-2">
-                            <img src="/new_site/assets/images/icons/ico-personalidade.png" />
+                            <img src="{{ $page->baseUrl }}/assets/images/icons/ico-personalidade.png" />
                         </div>
                         <h3 class="section-compreenda--title">
                             <strong>Perso</strong>nalize
@@ -92,7 +92,7 @@
                     </li>
                     <li>
                         <div class="section-compreenda--ico mb-2">
-                            <img src="/new_site/assets/images/icons/ico-circuito.png" />
+                            <img src="{{ $page->baseUrl }}/assets/images/icons/ico-circuito.png" />
                         </div>
                         <h3 class="section-compreenda--title">
                             <strong>Eng</strong>aje
@@ -108,8 +108,8 @@
                     </li>
                 </ul>
                 <div class="col-md-7 text-right d-none d-lg-block">
-                    <img src="/new_site/assets/images/home/bg-2-first-block.png" class="mt-3 img-phone fade left">
-                    <img src="/new_site/assets/images/home/bg-2-secound-block.png" class="mt-5 img-phone fade left">
+                    <img src="{{ $page->baseUrl }}/assets/images/home/bg-2-first-block.png" class="mt-3 img-phone fade left">
+                    <img src="{{ $page->baseUrl }}/assets/images/home/bg-2-secound-block.png" class="mt-5 img-phone fade left">
                 </div>
                 <div class="col-md-5 col-12 offset-0 offset-md-2 col-md-6 offset-md-7">
                     <div class="col-md-auto col-10 offset-1 offset-md-0 px-0">
@@ -158,7 +158,7 @@
                     </li>
                     <li id="abandono-de-carrinho" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0">
                         <div class="section-recomende--container--img col-md-6 col-12">
-                            <img src="/new_site/assets/images/home/abando-de-carrinho-site.png" alt="Celular abandono de carrinho" title="abandono de carrinho" class="ml-md-3" />
+                            <img src="{{ $page->baseUrl }}/assets/images/home/abando-de-carrinho-site.png" alt="Celular abandono de carrinho" title="abandono de carrinho" class="ml-md-3" />
                         </div>
                         <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
                             <i class="ico ico-cart-2"></i>
@@ -197,7 +197,7 @@
                     </li>
                     <li id="abandono-de-navegacao" class="section-recomende--container--content row mx-0 hide p-sm-5 p-3 p-lg-0">
                         <div class="section-recomende--container--img col-md-6 col-12">
-                            <img src="/new_site/assets/images/home/abandono-de-navegacao-site.png" alt="visualização de celular site" title="abandono de navegação" class="ml-md-3" />
+                            <img src="{{ $page->baseUrl }}/assets/images/home/abandono-de-navegacao-site.png" alt="visualização de celular site" title="abandono de navegação" class="ml-md-3" />
                         </div>
                         <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
                             <i class="ico ico-cart-2"></i>
@@ -236,7 +236,7 @@
                     </li>
                     <li id="reducao-de-precos" class="section-recomende--container--content row mx-0 hide p-sm-5 p-3 p-lg-0">
                         <div class="section-recomende--container--img col-md-6 col-12">
-                            <img src="/new_site/assets/images/home/reduziu-preco-site.png" class="ml-md-3" />
+                            <img src="{{ $page->baseUrl }}/assets/images/home/reduziu-preco-site.png" class="ml-md-3" />
                         </div>
                         <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
                             <i class="ico ico-cart-2"></i>
@@ -274,7 +274,7 @@
                     </li>
                     <li id="reconquista" class="section-recomende--container--content row mx-0 hide p-sm-5 p-3 p-lg-0">
                         <div class="section-recomende--container--img col-md-6 col-12">
-                            <img src="/new_site/assets/images/home/reconquista-site.png" class="ml-md-3" />
+                            <img src="{{ $page->baseUrl }}/assets/images/home/reconquista-site.png" class="ml-md-3" />
                         </div>
                         <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
                             <i class="ico ico-cart-2"></i>
@@ -313,7 +313,7 @@
                     </li>
                     <li id="indecisos" class="section-recomende--container--content row mx-0 hide p-sm-5 p-3 p-lg-0">
                         <div class="section-recomende--container--img col-md-6 col-12">
-                            <img src="/new_site/assets/images/home/indecisos-site.png" class="ml-md-3" />
+                            <img src="{{ $page->baseUrl }}/assets/images/home/indecisos-site.png" class="ml-md-3" />
                         </div>
                         <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
                             <i class="ico ico-cart-2"></i>
@@ -351,7 +351,7 @@
         <section class="section-ideais container-fluid">
             <div class="row mx-0 space-y">
                 <div class="col-12 pl-4">
-                    <img src="/new_site/assets/images/icons/ico-letter-opened.png" />
+                    <img src="{{ $page->baseUrl }}/assets/images/icons/ico-letter-opened.png" />
                 </div>
                 <div class="col-lg-4 pl-4 pr-lg-0">
                     <h3 class="section-ideais--title">SOMOS IDEAIS PARA <strong>DIVERSOS TIPOS DE NEGÓCIOS</strong></h3>
@@ -376,7 +376,7 @@
                 </div>
                 <div class="col-lg-8 justify-content-end">
                     <div class="section-ideais--mozaico mt-2">
-                        <img src="/new_site/assets/images/home/ideais-bg.jpg" style="width: 100%">
+                        <img src="{{ $page->baseUrl }}/assets/images/home/ideais-bg.jpg" style="width: 100%">
                     </div>
                 </div>
             </div>
@@ -396,94 +396,94 @@
                 <div class="row justify-content-around">
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/reserva.png" alt="logo cliente locaweb reserva" title="reserva">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/reserva.png" alt="logo cliente locaweb reserva" title="reserva">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/b2w.png" alt="logo cliente locaweb bw2" title="b2w">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/b2w.png" alt="logo cliente locaweb bw2" title="b2w">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/eurofarma.png" alt="logo cliente locaweb ultrafarma" title="ultrafarma">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/eurofarma.png" alt="logo cliente locaweb ultrafarma" title="ultrafarma">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/giuliana.png" alt="logo cliente locaweb giuliana" title="giuliana">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/giuliana.png" alt="logo cliente locaweb giuliana" title="giuliana">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/hotel-urbano.png" alt="logo cliente locaweb hotel-urbano" title="hotel-urbano">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/hotel-urbano.png" alt="logo cliente locaweb hotel-urbano" title="hotel-urbano">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/rchlo.png" alt="logo cliente locaweb rchlo" title="rchlo">
-                        </div>
-                    </div>
-
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/sephora.png" alt="logo cliente locaweb sephora" title="sephora">
-                        </div>
-                    </div>
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/magazineluiza.png" alt="logo cliente locaweb magazineluiza" title="magazineluiza">
-                        </div>
-                    </div>
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/kalunga.png" alt="logo cliente locaweb kalunga" title="kalunga">
-                        </div>
-                    </div>
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/gool.png" alt="logo cliente locaweb gool" title="gool">
-                        </div>
-                    </div>
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/ambev.png" alt="logo cliente locaweb ambev" title="ambev">
-                        </div>
-                    </div>
-                    <div class="col-5 col-sm-3 col-lg-2">
-                        <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/saraiva.png" alt="logo cliente locaweb saraiva" title="saraiva">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/rchlo.png" alt="logo cliente locaweb rchlo" title="rchlo">
                         </div>
                     </div>
 
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/hering.png" alt="logo cliente locaweb hering" title="hering">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/sephora.png" alt="logo cliente locaweb sephora" title="sephora">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/ricardo-eletro.png" alt="logo cliente locaweb ricardo-eletro" title="ricardo-eletro">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/magazineluiza.png" alt="logo cliente locaweb magazineluiza" title="magazineluiza">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/marisa.png" alt="logo cliente locaweb marisa" title="marisa">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/kalunga.png" alt="logo cliente locaweb kalunga" title="kalunga">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/pda.png" alt="logo cliente locaweb pda" title="pda">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/gool.png" alt="logo cliente locaweb gool" title="gool">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/netshoes.png" alt="logo cliente locaweb netshoes" title="netshoes">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/ambev.png" alt="logo cliente locaweb ambev" title="ambev">
                         </div>
                     </div>
                     <div class="col-5 col-sm-3 col-lg-2">
                         <div class="section-clients--logo">
-                            <img src="/new_site/assets/images/clientes/samsung.png" alt="logo cliente locaweb samsung" title="samsung">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/saraiva.png" alt="logo cliente locaweb saraiva" title="saraiva">
+                        </div>
+                    </div>
+
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/hering.png" alt="logo cliente locaweb hering" title="hering">
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/ricardo-eletro.png" alt="logo cliente locaweb ricardo-eletro" title="ricardo-eletro">
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/marisa.png" alt="logo cliente locaweb marisa" title="marisa">
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/pda.png" alt="logo cliente locaweb pda" title="pda">
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/netshoes.png" alt="logo cliente locaweb netshoes" title="netshoes">
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-3 col-lg-2">
+                        <div class="section-clients--logo">
+                            <img src="{{ $page->baseUrl }}/assets/images/clientes/samsung.png" alt="logo cliente locaweb samsung" title="samsung">
                         </div>
                     </div>
                 </div>
@@ -493,7 +493,7 @@
             <div class="section-blog--row row mx-0">
                 <header class="section-blog--header col-12 col-md-4 mb-5 pb-5 mb-md-0 pb-md-0">
                     <div class="row mb-3 pl-4">
-                        <img src="/new_site/assets/images/icons/ico-blog.png" />
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" />
                     </div>
                     <div class="row">
                         <h3 class="section-blog--header--title mb-4 pl-4">Conheça nosso <strong>blog e veja as novidades</strong></h3>
@@ -509,7 +509,7 @@
                             <div class="section-blog--article-container" style="flex-grow: 1">
                                 <div class="section-blog--content--article--img">
                                     <a href="/news/descubra-como-giuliana-flores-aumentou-o-engajamento-com-seu-publico-utilizando/">
-                                        <img src="/new_site/assets/images/home/blog-1.jpg">
+                                        <img src="{{ $page->baseUrl }}/assets/images/home/blog-1.jpg">
                                     </a>
                                 </div>
                                 <strong class="section-blog--content--article--data">
@@ -525,8 +525,8 @@
                                 <hr class="my-4" />
                                 <footer class="section-blog--content--article--footer row justify-content-between">
                                     <!--&lt;!&ndash;<div class="col-auto">&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<img src="/new_site/assets/images/icons/ico-msg.png" /> 1&ndash;&gt;-->
-                                    <!--&lt;!&ndash;<img src="/new_site/assets/images/icons/ico-heart.png" class="ml-4" /> 13&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<img src="{{ $page->baseUrl }}/assets/images/icons/ico-msg.png" /> 1&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<img src="{{ $page->baseUrl }}/assets/images/icons/ico-heart.png" class="ml-4" /> 13&ndash;&gt;-->
                                     <!--&lt;!&ndash;</div>&ndash;&gt;-->
                                 </footer>
                             </div>
@@ -537,7 +537,7 @@
                             <div class="section-blog--article-container" style="flex-grow: 1">
                                 <div class="section-blog--content--article--img">
                                     <a href="/news/converta-mais-no-seu-e-commerce-com-neuromarketing-e-algoritmo-de-recomendacao/">
-                                        <img src="/new_site/assets/images/home/blog-2.jpg">
+                                        <img src="{{ $page->baseUrl }}/assets/images/home/blog-2.jpg">
                                     </a>
                                 </div>
                                 <strong class="section-blog--content--article--data">
@@ -558,7 +558,7 @@
                             <div class="section-blog--article-container" style="flex-grow: 1">
                                 <div class="section-blog--content--article--img">
                                     <a href="/news/6-dicas-para-criar-um-assunto-de-e-mail-campeao/">
-                                        <img src="/new_site/assets/images/home/blog-3.jpg">
+                                        <img src="{{ $page->baseUrl }}/assets/images/home/blog-3.jpg">
                                     </a>
                                 </div>
                                 <strong class="section-blog--content--article--data">
@@ -576,8 +576,8 @@
                                 <hr class="my-4" />
                                 <footer class="section-blog--content--article--footer row justify-content-between">
                                     <!--<div class="col-auto">-->
-                                    <!--<img src="/new_site/assets/images/icons/ico-msg.png" /> 1-->
-                                    <!--<img src="/new_site/assets/images/icons/ico-heart.png" class="ml-4" /> 13-->
+                                    <!--<img src="{{ $page->baseUrl }}/assets/images/icons/ico-msg.png" /> 1-->
+                                    <!--<img src="{{ $page->baseUrl }}/assets/images/icons/ico-heart.png" class="ml-4" /> 13-->
                                     <!--</div>-->
                                 </footer>
                             </div>
@@ -595,7 +595,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row mx-0 mb-4 pl-4">
-                        <img src="/new_site/assets/images/icons/ico-contact.png" />
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-contact.png" />
                     </div>
                     <h4 class="section-contact--form--title pl-4">
                         Possui alguma dúvida
@@ -661,31 +661,4 @@
 @endsection
 
 @section('scripts')
-    <script>
-        $(document).ready(function() {
-            console.log('enter');
-            $('#form-assunto').submit(function(event) {
-                event.preventDefault();
-                if (navigator.sendBeacon) ga('set', 'transport', 'beacon');
-
-                ga('send', 'event', 'enviar_mensagem', $("#form-assunto").val(), $("input[name='email']").val());
-
-                $.post(this.action, $(this).serialize(), function(response) {
-                    alert(response.mensagem || "Sua solicitação não pode ser completada.");
-                }).fail(function() {
-                    alert("Sua solicitação não pode ser completada.");
-                });
-            });
-
-            $('.sml_subscribe').submit(function(event) {
-                event.preventDefault();
-
-                $.post(this.action, $(this).serialize(), function(response) {
-                    alert(response.mensagem || "Sua solicitação não pode ser completada.");
-                });
-
-                return false;
-            });
-        })
-    </script>
 @endsection

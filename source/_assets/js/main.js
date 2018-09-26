@@ -88,6 +88,16 @@ if (document.querySelector('.the-header')) {
     window.addEventListener('load', bindScrollHeader);
 }
 
+//OLD HEADER
+document.querySelectorAll('.navbar-toggle').forEach(function(item) {
+   item.addEventListener('click', function() {
+       var selector = item.getAttribute('data-target');
+       var element = document.querySelector(selector);
+
+       element.classList.toggle('in');
+   })
+});
+
 new SmoothScroll('a[href*="#"]');
 
 console.info("[load] main script loaded!");
