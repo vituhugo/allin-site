@@ -1,0 +1,47 @@
+#compreenda {
+    .section-main {
+        background-image: url('../../../assets/images/compreenda/bg-compreenda.jpg');
+        height: 608px;
+        padding-top: 100px;
+        color: white;
+
+        .section-main--highlight--text strong {
+            font-size: 1.65em;
+            font-weight: bold;
+        }
+
+        .section-main--highlight--container:not(.is-active) {
+            filter: invert(50%) brightness(400%);
+        }
+    }
+
+    .internal-title {
+        font-size: 6em;
+        line-height: 1;
+    }
+
+    .internal-subtitle {
+        font-size: 2em;
+    }
+
+    .internal-title span {
+        color: #fa4616;
+    }
+
+    .internal-breadcrumb {
+        list-style: none;
+        font-size: 1.52em;
+        font-weight: bold;
+        color: #fa4616;
+        padding-left: 0;
+    }
+
+    .internal-breadcrumb li {
+        display: inline-block;
+    }
+
+    .internal-breadcrumb li a {
+        color: inherit;
+        text-decoration: none;
+    }
+}

@@ -1,28 +1,27 @@
 /* [SECTION] MAIN */
-.section-main {
-    height: 100vh;
-
-    background-image: url("../../../assets/images/home/banner.jpg");
-    background-position-y: bottom;
-    background-position-x: calc((1900px - 100vw) / 7 * -1);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #545655;
-
-    color: white;
-}
-
-@media(max-width:  768px) {
+#home {
     .section-main {
-        background-position-x: calc((1900px - 100vw) / 8 * -1);
+        height: 100vh;
+
+        background-image: url("../../../assets/images/home/banner.jpg");
+        background-position-y: bottom;
+        background-position-x: calc((1900px - 100vw) / 7 * -1);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: #545655;
+
+        color: white;
+
+        @media(max-width:  768px) {
+            background-position-x: calc((1900px - 100vw) / 8 * -1);
+        }
+
+        @media(orientation: landscape) and (max-width: 961px) {
+            background-position-x: 0;
+        }
     }
 }
 
-@media(orientation: landscape) and (max-width: 961px) {
-    .section-main {
-        background-position-x: 0;
-    }
-}
 
 .home-title {
     font-size: 5em;

@@ -1,7 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
-    @include('_layouts/_partials/head_tags')
+    @include('_layouts._partials.head_tags')
     <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
 <body>
