@@ -1,4 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,600,700,700i,900);@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);@charset "UTF-8";
+/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -3606,6 +3607,276 @@ html {
   visibility: hidden !important;
 }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list {
+  background: #fff url("./ajax-loader.gif") center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+  font-family: "slick";
+  src: url("./fonts/slick.eot");
+  src: url("./fonts/slick.eot?#iefix") format("embedded-opentype"), url("./fonts/slick.woff") format("woff"), url("./fonts/slick.ttf") format("truetype"), url("./fonts/slick.svg#slick") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.slick-prev:hover, .slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  outline: none;
+  background: transparent;
+  color: transparent;
+}
+
+.slick-prev:hover:before, .slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 0.25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-family: "slick";
+  font-size: 20px;
+  line-height: 1;
+  color: white;
+  opacity: 0.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev {
+  left: -25px;
+}
+
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: -25px;
+}
+
+.slick-prev:before {
+  content: "\2190";
+}
+
+[dir="rtl"] .slick-prev:before {
+  content: "\2192";
+}
+
+.slick-next {
+  right: -25px;
+}
+
+[dir="rtl"] .slick-next {
+  left: -25px;
+  right: auto;
+}
+
+.slick-next:before {
+  content: "\2192";
+}
+
+[dir="rtl"] .slick-next:before {
+  content: "\2190";
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -25px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.slick-dots li button:hover, .slick-dots li button:focus {
+  outline: none;
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\2022";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -3692,8 +3963,15 @@ a:hover {
 }
 
 .container-fluid {
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
 }
 
 .btn {
@@ -3766,6 +4044,75 @@ main ul:not(.list-unstyled) li:before {
 main ul:not(.list-unstyled).white-icon li:before {
   -webkit-filter: invert(100%);
           filter: invert(100%);
+}
+
+.generic-title {
+  font-size: 3.2rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.generic-subtitle {
+  font-size: 1.6rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .text-xl-left {
+    text-align: left;
+  }
+  .text-xl-center {
+    text-align: center;
+  }
+  .text-xl-right {
+    text-align: right;
+  }
+}
+
+.number-shake {
+  font-style: normal;
+}
+
+.separator {
+  position: relative;
+}
+
+.separator:before {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 9px;
+  width: 3rem;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #fa4616;
+}
+
+.separator:before.white {
+  background: white;
+}
+
+.separator:before.orange {
+  background: #fa4616;
+}
+
+.separator:before.black {
+  background: black;
 }
 
 .fade {
@@ -4001,13 +4348,29 @@ a:hover .ico, a.ico:hover {
   }
 }
 
-.sub-header li {
-  display: inline-block;
-  margin-right: 1.6em;
-}
-
 .sub-header {
   background-color: #fa4616;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+}
+
+.sub-header.hide {
+  display: block !important;
+  height: 0;
+  opacity: 0;
+}
+
+.sub-header li {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .sub-header li {
+    margin-right: 1.6em;
+  }
 }
 
 .sub-header li a {
@@ -4024,6 +4387,11 @@ a:hover .ico, a.ico:hover {
 .sub-header li:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.sub-header li.is-active {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
 }
 
 .sub-header--container {
@@ -4214,13 +4582,13 @@ a:hover .ico, a.ico:hover {
   position: relative;
 }
 
-.section-ideais--title, #compreenda .section-optimizacao-publico--title {
+.section-ideais--title, #compreenda .section-optimizacao-publico--title, #compreenda .section-jornada-cliente--title, #compreenda .section-remarketing--title, #compreenda .section-integrations--title {
   position: relative;
   font-size: 3.2rem;
   letter-spacing: -1px;
 }
 
-.section-ideais--title:before, #compreenda .section-optimizacao-publico--title:before {
+.section-ideais--title:before, #compreenda .section-optimizacao-publico--title:before, #compreenda .section-jornada-cliente--title:before, #compreenda .section-remarketing--title:before, #compreenda .section-integrations--title:before {
   content: '';
   position: absolute;
   display: block;
@@ -4231,16 +4599,16 @@ a:hover .ico, a.ico:hover {
   background-color: #fa4616;
 }
 
-.section-ideais--title strong, #compreenda .section-optimizacao-publico--title strong {
+.section-ideais--title strong, #compreenda .section-optimizacao-publico--title strong, #compreenda .section-jornada-cliente--title strong, #compreenda .section-remarketing--title strong, #compreenda .section-integrations--title strong {
   display: block;
 }
 
-.section-ideais--text, #compreenda .section-optimizacao-publico--text {
+.section-ideais--text, #compreenda .section-optimizacao-publico--text, #compreenda .section-jornada-cliente--text, #compreenda .section-remarketing--text, #compreenda .section-integrations--text {
   font-size: 1.8rem;
   line-height: 1.3;
 }
 
-.section-ideais--text p, #compreenda .section-optimizacao-publico--text p {
+.section-ideais--text p, #compreenda .section-optimizacao-publico--text p, #compreenda .section-jornada-cliente--text p, #compreenda .section-remarketing--text p, #compreenda .section-integrations--text p {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: justify;
@@ -4887,17 +5255,33 @@ select.form-control:not([size]):not([multiple]) {
 
 #compreenda .section-main {
   background-image: url("../../../assets/images/compreenda/bg-compreenda.jpg");
-  height: 608px;
-  padding-top: 100px;
+  background-size: cover;
+  background-position: 80%;
+  padding-top: 150px;
   color: white;
 }
 
-#compreenda .section-main .section-main--highlight--text strong {
-  font-size: 1.65em;
-  font-weight: bold;
+@media (min-width: 768px) {
+  #compreenda .section-main {
+    min-height: 608px;
+    padding-top: 100px;
+    background-size: auto;
+    background-position: right;
+  }
 }
 
-#compreenda .section-main .section-main--highlight--container:not(.is-active) {
+#compreenda .section-main .section-main--highlight--text strong {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+@media (min-width: 768px) {
+  #compreenda .section-main .section-main--highlight--text strong {
+    font-size: 1.65em;
+  }
+}
+
+#compreenda .section-main .section-main--highlight--container:not(.is-active):not(:hover) {
   -webkit-filter: invert(50%) brightness(400%);
           filter: invert(50%) brightness(400%);
 }
@@ -4907,8 +5291,20 @@ select.form-control:not([size]):not([multiple]) {
   line-height: 1;
 }
 
+@media (max-width: 480px) {
+  #compreenda .internal-title {
+    font-size: 3em;
+  }
+}
+
 #compreenda .internal-subtitle {
   font-size: 2em;
+}
+
+@media (max-width: 480px) {
+  #compreenda .internal-subtitle {
+    font-size: 1.1em;
+  }
 }
 
 #compreenda .internal-title span {
@@ -4941,7 +5337,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 #compreenda .section-optimizacao-publico {
-  background: url("../../../assets/images/compreenda/bg-otimizacao-publicos.jpg");
+  background-color: #fa4616;
+}
+
+@media (min-width: 480px) {
+  #compreenda .section-optimizacao-publico {
+    background-image: url("../../../assets/images/compreenda/bg-otimizacao-publicos.jpg");
+    background-position-x: calc((1920px - 100vw)/2 * -1);
+  }
 }
 
 #compreenda .section-optimizacao-publico--title {
@@ -4956,7 +5359,7 @@ select.form-control:not([size]):not([multiple]) {
   display: inline;
 }
 
-#compreenda .section-optimizacao-publico--recorte-superior {
+#compreenda .section-optimizacao-publico--recorte-superior, #compreenda .section-integrations--recorte-superior {
   position: relative;
   right: 1rem;
   width: calc(100% + 5rem);
@@ -4964,9 +5367,255 @@ select.form-control:not([size]):not([multiple]) {
   display: block;
 }
 
-#compreenda .section-optimizacao-publico--recorte-superior:after {
+#compreenda .section-optimizacao-publico--recorte-superior:after, #compreenda .section-integrations--recorte-superior:after {
   position: absolute;
   content: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
   left: -.5em;
   bottom: -2.30em;
+}
+
+#compreenda .section-jornada-cliente {
+  background-color: white;
+  background-image: url("../../../assets/images/compreenda/bg-workflow.jpg");
+  background-size: contain;
+  background-position-x: right;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1199px) {
+  #compreenda .section-jornada-cliente {
+    background: white;
+  }
+}
+
+#compreenda .section-jornada-cliente--recorte-inferior {
+  position: relative;
+  right: 0;
+  width: calc(100% + 4rem);
+  border-top: 4px solid #fa4616;
+  display: block;
+  margin-top: 5rem;
+}
+
+#compreenda .section-jornada-cliente--recorte-inferior:after {
+  content: url(../../../assets/images/home/blog-recorte-superior.png);
+  position: absolute;
+  left: -.8em;
+  bottom: 0;
+}
+
+#compreenda .section-jornada-cliente--title strong, #compreenda .section-remarketing--title strong {
+  display: inline;
+}
+
+#compreenda .section-remarketing--statistics {
+  background-color: white;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+
+#compreenda .section-remarketing--statistics strong {
+  font-weight: 800;
+  display: block;
+  position: relative;
+}
+
+#compreenda .section-remarketing--statistics strong span {
+  display: inline-block;
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
+  margin-right: .5rem;
+}
+
+@media (min-width: 1200px) {
+  #compreenda .section-remarketing--statistics strong span {
+    position: absolute;
+    right: 100%;
+  }
+}
+
+#compreenda .section-remarketing {
+  background-color: white;
+  background-image: url("../../../assets/images/compreenda/bg-remarketing.png");
+  background-repeat: no-repeat;
+  background-position-x: 2rem;
+  background-position-y: 60px;
+  background-size: calc(100% - 4rem);
+}
+
+@media (max-width: 1199px) {
+  #compreenda .section-remarketing {
+    background: white;
+  }
+}
+
+#compreenda .section-integrations {
+  background-image: url("../../../assets/images/home/bg-cinza.jpg");
+  background-size: cover;
+  color: white;
+}
+
+#compreenda .section-integrations--logo-container {
+  border: white 2px solid;
+  margin-bottom: 1vw;
+  margin-top: 1vw;
+  height: 8vw;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform linear .2s;
+  transition: -webkit-transform linear .2s;
+  transition: transform linear .2s;
+  transition: transform linear .2s, -webkit-transform linear .2s;
+}
+
+#compreenda .section-integrations--logo-container:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: invert(50%) sepia(100%) saturate(300) hue-rotate(39deg) brightness(200%) grayscale(10%);
+          filter: invert(50%) sepia(100%) saturate(300) hue-rotate(39deg) brightness(200%) grayscale(10%);
+}
+
+#compreenda .section-integrations--logo-container img {
+  max-width: 70%;
+  max-height: 70%;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  #compreenda .section-integrations--logo-container {
+    height: 17vw;
+  }
+}
+
+@media (max-width: 575px) {
+  #compreenda .section-integrations--logo-container {
+    margin-bottom: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  #compreenda .section-integrations--logo-container {
+    height: 28vw;
+  }
+}
+
+#compreenda .section-integrations--recorte-superior {
+  top: -4.4rem;
+  right: 2rem;
+  width: calc(100% + 6rem);
+}
+
+#compreenda .section-integrations--recorte-superior:after {
+  left: -14px;
+  bottom: -63px;
+}
+
+#compreenda .section-data-analytics {
+  background-image: url("../../../assets/images/compreenda/bg-analytcs.jpg");
+  background-position-x: left;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+@media (max-width: 1199px) {
+  #compreenda .section-data-analytics {
+    background: white;
+  }
+}
+
+#compreenda .slick-slide {
+  height: auto;
+  padding-bottom: 4rem;
+}
+
+#compreenda .slick-slide li {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+#compreenda .slick-slide li {
+  -webkit-transform: scale(0.8) translateY(12%) translateX(120%);
+          transform: scale(0.8) translateY(12%) translateX(120%);
+}
+
+#compreenda .slick-slide.slick-active li {
+  -webkit-transform: scale(0.9) translateY(5.3%) translateX(40%);
+          transform: scale(0.9) translateY(5.3%) translateX(40%);
+}
+
+#compreenda .slick-active + .slick-slide li {
+  -webkit-transform: scale(0.8) translateY(12%) translateX(-120%);
+          transform: scale(0.8) translateY(12%) translateX(-120%);
+}
+
+#compreenda .slick-current + .slick-active li {
+  -webkit-transform: scale(0.9) translateY(5.3%) translateX(-40%);
+          transform: scale(0.9) translateY(5.3%) translateX(-40%);
+}
+
+#compreenda .slick-slide.slick-active.slick-current li {
+  -webkit-transform: scale(1) translateY(0) translateX(0);
+          transform: scale(1) translateY(0) translateX(0);
+}
+
+#compreenda .slick-slide {
+  position: relative;
+  z-index: 1;
+}
+
+#compreenda .slick-active {
+  z-index: 2;
+}
+
+#compreenda .slick-active.slick-current {
+  z-index: 3;
+}
+
+#compreenda .slider p {
+  background: black;
+  color: white;
+  margin: -1em 10px 0;
+  display: block;
+  position: relative;
+  z-index: 3;
+  padding: .7em;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.4em;
+}
+
+#compreenda .slick-slide img {
+  -webkit-box-shadow: 0px 30px 50px #000000;
+          box-shadow: 0px 30px 50px #000000;
+}
+
+#compreenda .slick-dots {
+  bottom: 1rem;
+}
+
+#compreenda .slick-dots li {
+  background: gray;
+  border-radius: 100%;
+  margin: 0 .75rem;
+}
+
+#compreenda .slick-dots li.slick-active {
+  background-color: black;
+}
+
+#compreenda .slick-dots li button {
+  height: 1.5em;
+  width: 1.5em;
 }
