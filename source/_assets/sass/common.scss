@@ -68,8 +68,14 @@ a {
 }
 
 .container-fluid {
-    padding-left: 4rem;
-    padding-right: 4rem;
+
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+
+    @media(min-width: 1200px) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }
 
 .btn {
@@ -121,4 +127,98 @@ a {
 .form-control {
     width: 100%;
     border-style: solid;
+}
+
+main ul:not(.list-unstyled) {
+    list-style: none;
+    li {
+        position: relative;
+        margin-top: 2rem;
+
+        &:before {
+            content: "";
+            background-image: url(../../../assets/images/icons/ico-list-item.png);
+            width: 2rem;
+            height: 2rem;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: inline-block;
+            margin-right: .75rem;
+            vertical-align: middle;
+            position: absolute;
+            left: -2.8rem;
+            top: .2em;
+        }
+    }
+
+    &.white-icon {
+        li:before {
+            filter: invert(100%);
+        }
+    }
+}
+
+.generic-title {
+    font-size: 3.2rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.generic-subtitle {
+    font-size: 1.6rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+@media(min-width: 1200px) {
+    .text-xl-left {
+        text-align: left;
+    }
+    .text-xl-center {
+        text-align: center;
+    }
+    .text-xl-right {
+        text-align: right;
+    }
+}
+
+.number-shake {
+    font-style: normal;
+}
+
+.separator {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 9px;
+        width: 3rem;
+        top: 3.5rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #fa4616;
+        &.white {
+            background: white;
+        }
+        &.orange {
+            background: #fa4616;
+        }
+        &.black {
+            background: black;
+        }
+    }
 }

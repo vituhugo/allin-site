@@ -5,6 +5,12 @@
     <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
 <body>
+
+<style>
+    .fade {
+        opacity: 0;
+    }
+</style>
 @include('_layouts._partials.header-old')
 {{--@include('_layouts._partials.header')--}}
 @yield('content')

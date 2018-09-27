@@ -21,12 +21,6 @@
                                                                                             class="attachment-full"
                                                                                             style="width: 120px"
                                                                                             src="{{ $page->baseUrl }}/assets/images/logo-allin.png"></a>
-                    <div class="navbar-header visible-xs-block">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target=".navbar-ex1-collapse" title="Acessar menu"><span class="sr-only">Acessar menu</span>
-                            <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
-                        </button>
-                    </div>
                 </div>
                 <nav id="site-navigation" role="navigation" class="col col-xs-12 col-sm-6">
                     <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -57,13 +51,24 @@
                         </div>
                     </div>
                 </nav>
-                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4"><a id="cabecalho_extra_link_email"
-                                                                                     class="icone icone-email"
-                                                                                     href="http://allin.com.br/suporte/#formulario"
-                                                                                     title="Contato">Contato</a> <a
-                            id="cabecalho_extra_busca" class="icone icone-busca" href="#" title="Busca">Busca</a> <a
-                            id="cabecalho_extra_link_busca" class="btn btn-simples btn-teste" href="/#contato"><span style="vertical-align: sub;">Contato </span>
-                        <i class="icone icone-teste"></i></a></div>
+                <div id="cabecalho_extra" class="col col-xs-12 col-sm-4">
+                    <a id="cabecalho_extra_link_email" class="icone icone-email" href="http://allin.com.br/suporte/#formulario" title="Contato">
+                        Contato
+                    </a>
+                    <a id="cabecalho_extra_busca" class="icone icone-busca" href="#" title="Busca">
+                        Busca
+                    </a>
+                    <a id="cabecalho_extra_link_busca" class="btn btn-simples btn-teste" href="/#contato">
+                        <span style="vertical-align: sub;">
+                            Contato
+                        </span>
+                        <i class="icone icone-teste"></i>
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target=".navbar-ex1-collapse" title="Acessar menu"><span class="sr-only">Acessar menu</span>
+                        <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    </button>
+                </div>
             </div>
         </div>
         <aside id="sub_busca" class="row" style="display: none;">
@@ -83,13 +88,15 @@
             </div>
         </aside>
         @if(!empty($subheader))
-            <div class="sub-header">
+            <div class="sub-header hide">
                 <ul class="sub-header--container container list-unstyled">
                     @foreach($subheader as $item)
-                        <li>
+                        <li class="{{$item[3]}} px-3 px-md-0">
                             <a href="{{$item[0]}}">
                                 @if(isset($item[2]))<img src="{{$item[2]}}">@endif
+                                <span class="d-md-inline d-none">
                                 {{ $item[1] }}
+                                </span>
                             </a>
                         </li>
                     @endforeach
@@ -540,9 +547,8 @@
 
         .old .navbar-toggle {
             position: absolute;
-            right: 50%;
             top: 0;
-            margin: 0 -27px 0 0;
+            margin: 0;
             border: none;
             border-radius: 0;
             box-shadow: none;
@@ -656,7 +662,7 @@
             #cabecalho_extra {
                 position: absolute;
                 right: 0;
-                top: 0;
+                top: 10px;
                 line-height: 50px;
                 width: auto;
             }
@@ -746,6 +752,9 @@
             content: " ";
         }
 
+        .navbar-header {
+            float: right;
+        }
         .old .col-xs-12 {
             width: 100%;
         }
@@ -781,11 +790,4 @@
         }
 
     </style>
-    <script>
-        var btn = document.querySelector('.navbar-toggle');
-        btn.addEventListener('click', function() {
-            var selector = this.getAttribute('data-target');
-            document.querySelector(selector).classList.toggle('in');
-        });
-    </script>
 </section>

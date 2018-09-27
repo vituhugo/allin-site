@@ -2,7 +2,7 @@
     <div class="row mx-0 px-3">
         <div class="col-md-3 col-12 text-md-left text-center">
             <div class="footer--logo mb-4">
-                <img src="{{ $page->baseUrl }}/assets/images/logo.png" />
+                <img src="{{ $page->baseUrl }}/assets/images/logo-locaweb.png" />
             </div>
             <p class="footer--paragraph">
                 Plataforma brasileira líder em marketing

@@ -1,5 +1,6 @@
 window.SmoothScroll = require('smooth-scroll');
 window.$ = window.jQuery = require('jquery');
+window.$slick = require('slick-carousel');
 
 window.ready = function ready(selector, time, time_per_item) {
     time = time || 300;
@@ -18,7 +19,7 @@ window.scroll = function scroll(selector, time, time_per_item) {
 
     document.querySelectorAll(selector).forEach(function(el) {
         let listener = function() {
-            if (el.getBoundingClientRect().bottom - window.innerHeight < 0 ) {
+            if (el.getBoundingClientRect().top + el.offsetHeight/2 - window.innerHeight < 0 ) {
                 setTimeout(function() {
                     el.classList.add('ready');
                     window.removeEventListener("scroll", listener);
@@ -30,6 +31,17 @@ window.scroll = function scroll(selector, time, time_per_item) {
         listener();
     });
 
+};
+
+window.afterScroll = function(selectorEl, selectorDisplayEl) {
+    let el = document.querySelector(selectorEl);
+    let displayEl = document.querySelector(selectorDisplayEl);
+    let listener = function() {
+        el.getBoundingClientRect().bottom < 0 ?
+            displayEl.classList.remove('hide') : displayEl.classList.add('hide');
+    };
+    window.addEventListener('scroll', listener);
+    listener();
 };
 
 window.toggleMenu = function toggleMenu() {
@@ -44,6 +56,9 @@ window.addEventListener('load', function (event) {
     scroll('.img-phone');
     scroll('#form-assunto', 500);
     scroll('.section-contact--form--info', 100, 300);
+    scroll('.scroll-default', 100, 300);
+    afterScroll('.section-main', '.sub-header')
+    numberShake();
 });
 
 let last_scroll = window.scrollY;
@@ -61,6 +76,30 @@ let bindScrollHeader = function() {
         document.querySelector('.the-header').classList.add('hide');
     }
     last_scroll = window.scrollY;
+};
+
+let numberShake = function() {
+    let time = 300;
+    let time_per_item = 0;
+    let listener = function() {
+        document.querySelectorAll('.number-shake').forEach(function(el) {
+            if (el.getBoundingClientRect().top + el.offsetHeight / 2 - window.innerHeight < 0) {
+                setTimeout(function () {
+                    let to_number = el.getAttribute('data-number');
+                    let count = 0;
+                    let interval = setInterval(function () {
+                        el.innerHTML = Math.floor(to_number / 50 * count);
+                        count++ && count > 50 && clearInterval(interval);
+                    }, 20);
+
+                    window.removeEventListener("scroll", listener);
+                }, time);
+                time = time + time_per_item
+            }
+        })
+    };
+    window.addEventListener('scroll', listener);
+    listener();
 };
 
 window.addEventListener('load', function() {
@@ -99,5 +138,17 @@ document.querySelectorAll('.navbar-toggle').forEach(function(item) {
 });
 
 new SmoothScroll('a[href*="#"]');
+
+$('.slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '10px',
+    dotsClass: 'list-unstyled slick-dots'
+    // autoplay: true,
+})
 
 console.info("[load] main script loaded!");

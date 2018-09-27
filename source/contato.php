@@ -1,5 +1,13 @@
 <?php
-$to = "Mayara Oliveira <mayara.oliveira@allin.com.br>, Financeiro <financeiro@allin.com.br>, Spam <spamcontrol@allin.com.br>, Jurídico <juridico@allin.com.br>, Comercial <comercial@allin.com.br>, Parcerias <comercial@allin.com.br>, Suporte <helpdesk@allin.com.br>, Outros <contato@allin.com.br>";
+$to = [
+        "Financeiro " => "<financeiro@allin.com.br>",
+        "Spam" => "<spamcontrol@allin.com.br>",
+        "Jurídico" => "<juridico@allin.com.br>",
+        "Comercial" => "<comercial@allin.com.br>",
+        "Parcerias" => "<comercial@allin.com.br>",
+        "Suporte" => "<helpdesk@allin.com.br>",
+        "Outros" => "<contato@allin.com.br>"
+    ];
 
 $subject = "";
 $body  = "<html><body>";
@@ -26,7 +34,7 @@ $header .= "Content-Transfer-Encoding: 8bit \r\n";
 $header .= "Date: ".date("r (T)")." \r\n";
 $header .= iconv_mime_encode("Subject", $subject, $subject_preferences);
 
-$sent = mail($to, $subject, $body, $header);
+$sent = mail($to[$_POST['assunto']], $subject, $body, $header);
 
 header('Content-Type: application/json');
 
