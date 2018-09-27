@@ -789,5 +789,10 @@
             }
         }
 
+        @media (max-width: 767px) {
+            .old .navbar-toggle {
+                display: none;
+            }
+        }
     </style>
 </section>
