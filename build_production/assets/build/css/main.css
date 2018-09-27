@@ -3739,6 +3739,35 @@ a:hover {
   border-style: solid;
 }
 
+main ul:not(.list-unstyled) {
+  list-style: none;
+}
+
+main ul:not(.list-unstyled) li {
+  position: relative;
+  margin-top: 2rem;
+}
+
+main ul:not(.list-unstyled) li:before {
+  content: "";
+  background-image: url(../../../assets/images/icons/ico-list-item.png);
+  width: 2rem;
+  height: 2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: .75rem;
+  vertical-align: middle;
+  position: absolute;
+  left: -2.8rem;
+  top: .2em;
+}
+
+main ul:not(.list-unstyled).white-icon li:before {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
 .fade {
   position: relative;
   opacity: 0;
@@ -4007,6 +4036,7 @@ a:hover .ico, a.ico:hover {
 /* [SECTION] MAIN */
 #home .section-main {
   height: 100vh;
+  min-height: 55em;
   background-image: url("../../../assets/images/home/banner.jpg");
   background-position-y: bottom;
   background-position-x: calc((1900px - 100vw) / 7 * -1);
@@ -4184,13 +4214,13 @@ a:hover .ico, a.ico:hover {
   position: relative;
 }
 
-.section-ideais--title {
+.section-ideais--title, #compreenda .section-optimizacao-publico--title {
   position: relative;
   font-size: 3.2rem;
   letter-spacing: -1px;
 }
 
-.section-ideais--title:before {
+.section-ideais--title:before, #compreenda .section-optimizacao-publico--title:before {
   content: '';
   position: absolute;
   display: block;
@@ -4201,14 +4231,19 @@ a:hover .ico, a.ico:hover {
   background-color: #fa4616;
 }
 
-.section-ideais--text {
+.section-ideais--title strong, #compreenda .section-optimizacao-publico--title strong {
+  display: block;
+}
+
+.section-ideais--text, #compreenda .section-optimizacao-publico--text {
   font-size: 1.8rem;
   line-height: 1.3;
 }
 
-.section-ideais--text p {
+.section-ideais--text p, #compreenda .section-optimizacao-publico--text p {
   margin-top: 1em;
   margin-bottom: 1em;
+  text-align: justify;
 }
 
 @media (min-width: 992px) {
@@ -4283,7 +4318,6 @@ a:hover .ico, a.ico:hover {
 .section-recomende--title {
   font-size: 3.2rem;
   text-align: center;
-  text-transform: uppercase;
 }
 
 .section-recomende--subtitle {
@@ -4377,7 +4411,6 @@ a:hover .ico, a.ico:hover {
 
 .section-recomende--container--title {
   font-size: 2.15rem;
-  text-transform: uppercase;
 }
 
 .section-recomende--container--title strong {
@@ -4443,7 +4476,6 @@ a:hover .ico, a.ico:hover {
 
 .section-clients--header--title {
   text-align: center;
-  text-transform: uppercase;
   font-size: 3.2rem;
 }
 
@@ -4534,7 +4566,6 @@ a:hover .ico, a.ico:hover {
 .section-blog--header--title {
   position: relative;
   font-size: 3.2rem;
-  text-transform: uppercase;
 }
 
 .section-blog--header--title:before {
@@ -4656,7 +4687,6 @@ a:hover .ico, a.ico:hover {
   border-radius: 4px;
   border-width: 2px;
   color: #AAAAAA;
-  text-transform: uppercase;
   padding: 1em 1em;
   height: 4rem;
   font-size: 1.15em;
@@ -4676,7 +4706,6 @@ select.form-control:not([size]):not([multiple]) {
   font-size: 3.2rem;
   text-align: center;
   margin-bottom: 1.5em;
-  text-transform: uppercase;
   position: relative;
 }
 
@@ -4694,7 +4723,6 @@ select.form-control:not([size]):not([multiple]) {
 
 .section-contact--form--title {
   font-size: 3.2rem;
-  text-transform: uppercase;
   max-width: 600px;
   position: relative;
 }
@@ -4902,4 +4930,43 @@ select.form-control:not([size]):not([multiple]) {
 #compreenda .internal-breadcrumb li a {
   color: inherit;
   text-decoration: none;
+}
+
+#compreenda .section-main--highlight--image {
+  height: 4.7em;
+}
+
+#compreenda .section-ideais--mozaico:after {
+  content: none;
+}
+
+#compreenda .section-optimizacao-publico {
+  background: url("../../../assets/images/compreenda/bg-otimizacao-publicos.jpg");
+}
+
+#compreenda .section-optimizacao-publico--title {
+  color: white;
+}
+
+#compreenda .section-optimizacao-publico--title:before {
+  background-color: white;
+}
+
+#compreenda .section-optimizacao-publico--title strong {
+  display: inline;
+}
+
+#compreenda .section-optimizacao-publico--recorte-superior {
+  position: relative;
+  right: 1rem;
+  width: calc(100% + 5rem);
+  border-top: 4px solid white;
+  display: block;
+}
+
+#compreenda .section-optimizacao-publico--recorte-superior:after {
+  position: absolute;
+  content: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
+  left: -.5em;
+  bottom: -2.30em;
 }
