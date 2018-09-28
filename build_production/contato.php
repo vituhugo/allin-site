@@ -13,6 +13,7 @@ $subject = "";
 $body  = "<html><body>";
 $body .= "<p><b>DE:</b> {$_POST['nome']}</p> \r\n";
 $body .= "<p><b>Telefone:</b> {$_POST['tel']}</p> \r\n";
+$body .= "<p><b>Email:</b> {$_POST['email']}</p> \r\n";
 $body .= "<p><b>Assunto:</b> {$_POST['assunto']}</p> \r\n";
 $body .= "<p><b>Corpo da mensagem:</b><br> \r\n\r\n";
 $body .= $_POST['mensagem']."</p>";
