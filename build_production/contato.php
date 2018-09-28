@@ -11,11 +11,11 @@ $to = [
 
 $subject = "";
 $body  = "<html><body>";
-$body .= "DE: {$_POST['nome']} \r\n";
-$body .= "Telefone: {$_POST['tel']} \r\n";
-$body .= "Assunto: {$_POST['assunto']} \r\n";
-$body .= "Corpo da mensagem: \r\n\r\n";
-$body .= $_POST['mensagem'];
+$body .= "<p><b>DE:</b> {$_POST['nome']}</p> \r\n";
+$body .= "<p><b>Telefone:</b> {$_POST['tel']}</p> \r\n";
+$body .= "<p><b>Assunto:</b> {$_POST['assunto']}</p> \r\n";
+$body .= "<p><b>Corpo da mensagem:</b><br> \r\n\r\n";
+$body .= $_POST['mensagem']."</p>";
 $body .= "--\r\nEste e-mail foi enviado de um formulário de contato em http://allin.com.br";
 $body .= "</body></html>";
 
@@ -28,7 +28,7 @@ $subject_preferences = array(
 );
 
 $header = "Content-type: text/html; charset="."utf-8"." \r\n";
-$header .= "From: Site Allin <site@allin.com.br> \r\n";
+$header .= "From: Sis Allin <site@allin.com.br> \r\n";
 $header .= "MIME-Version: 1.0 \r\n";
 $header .= "Content-Transfer-Encoding: 8bit \r\n";
 $header .= "Date: ".date("r (T)")." \r\n";
