@@ -16,7 +16,7 @@
 @yield('content')
 @include('_layouts._partials.footer')
 <section id="external-scripts">
-    <!-- v1.0.0 -->
+    <!-- v1.0.1 -->
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
