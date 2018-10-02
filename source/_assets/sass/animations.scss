@@ -1,8 +1,17 @@
 .fade {
     position:relative;
-
     opacity: 0;
+}
 
+.has-animation {
+    transition: none !important;
+
+    &:not([data-animation-style]) {
+        opacity: 0;
+    }
+}
+
+.is-animate {
     transition: all .5s ease-out, opacity .7s ease-in;
 }
 

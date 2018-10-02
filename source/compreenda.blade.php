@@ -1,68 +1,69 @@
 @extends('_layouts.master', ['subheader' => [
-    ['#', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-compreenda.png", 'is-active'],
-    ['#', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png" ],
-    ['#', 'Engaje', $page->baseUrl."/assets/images/icons/ico-engaje.png" ],
+    ['/compreenda', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-compreenda.png", 'is-active'],
+    ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png" ],
+    ['/engaje', 'Engaje', $page->baseUrl."/assets/images/icons/ico-engaje.png" ],
 ]])
 
 @section('content')
 
+
     <main class="page-content page-compreenda" id="compreenda">
-        <section class="section-main container-fluid justify-content-center justify-content-md-end d-flex flex-column">
-            <div class="section-main--text fade right mb-5 pb-5 pb-md-0">
+        <section class="banner-internal" style="background-image: url('{{$page->baseUrl}}/assets/images/compreenda/banner.jpg');">
+            <div class="banner-internal--main has-animation">
                 <div class="row">
-                    <div class="col-sm-auto col-2 pr-0 pr-sm-5">
+                    <div class="col-sm-auto col-2 pr-sm-5">
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-brain-big.png" class="mt-4"/>
                     </div>
-                    <div class="col-sm-auto col-10 pt-4 pt-sm-0 section-main--text--row--container no-gutters">
-                        <h1 class="internal-title col-auto m-0">
+                    <div class="col-sm-auto col-10 pt-4 pt-sm-0 no-gutters">
+                        <h1 class="banner-internal--main--title col-auto">
                             <strong>Compreenda<span>.</span></strong>
                         </h1>
-                        <h2 class="internal-subtitle col-auto m-0 pl-1">
+                        <h2 class="banner-internal--main--subtitle col-auto">
                             Gestão de base de forma simples e completa.
                         </h2>
                     </div>
                 </div>
-                <ul class="internal-breadcrumb mt-4 mt-sm-0 list-unstyled">
+                <ul class="banner-internal--main--breadcrumb mt-4 list-unstyled">
                     <li><a href="/">Home</a> <span class="ico ico-arrow-right mx-3"></span></li>
                     <li>Compreenda</li>
                 </ul>
             </div>
-            <div class="row justify-content-center mt-5">
+            <footer class="banner-internal--footer row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-12">
-                    <ul class="row no-gutters list-unstyled mt-3 mb-0 d-flex">
+                    <ul class="banner-internal--footer--container row no-gutters list-unstyled mt-3 mb-0">
                         <li class="col-4 d-flex justify-content-center pb-3">
-                            <div class="section-main--highlight--container is-active fade left" style="margin-left: -1.5rem">
-                                <div class="section-main--highlight--image pt-4">
+                            <a href="/compreenda" class="banner-internal--footer--highlight is-active has-animation" style="margin-left: -1.5rem" data-animation-init-time="800">
+                                <div class="banner-internal--footer--highlight--image pt-4">
                                     <img src="{{ $page->baseUrl }}/assets/images/icons/bg-seta-circle-big.png" />
                                 </div>
-                                <h3 class="section-main--highlight--text mt-2">
+                                <h3 class="banner-internal--footer--highlight--text mt-2">
                                     <strong>Compreenda</strong>
                                 </h3>
-                            </div>
+                            </a>
                         </li>
                         <li class="col-4 d-flex justify-content-center pb-3" style="border-left: .15rem solid #fa4616;border-right: .15rem solid #fa4616;">
-                            <div class="section-main--highlight--container fade left">
-                                <div class="section-main--highlight--image">
+                            <a href="/presonalize" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1300">
+                                <div class="banner-internal--footer--highlight--image">
                                     <img src="{{ $page->baseUrl }}/assets/images/icons/ico-personalidade.png" />
                                 </div>
-                                <h3 class="section-main--highlight--text mt-2">
+                                <h3 class="banner-internal--footer--highlight--text mt-2">
                                     <strong>Personalize</strong>
                                 </h3>
-                            </div>
+                            </a>
                         </li>
                         <li class="col-4 d-flex justify-content-center pb-3">
-                            <div class="section-main--highlight--container fade left">
-                                <div class="section-main--highlight--image pt-2">
+                            <a href="/engaje" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1800">
+                                <div class="banner-internal--footer--highlight--image pt-2">
                                     <img src="{{ $page->baseUrl }}/assets/images/icons/ico-circuito.png" />
                                 </div>
-                                <h3 class="section-main--highlight--text mt-2">
+                                <h3 class="banner-internal--footer--highlight--text mt-2">
                                     <strong>Engaje</strong>
                                 </h3>
-                            </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </footer>
         </section>
 
         <section class="section-ideais container-fluid" style="background: white">
@@ -87,7 +88,7 @@
                 </div>
                 <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
                     <div class="section-ideais--mozaico mt-2">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/power-segmentador-image.jpg" style="width: 100%" class="fade right scroll-default">
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/power-segmentador-image.jpg" style="width: 100%" class="has-animation">
                     </div>
                 </div>
             </div>
@@ -95,11 +96,11 @@
         <section class="section-optimizacao-publico container-fluid">
             <div class="row py-5">
                 <div class="col-3 col-md-6 offset-lg-6 offset-md-3 pl-4 mt-5">
-                    <img src="{{ $page->baseUrl }}/assets/images/icons/ico-filter.png" class="fade left scroll-default" />
+                    <img src="{{ $page->baseUrl }}/assets/images/icons/ico-filter.png" class="has-animation" />
                 </div>
                 <div class="col-12 col-md-9 col-lg-6 offset-lg-6 offset-md-3">
-                    <h3 class="section-optimizacao-publico--title mt-3 fade left scroll-default">Otimização <strong>de Públicos</strong></h3>
-                    <div class="section-optimizacao-publico--text fade left scroll-default">
+                    <h3 class="section-optimizacao-publico--title mt-3 has-animation">Otimização <strong>de Públicos</strong></h3>
+                    <div class="section-optimizacao-publico--text has-animation">
                         <p>
                             A All iN ajuda você a otimizar os públicos do seu negócio. Afinal, sabemos que ter várias
                             listas pode complicar a organização dos seus clientes. Fazendo a otimização de públicos,
@@ -109,7 +110,7 @@
                         <span class="section-optimizacao-publico--recorte-superior d-none d-xl-block"></span>
                         <div class="row">
                             <div class="col-12 pl-4">
-                                <ul class="pl-5 mt-4 white-icon row no-gutters fade left scroll-default">
+                                <ul class="pl-5 mt-4 white-icon row no-gutters has-animation">
                                     <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Gênero, Idade e Data&nbsp;de&nbsp;Nascimento;</strong></li>
                                     <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Data&nbsp;de&nbsp;Cadastro, Data&nbsp;da&nbsp;última&nbsp;compra;</strong></li>
                                     <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Cidades, Estados ou&nbsp;Países;</strong></li>
@@ -127,7 +128,7 @@
                 Sua marca precisa estar em todos os pontos de contato do cliente, impactando-o durante toda a jornada de compra. <br><br class="d-block d-md-none">
                 <strong>Por isso, a All iN oferece uma gama de soluções que te ajudam a automatizar</strong> campanhas inteligentes e direcionadas.
             </p>
-            <span class="section-jornada-cliente--recorte-inferior d-none d-xl-block my-5 my-xl-0"></span>
+            <span class="section-jornada-cliente--recorte-inferior d-none d-xl-block mb-3"></span>
 
             <div class="row mx-0 space-y">
                 <div class="col-12 col-xl-5">
@@ -165,19 +166,19 @@
                 <div class="row">
                     <div class="col-12 py-4 py-lg-0 offset-lg-1 col-lg-3 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake" data-number="8">0</i>x mais</strong>
+                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="8">0</i>x mais</strong>
                             cliques
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4  justify-content-center text-center text-xl-left">
                         <div class=" pl-lg-4">
-                            <strong><span>+</span><i class="number-shake" data-number="34">0</i>% de</strong>
+                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="34">0</i>% de</strong>
                             aumento&nbsp;em&nbsp;receita
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake" data-number="45">0</i>%% mais</strong>
+                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>%% mais</strong>
                             abertura
                         </div>
                     </div>
@@ -265,32 +266,32 @@
                         <div class="col-xl-11 col-12">
                             <ul class="list-unstyled row">
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/vtex.png" />
                                     </div>
                                 </li>
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/tray.png" />
                                     </div>
                                 </li>
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/drive.png" />
                                     </div>
                                 </li>
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/ftp.png" />
                                     </div>
                                 </li>
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/api.png" />
                                     </div>
                                 </li>
                                 <li class="col-sm-4 col-6">
-                                    <div class="section-integrations--logo-container">
+                                    <div class="logo-container">
                                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/integrations/zapier.png" />
                                     </div>
                                 </li>
@@ -336,80 +337,12 @@
                             </div>
                         </div>
                         <div class="col-xl-6 col-12" style="position: relative; left: -4rem;">
-                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/celulares.png" class="fade left scroll-default" />
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/celulares.png" class="has-animation" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-contact container-fluid space-y" id="contato">
-            <h3 class="section-contact--title">
-                <strong>Entre em</strong> contato
-            </h3>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row mx-0 mb-4 pl-4">
-                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-contact.png" />
-                    </div>
-                    <h4 class="section-contact--form--title pl-4">
-                        Possui alguma dúvida
-                        <strong>
-                            ou deseja entrar em
-                            contato conosco?
-                        </strong>
-                    </h4>
-                    <p class="section-contact--form--subtitle mb-4 pl-4">
-                        Venha conhecer mais do nosso Marketing Orange :)
-                    </p>
-                    <p class="section-contact--form--info fade left pl-4">
-                        <i class="ico ico-letter"></i>
-                        <strong>
-                            contato@allin.com.br
-                        </strong>
-                    </p>
-                    <p class="section-contact--form--info fade left pl-4">
-                        <i class="ico ico-phone"></i>
-                        <strong>
-                            +55 (11)3544-0499
-                        </strong>
-                    </p>
-                </div>
-                <form action="/contato.php" id="form-assunto" class="col-lg-6 fade right wpcf7-form" method="post">
-                    <div class="row">
-                        <div class="form-group col-sm-6 col-12">
-                            <select class="form-control" title="Assunto" name="assunto" required>
-                                <option selected="">Qual o assunto?</option>
-                                <option value="Financeiro">Financeiro</option>
-                                <option value="Spam">Spam</option>
-                                <option value="Jurídico">Jurídico</option>
-                                <option value="Comercial" selected>Comercial</option>
-                                <option value="Parcerias">Parcerias</option>
-                                <option value="Suporte">Suporte</option>
-                                <option value="Outros">Outros</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group col-sm-6 col-12">
-                            <input class="form-control" type="text" placeholder="NOME" title="Nome" name="nome" required>
-                        </div>
-
-                        <div class="form-group col-sm-6 col-12">
-                            <input class="form-control" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
-                        </div>
-                        <div class="form-group col-sm-6 col-12">
-                            <input class="form-control" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
-                        </div>
-
-                        <div class="form-group col-12">
-                            <textarea class="form-control" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
-                        </div>
-
-                        <div class="col-lg-12">
-                            <button id="btn-enviar-contato" class="btn"><i class="ico ico-go"></i>Enviar</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
+        @include('_layouts._partials.form-contact')
     </main>
 @endsection

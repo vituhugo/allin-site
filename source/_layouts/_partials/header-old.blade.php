@@ -89,10 +89,10 @@
         </aside>
         @if(!empty($subheader))
             <div class="sub-header hide">
-                <ul class="sub-header--container container list-unstyled">
+                <ul class="sub-header--container container list-unstyled d-flex justify-content-center">
                     @foreach($subheader as $item)
-                        <li class="{{$item[3]}} px-3 px-md-0">
-                            <a href="{{$item[0]}}">
+                        <li class="{{$item[3]}} px-3 px-md-0 d-flex flex-column justify-content-center">
+                            <a href="{{$item[0]}}" class="d-block">
                                 @if(isset($item[2]))<img src="{{$item[2]}}">@endif
                                 <span class="d-md-inline d-none">
                                 {{ $item[1] }}
@@ -789,7 +789,7 @@
             }
         }
 
-        @media (max-width: 767px) {
+        @media (min-width: 768px) {
             .old .navbar-toggle {
                 display: none;
             }

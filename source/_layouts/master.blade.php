@@ -38,12 +38,13 @@
     <script>
         $(document).ready(function() {
 
-            $('#form-assunto').submit(function(event) {
+            $('#contato').submit(function(event) {
                 event.preventDefault();
                 var email = jQuery("input[name='email']").val();
+                var subject = $("#ddl-assunto").val();
                 if (navigator.sendBeacon) ga('set', 'transport', 'beacon');
 
-                ga('send', 'event', 'enviar_mensagem', $("#form-assunto").val(), email);
+                ga('send', 'event', 'enviar_mensagem', subject, email);
 
                 $.post(this.action, $(this).serialize(), function(response) {
                     alert(response.mensagem || "Sua solicitação não pode ser completada.");
