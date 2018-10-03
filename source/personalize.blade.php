@@ -66,7 +66,7 @@
             <div class="row no-gutters">
                 <div class="col-5">
                     <div class="col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-cart.png" />
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-cart.png" class="has-animation" />
                     </div>
                     <h3 class="article-simple--title">
                         Recomendação de <strong class="d-block">Produtos</strong>
@@ -404,14 +404,14 @@
                     </ul>
                 </div>
                 <div class="col-12 personalize-responsive-image">
-                    <img src="{{ $page->baseUrl }}/assets/images/personalize/responsive.png"  />
+                    <img src="{{ $page->baseUrl }}/assets/images/personalize/responsive.png" class="has-animation" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row mt-5">
                 <div class="col-6 pr-5">
-                    <img src="{{ $page->baseUrl }}/assets/images/personalize/xml.png" />
+                    <img src="{{ $page->baseUrl }}/assets/images/personalize/xml.png" class="has-animation" data-animation-direction="left" />
                 </div>
                 <div class="col-6">
                     <div class="col-12">
