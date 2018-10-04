@@ -978,7 +978,7 @@
             <div class="row no-gutters">
                 <div class="col-5">
                     <div class="col-12">
-                        <img src="/new_site/assets/images/icons/ico-cart.png" />
+                        <img src="/new_site/assets/images/icons/ico-cart.png" class="has-animation" />
                     </div>
                     <h3 class="article-simple--title">
                         Recomendação de <strong class="d-block">Produtos</strong>
@@ -1370,14 +1370,14 @@
                     </ul>
                 </div>
                 <div class="col-12 personalize-responsive-image">
-                    <img src="/new_site/assets/images/personalize/responsive.png"  />
+                    <img src="/new_site/assets/images/personalize/responsive.png" class="has-animation" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row mt-5">
                 <div class="col-6 pr-5">
-                    <img src="/new_site/assets/images/personalize/xml.png" />
+                    <img src="/new_site/assets/images/personalize/xml.png" class="has-animation" data-animation-direction="left" />
                 </div>
                 <div class="col-6">
                     <div class="col-12">
@@ -1430,7 +1430,7 @@
                 </strong>
             </p>
         </div>
-        <form id="contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
+        <form id="form-contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
             <div class="row">
                 <div class="form-group col-sm-6 col-12">
                     <select id="ddl-assunto" class="form-control" title="Assunto" name="assunto" required>
@@ -1547,7 +1547,7 @@
         </div>
     </div>
 </footer><section id="external-scripts">
-    <!-- v1.0.1 -->
+    <!-- v1.0.2 -->
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
@@ -1568,7 +1568,7 @@
     <script>
         $(document).ready(function() {
 
-            $('#contato').submit(function(event) {
+            $('#form-contato').submit(function(event) {
                 event.preventDefault();
                 var email = jQuery("input[name='email']").val();
                 var subject = $("#ddl-assunto").val();
