@@ -30,7 +30,7 @@
                 </strong>
             </p>
         </div>
-        <form id="contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
+        <form id="form-contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
             <div class="row">
                 <div class="form-group col-sm-6 col-12">
                     <select id="ddl-assunto" class="form-control" title="Assunto" name="assunto" required>

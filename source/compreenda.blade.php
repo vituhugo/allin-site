@@ -122,6 +122,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section-jornada-cliente space-y separator orange container-fluid">
             <h3 class="section-jornada-cliente--header--title generic-title">Jornada <strong>do Cliente</strong></h3>
             <p class="section-jornada-cliente--header--text generic-subtitle">
