@@ -40,6 +40,7 @@ $sent = mail($to[$_POST['assunto']], $subject, $body, $header);
 header('Content-Type: application/json');
 
 if (!$sent) {
+<<<<<<< HEAD
 //    die(json_encode(array('mensagem' => 'Erro inesperado ao enviar o email.', 'status' => false)));
 }
 
@@ -77,3 +78,9 @@ function hubspotConversion() {
     @curl_close($ch);
     return $status_code . " " . $response . ' ' . $str_post;
 }
+=======
+    die(json_encode(array('mensagem' => 'Erro inesperado ao enviar o email.', 'status' => false)));
+}
+
+die(json_encode(array('mensagem' => 'Email enviado com sucesso!', 'status' => true)));
+>>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
