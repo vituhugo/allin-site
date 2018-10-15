@@ -4161,13 +4161,8 @@ main ul:not(.list-unstyled).white-icon li:before {
 
 @media (min-width: 768px) {
   .banner-internal {
-<<<<<<< HEAD
     min-height: 33rem;
     padding-top: 5.8rem;
-=======
-    min-height: 600px;
-    padding-top: 100px;
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
     background-size: auto 100%;
     background-position: right;
   }
@@ -4190,13 +4185,10 @@ main ul:not(.list-unstyled).white-icon li:before {
   padding: 6em 0;
 }
 
-<<<<<<< HEAD
 .banner-internal .banner-internal--main img {
   max-height: 7rem;
 }
 
-=======
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 .banner-internal .banner-internal--main .banner-internal--main--title {
   margin: 0;
   font-size: 6em;
@@ -4225,11 +4217,7 @@ main ul:not(.list-unstyled).white-icon li:before {
 }
 
 .banner-internal .banner-internal--main .banner-internal--main--breadcrumb {
-<<<<<<< HEAD
   font-size: 1.32em;
-=======
-  font-size: 1.52em;
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
   font-weight: bold;
   color: #fa4616;
 }
@@ -4404,14 +4392,6 @@ main ul:not(.list-unstyled).white-icon li:before {
   font-size: 1.4em;
 }
 
-<<<<<<< HEAD
-=======
-.slick-slide img {
-  -webkit-box-shadow: 0px 30px 50px #000000;
-          box-shadow: 0px 30px 50px #000000;
-}
-
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 .slick-dots {
   bottom: 1rem;
 }
@@ -4484,13 +4464,10 @@ main ul:not(.list-unstyled).white-icon li:before {
   line-height: .45;
 }
 
-<<<<<<< HEAD
 .screen-block {
   display: none !important;
 }
 
-=======
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 /* [END] INTERNAL PAGES */
 .fade {
   position: relative;
@@ -5710,7 +5687,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 #compreenda .section-optimizacao-publico--recorte-superior:after, #compreenda .section-integrations--recorte-superior:after {
-<<<<<<< HEAD
   content: "";
   position: absolute;
   background-image: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
@@ -5719,12 +5695,6 @@ select.form-control:not([size]):not([multiple]) {
   height: 47px;
   left: -13px;
   bottom: -43px;
-=======
-  position: absolute;
-  content: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
-  left: -.5em;
-  bottom: -2.30em;
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 }
 
 #compreenda .section-jornada-cliente {
@@ -5791,19 +5761,11 @@ select.form-control:not([size]):not([multiple]) {
 
 #compreenda .section-remarketing {
   background-color: white;
-<<<<<<< HEAD
   background-image: url(../../../assets/images/compreenda/bg-remarketing.png), url(../../../assets/images/compreenda/remarketing-footer.png);
   background-repeat: no-repeat, no-repeat;
   background-position-x: right, right;
   background-position-y: 20px, calc(100% - 4rem);
   background-size: calc(54%), calc(100% - 4rem);
-=======
-  background-image: url("../../../assets/images/compreenda/bg-remarketing.png");
-  background-repeat: no-repeat;
-  background-position-x: 2rem;
-  background-position-y: 60px;
-  background-size: calc(100% - 4rem);
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 }
 
 @media (max-width: 1199px) {
@@ -5879,15 +5841,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 #compreenda .section-integrations--recorte-superior:after {
-<<<<<<< HEAD
   width: 16px;
   height: 51px;
   left: -11px;
   bottom: -51px;
-=======
-  left: -14px;
-  bottom: -63px;
->>>>>>> 1c5d329b9fff63547ce8523dc5a4915edaa39627
 }
 
 #compreenda .section-data-analytics {
