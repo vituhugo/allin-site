@@ -7,10 +7,20 @@
 <body>
 
 <style>
+    .screen-block {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
     .fade {
         opacity: 0;
     }
 </style>
+<div class="screen-block"></div>
 @include('_layouts._partials.header-old')
 {{--@include('_layouts._partials.header')--}}
 @yield('content')
@@ -32,27 +42,12 @@
 
     <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css">
     <script src="{{ $page->baseUrl }}/assets/build/js/main.js"></script>
+
     @yield('scripts')
 
-<!-- HUBSPOT LEGACY CODE -->
-    <script>
-        (function (d, w) {
-            w._hsq = w._hsq || [];
-            var match = d.cookie.match('(^|;) ?hubspotutk=([^;]*)(;|$)');
-            if (match && match[2] == "7583a6df01ba2497388c640348a21a70") {
-                w._hsq.push(["identify", {
-                    "email": "mayara.oliveira@allin.com.br",
-                    "name": "May",
-                    "id": "33be9d9190599c080befc313734c352c"
-                }]);
-            }
-            w._hsq.push(["setContentType", "standard-page"]);
-        })(document, window);
-    </script>
-    <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/4037989.js"></script>
-    <script src="//js.hs-analytics.net/analytics/1538822400000/4037989.js" type="text/javascript" id="hs-analytics"></script>
-    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-4037989" crossorigin="anonymous" data-leadin-portal-id="4037989" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4037989" data-hsjs-env="prod"></script>
-    <!-- [END HUBSPOT LEGACY CODE] -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4037989.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <script src="//i.btg360.com.br/wf.js" type="text/javascript"></script> <!-- Integração TAG envio de contato allin -->
     <script>

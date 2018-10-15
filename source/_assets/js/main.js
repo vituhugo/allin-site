@@ -97,7 +97,7 @@ window.toggleMenu = function toggleMenu() {
     header.classList.toggle('show');
 };
 
-window.addEventListener('load', function() {
+window.addEventListener('ready', function() {
     document.querySelectorAll('.section-recomende--list--item, .section-recomende--anchor').forEach(function(el) {
 
         el.addEventListener('click', function(event) {

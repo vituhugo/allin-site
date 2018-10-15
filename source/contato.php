@@ -40,7 +40,40 @@ $sent = mail($to[$_POST['assunto']], $subject, $body, $header);
 header('Content-Type: application/json');
 
 if (!$sent) {
-    die(json_encode(array('mensagem' => 'Erro inesperado ao enviar o email.', 'status' => false)));
+//    die(json_encode(array('mensagem' => 'Erro inesperado ao enviar o email.', 'status' => false)));
 }
 
-die(json_encode(array('mensagem' => 'Email enviado com sucesso!', 'status' => true)));
+die(json_encode(array('mensagem' => 'Email enviado com sucesso!', 'status' => true, 'hubspot-response' => hubspotConversion())));
+
+function hubspotConversion() {
+    $hubspotutk      = $_COOKIE['hubspotutk']; //grab the cookie from the visitors browser.
+    $ip_addr         = $_SERVER['REMOTE_ADDR']; //IP address too.
+    $hs_context      = array(
+        'hutk' => $hubspotutk,
+        'ipAddress' => $ip_addr,
+        'pageUrl' => 'http://allin.com.br/',
+        'pageName' => 'Footer Form'
+    );
+    $hs_context_json = json_encode($hs_context);
+
+    $str_post = "email=" . urlencode($_POST['email'])
+        . "&leadin_nome_c0289e98897ab58f231c168b19a67b2e=" . urlencode($_POST['nome'])
+        . "&leadin_telefone_904ef931540a48dbb8dd83744801e3b6=" . urlencode($_POST['tel'])
+        . "&leadin_mensagem_20fda0cb45b099d6e77e05908e4c12bc=" . urlencode($_POST['mensagem'])
+        . "&hs_context=" . urlencode($hs_context_json); //Leave this one be
+
+    $endpoint = 'https://forms.hubspot.com/uploads/form/v2/4037989/85bc912a-3f79-4ed7-b0f3-8fec21d89724';
+
+    $ch = @curl_init();
+    @curl_setopt($ch, CURLOPT_POST, true);
+    @curl_setopt($ch, CURLOPT_POSTFIELDS, $str_post);
+    @curl_setopt($ch, CURLOPT_URL, $endpoint);
+    @curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/x-www-form-urlencoded'
+    ));
+    @curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    $response    = @curl_exec($ch); //Log the response from HubSpot as needed.
+    $status_code = @curl_getinfo($ch, CURLINFO_HTTP_CODE); //Log the response status code
+    @curl_close($ch);
+    return $status_code . " " . $response . ' ' . $str_post;
+}
