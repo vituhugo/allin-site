@@ -123,7 +123,7 @@
             </div>
         </section>
 
-        <section class="section-jornada-cliente space-y separator orange container-fluid">
+        <section class="section-jornada-cliente space-y separator orange container-fluid pb-0">
             <h3 class="section-jornada-cliente--header--title generic-title">Jornada <strong>do Cliente</strong></h3>
             <p class="section-jornada-cliente--header--text generic-subtitle">
                 Sua marca precisa estar em todos os pontos de contato do cliente, impactando-o durante toda a jornada de compra. <br><br class="d-block d-md-none">
@@ -131,7 +131,7 @@
             </p>
             <span class="section-jornada-cliente--recorte-inferior d-none d-xl-block mb-3"></span>
 
-            <div class="row mx-0 space-y">
+            <div class="row mx-0 space-y pb-0">
                 <div class="col-12 col-xl-5">
                     <div class="row">
                         <div class="col-3 col-sm-12">
@@ -186,7 +186,7 @@
                 </div>
             </div>
         </div>
-        <section class="section-remarketing space-y container-fluid">
+        <section class="section-remarketing space-y container-fluid pt-0">
             <div class="row space-y">
                 <div class="col-md-12 col-3">
                     <img src="{{ $page->baseUrl }}/assets/images/icons/ico-research.png" />

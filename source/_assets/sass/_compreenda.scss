@@ -108,11 +108,20 @@
         border-top: 4px solid white;
         display: block;
 
+
         &:after {
+            content: "";
             position: absolute;
-            content: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
-            left: -.5em;
-            bottom: -2.30em;
+
+            background-image: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
+            background-size: cover;
+
+            width: 15px;
+            height: 47px;
+
+            left: -13px;
+            bottom: -43px;
+
         }
     }
 
@@ -176,11 +185,11 @@
 
     .section-remarketing {
         background-color: white;
-        background-image: url("../../../assets/images/compreenda/bg-remarketing.png");
-        background-repeat: no-repeat;
-        background-position-x: 2rem;
-        background-position-y: 60px;
-        background-size: calc(100% - 4rem);
+        background-image: url(../../../assets/images/compreenda/bg-remarketing.png), url(../../../assets/images/compreenda/remarketing-footer.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position-x: right, right;
+        background-position-y: 20px, calc(100% - 4rem);
+        background-size: calc(54%), calc(100% - 4rem);
 
         @media(max-width: 1199px) {
             background: white;
@@ -255,8 +264,10 @@
         right: 2rem;
         width: calc(100% + 6rem);
         &:after {
-            left: -14px;
-            bottom: -63px;
+            width: 16px;
+            height: 51px;
+            left: -11px;
+            bottom: -51px;
         }
     }
 

@@ -269,8 +269,8 @@ main ul:not(.list-unstyled) {
     background-size: cover;
 
     @media(min-width: 768px) {
-        min-height: 600px;
-        padding-top: 100px;
+        min-height: 33rem;
+        padding-top: 5.8rem;
         background-size: auto 100%;
         background-position: right;
     }
@@ -284,6 +284,10 @@ main ul:not(.list-unstyled) {
         flex-grow: 1;
 
         padding: 6em 0;
+
+        img {
+            max-height: 7rem;
+        }
 
         .banner-internal--main--title {
             margin: 0;
@@ -307,7 +311,7 @@ main ul:not(.list-unstyled) {
         .banner-internal--main--breadcrumb {
             @extend .list-unstyled;
 
-            font-size: 1.52em;
+            font-size: 1.32em;
             font-weight: bold;
 
             color: #fa4616;
@@ -498,7 +502,7 @@ main ul:not(.list-unstyled) {
 }
 
 .slick-slide img {
-    box-shadow: 0px 30px 50px #000000;
+    //box-shadow: 0px 30px 50px #000000;
 }
 
 .slick-dots {
