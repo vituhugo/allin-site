@@ -19,7 +19,7 @@ body, html {
     overflow-x: hidden;
 
     @media(max-width: 1400px) {
-        font-size: 11px;
+        font-size: 10px;
     }
     @media(max-width: 991px) {
         font-size: 1.1vw;
@@ -183,6 +183,19 @@ main ul:not(.list-unstyled) {
     right: -4rem;
 }
 
+@media(min-width: 1200px) {
+
+    .xl-pull-container {
+        position: relative;
+        left: -4rem;
+    }
+
+    .xl-push-container {
+        position: relative;
+        right: -4rem;
+    }
+}
+
 .ignore-container {
     width: calc(100% + 8rem);
     margin-left: -4rem;
@@ -199,6 +212,19 @@ main ul:not(.list-unstyled) {
 
 .text-left {
     text-align: left;
+}
+
+
+@media(min-width: 768px) {
+    .text-md-left {
+        text-align: left;
+    }
+    .text-md-center {
+        text-align: center;
+    }
+    .text-md-right {
+        text-align: right;
+    }
 }
 
 @media(min-width: 1200px) {
@@ -271,7 +297,7 @@ main ul:not(.list-unstyled) {
     @media(min-width: 768px) {
         min-height: 33rem;
         padding-top: 5.8rem;
-        background-size: auto 100%;
+        background-size: cover;
         background-position: right;
     }
 
@@ -568,10 +594,15 @@ main ul:not(.list-unstyled) {
         position: relative;
         &:before {
             content: '+';
-            position: absolute;
-            left: -.6em;
             font-size: 2em;
             line-height: .45;
+            position: relative;
+            top: .15em;
+            @media(min-width: 768px) {
+                position: absolute;
+                left: -.6em;
+                top: auto;
+            }
         }
     }
 }

@@ -105,7 +105,7 @@
             </p>
 
             <div class="row justify-content-center">
-                <div class="col-7 mt-5">
+                <div class="col-lg-7 col-12 mt-5">
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
@@ -136,8 +136,8 @@
         </section>
         <section class="section-workflow-transacional">
             <article class="article-simple article-workflow-transacional">
-                <div class="row no-gutters">
-                    <div class="col-5">
+                <div class="row pt-4 no-gutters">
+                    <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" />
                         </div>
@@ -156,17 +156,17 @@
                             e-book ou assiste um webinar, por exemplo.
                         </p>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                     </div>
                 </div>
             </article>
             <article class="article-simple article-web">
-                <div class="row no-gutters">
-                    <div class="col-6 pt-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/engaje/note-loja.png" class="pull-container" />
+                <div class="row no-gutters flex-xl-row flex-column-reverse">
+                    <div class="col-xl-6 col-auto pt-xl-5">
+                        <img src="{{ $page->baseUrl }}/assets/images/engaje/note-loja.png" class="xl-pull-container" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-auto">
                         <div class="col-12 px-0">
                             <img src="{{$page->baseUrl}}/assets/images/icons/ico-mac-click.png" />
                         </div>
@@ -192,7 +192,7 @@
 
         <section class="article-simple bg-cinza">
             <div class="row no-gutters">
-                <div class="col-5">
+                <div class="col-xl-5 col-12">
                     <div class="col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-pin.png" />
                     </div>
@@ -210,17 +210,17 @@
                         você (como novo cadastro, troca de senha, pedido enviado, etc);
                     </p>
                 </div>
-                <div class="col-7 pl-5">
+                <div class="col-xl-7 col-12 pl-5">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-compra.png" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
-            <div class="row no-gutters">
-                <div class="col-6">
+            <div class="row flex-xl-row flex-column-reverse no-gutters">
+                <div class="col-xl-6 col-auto">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-mensagem.png" />
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-auto">
                     <div class="col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-sms.png" />
                     </div>

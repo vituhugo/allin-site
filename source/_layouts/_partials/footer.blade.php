@@ -49,7 +49,7 @@
             <!--</div>-->
 
             <div class="row justify-content-md-end justify-content-center mx-0">
-                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#home">
+                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#body">
                     <span>Topo </span>
                     <i class="icone icone-topo"></i>
                 </a>

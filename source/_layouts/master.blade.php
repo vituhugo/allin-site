@@ -4,7 +4,7 @@
     @include('_layouts._partials.head_tags')
     <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
-<body>
+<body id="body">
 
 <style>
     .screen-block {

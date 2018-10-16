@@ -64,7 +64,7 @@
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row no-gutters">
-                <div class="col-5">
+                <div class="col-xl-5 col-12">
                     <div class="col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-cart.png" class="has-animation" />
                     </div>
@@ -85,7 +85,7 @@
                         <a class="btn"><i class="ico ico-go"></i>Saiba Mais</a>
                     </p>
                 </div>
-                <div class="col-7">
+                <div class="col-xl-7 col-12">
                     <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.png" class="ml-xl-5" />
                 </div>
             </div>
@@ -267,34 +267,34 @@
             <div class="statistics-list-inline ignore-container mt-5">
                 <div class="container-fluid py-4">
                     <div class="row justify-content-center">
-                        <div class="col-2 pl-5">
+                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pl-xl-5">
                             <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="800">0</i>x mais</strong>
                             envolvimento com
                             conteúdo preditivo e
                             engajado
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
                             <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="1100">0</i>x mais</strong>
-                            receitas geradas por<br>
-                            personalização de<br>
+                            receitas geradas por<br class="d-md-block d-none">
+                            personalização de<br class="d-md-block d-none">
                             mensagem
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
                             <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="2" data-animation-init-time="1400">0</i>x mais</strong>
-                            conversão via<br>
-                            segmentação e<br>
+                            conversão via<br class="d-md-block d-none">
+                            segmentação e<br class="d-md-block d-none">
                             mensagens relevantes
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
                             <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="1700">0</i>x mais</strong>
-                            envolvimento com<br>
-                            conteúdo preditivo e<br>
+                            envolvimento com<br class="d-md-block d-none">
+                            conteúdo preditivo e<br class="d-md-block d-none">
                             engajado
                         </div>
-                        <div class="col-2">
+                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
                             <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="2000">0</i>x mais</strong>
-                            receitas geradas por<br>
-                            personalização de<br>
+                            receitas geradas por<br class="d-md-block d-none">
+                            personalização de<br class="d-md-block d-none">
                             mensagem
                         </div>
                     </div>
@@ -305,7 +305,7 @@
         <section class="article-simple bg-grafismos">
             <article class="article-workflow-transacional-personalize">
                 <div class="row no-gutters pb-5">
-                    <div class="col-5">
+                    <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" />
                         </div>
@@ -327,12 +327,12 @@
                             <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
                         </p>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                     </div>
                 </div>
                 <div class="row no-gutters pt-5 mt-5">
-                    <div class="col-5">
+                    <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" />
                         </div>
@@ -350,7 +350,7 @@
                             <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
                         </p>
                     </div>
-                    <div class="col-7">
+                    <div class="col-xl-7 col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                     </div>
                 </div>
@@ -369,7 +369,7 @@
                 </h4>
                 <div class="col-12">
                     <ul class="list-unstyled row text-center my-5 article-center--highglights">
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="{{ $page->baseUrl }}/assets/images/icons/ico-praticidade.png" />
                             </div>
@@ -380,7 +380,7 @@
                                 comunicações.
                             </p>
                         </li>
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="{{ $page->baseUrl }}/assets/images/icons/ico-maior-taxa.png" />
                             </div>
@@ -390,7 +390,7 @@
                                 Afinal, estima-se que mais de 71% dos usuários apaguem e-mails desconfigurados.
                             </p>
                         </li>
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="{{ $page->baseUrl }}/assets/images/icons/ico-personalização.png" />
                             </div>
@@ -409,11 +409,11 @@
             </div>
         </section>
         <section class="article-simple bg-grafismos">
-            <div class="row mt-5">
-                <div class="col-6 pr-5">
+            <div class="row flex-xl-row flex-column-reverse mt-5">
+                <div class="col-xl-6 col-auto pr-5">
                     <img src="{{ $page->baseUrl }}/assets/images/personalize/xml.png" class="has-animation" data-animation-direction="left" />
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-auto">
                     <div class="col-12">
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-preço-dinamico.png" />
                     </div>
