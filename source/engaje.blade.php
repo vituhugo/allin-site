@@ -105,7 +105,7 @@
             </p>
 
             <div class="row justify-content-center">
-                <div class="col-lg-7 col-12 mt-5">
+                <div class="col-lg-9 col-12 mt-5">
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
@@ -217,7 +217,7 @@
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row flex-xl-row flex-column-reverse no-gutters">
-                <div class="col-xl-6 col-auto">
+                <div class="col-xl-6 col-auto px-5">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-mensagem.png" />
                 </div>
                 <div class="col-xl-6 col-auto">

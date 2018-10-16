@@ -30,9 +30,6 @@
 <link rel="alternate" type="application/json+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F"/>
 <link rel="alternate" type="text/xml+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F&#038;format=xml"/>
 
-<script src="https://www.google.com/recaptcha/api.js?hl=pt_BR" async defer></script>
-<meta name="google-site-verification" content="hPGIpOmsAQ7uTIhmWOd85AkFy2znJaCiJD3mcox_0FE"/>
-
 <script type="text/javascript">window.smartlook || (function (d) {
         var o = smartlook = function () {
             o.api.push(arguments)

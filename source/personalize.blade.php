@@ -86,7 +86,7 @@
                     </p>
                 </div>
                 <div class="col-xl-7 col-12">
-                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.png" class="ml-xl-5" />
+                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.gif" class="ml-xl-5" />
                 </div>
             </div>
         </section>
@@ -327,8 +327,8 @@
                             <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
                         </p>
                     </div>
-                    <div class="col-xl-7 col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
+                    <div class="col-xl-7 col-12 px-5">
+                        <img src="{{ $page->baseUrl }}/assets/images/personalize/workflow-transacional.gif" />
                     </div>
                 </div>
                 <div class="row no-gutters pt-5 mt-5">
@@ -350,8 +350,8 @@
                             <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
                         </p>
                     </div>
-                    <div class="col-xl-7 col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
+                    <div class="col-xl-7 col-12 px-5">
+                        <img src="{{ $page->baseUrl }}/assets/images/personalize/automacao-marketing.gif" />
                     </div>
                 </div>
             </article>

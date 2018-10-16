@@ -279,7 +279,7 @@ main ul:not(.list-unstyled) {
 
 .banner-internal {
     @extend .container-fluid;
-
+    font-size: 12px;
     display: flex;
 
     flex-direction: column;

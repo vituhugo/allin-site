@@ -26,7 +26,13 @@
 @yield('content')
 @include('_layouts._partials.footer')
 <section id="external-scripts">
-    <!-- v1.0.3 -->
+    <!-- v1.0.4 -->
+
+    <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css">
+    <script src="{{ $page->baseUrl }}/assets/build/js/main.js"></script>
+
+    @yield('scripts')
+
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
@@ -39,11 +45,6 @@
             <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/993006705/?value=0&amp;guid=ON&amp;script=0"/>
         </div>
     </noscript>
-
-    <link rel="stylesheet" href="{{ $page->baseUrl }}/assets/build/css/main.css">
-    <script src="{{ $page->baseUrl }}/assets/build/js/main.js"></script>
-
-    @yield('scripts')
 
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4037989.js"></script>
