@@ -79,6 +79,21 @@
             background-image: url("../../../assets/images/compreenda/bg-otimizacao-publicos.jpg");
             background-position-x: calc((1920px - 100vw)/2 * -1);
         }
+        @media (min-width: 1200px) {
+            position: relative;
+            &:before {
+                content: '';
+                background-image: url(../../../assets/images/compreenda/grafismo-escuro.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 19rem;
+                z-index: 99;
+                top: -10em;
+            }
+        }
     }
 
 
@@ -280,5 +295,9 @@
         @media(max-width: 1199px) {
             background: white;
         }
+    }
+
+    .footer-banner {
+        background-image: url("../../../assets/images/compreenda/banner-footer.jpg");
     }
 }

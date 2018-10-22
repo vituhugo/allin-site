@@ -86,7 +86,7 @@
                     </p>
                 </div>
                 <div class="col-xl-7 col-12">
-                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.gif" class="ml-xl-5" />
+                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.png" class="ml-xl-5" />
                 </div>
             </div>
         </section>
@@ -96,214 +96,43 @@
                 Gatilhos <strong>Comportamentais</strong>
             </h3>
             <h4 class="section-recomende--subtitle">
-                Para garantir a personalização da mensagem para cada ação realizada no seu site, oferecemos mais de 20
-                regras de comportamento para impactar seu cliente em diversos momentos da jornada de compra. Confira
-                algumas delas:
-
+                Impacte quem <strong>abandonou o carrinho, fechou a navegação</strong> de uma página, <strong>não compra há determinado período</strong>
+                ou está em <strong>dúvida em um produto</strong> através de <strong>100 combinações</strong> do nosso exclusivo algoritmo de recomendação.
+                São mais de 20 regras possíveis com 5 módulos de recomendação feitos para o seu negócio.
             </h4>
-            <div class="row no-gutters justify-content-center pb-5">
-                @include('_layouts._partials.container-with-tabs', [
-                    'list' => [
-                        [
-                            'ico' => 'ico-cart-2',
-                            'name' => 'Abandono de carinho',
-                            'title' => 'Conheça mais sobre o <strong>abandono de carrinho</strong>',
-                            'content' => '<p>Envie comunicações para os clientes que abandonaram os produtos do seu
-                                          e-commerce no carrinho.</p><p>Além do produto abandonado, você pode enviar
-                                          sugestões de similares, cross sell, quem viu, viu também e mais.</p>',
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-12 pr-5">
+                    <ul class="list-unstyled slider slider-gatilhos-comportamentais">
+                        <li class="slider--item">
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
+                            <p>Abandono de carrinho</p>
+                        </li>
 
-                            'image' => [
-                                'src' => $page->baseUrl.'/assets/images/home/abando-de-carrinho-site.png',
-                                'alt' => 'Celular abandono de carrinho',
-                                'title' => 'abandono de carrinho',
-                            ],
-                            'highlights' => [
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '1,5 MM',
-                                    'description' => 'envios mensais',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 25%',
-                                    'description' => 'de cliques',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 45%',
-                                    'description' => 'de conversão',
-                                ]
-                            ]
-                        ],
-                        [
-                            'ico' => 'ico-click',
-                            'name' => 'Abandono de Navegação',
-                            'title' => 'Conheça mais sobre o <strong>Abandono de navegação</strong>',
-                            'content' => '<p> O cliente navegou em uma categoria ou em páginas de produtos do seu site e abandonou
-                                         a navegação? Com esse recurso, você pode enviar os itens vistos em um e-mail
-                                         personalizado e tentar a conversão através dos módulos de similares, quem viu,
-                                         comprou e mais!</p>',
-                            'image' => [
-                                'src' => $page->baseUrl.'/assets/images/home/abandono-de-navegacao-site.png',
-                                'alt' => 'visualização de celular site',
-                                'title' => 'abandono de navegação',
-                            ],
-                            'highlights' => [
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '8,5 MM',
-                                    'description' => 'envios mensais',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 20%',
-                                    'description' => 'de cliques',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 18%',
-                                    'description' => 'de conversão',
-                                ]
-                            ]
-                        ],
-                        [
-                            'ico' => 'ico-baixo-custo',
-                            'name' => 'Redução de preços',
-                            'title' => 'Conheça mais sobre o <strong>Redução de preços</strong>',
-                            'content' => '<p> Com esse recurso, você pode avisar seu cliente quando o produto
-                                         navegado ou item similar sofrer alguma alteração de preço. Quem sabe assim,
-                                         ele não desiste de pesquisar na concorrência e fecha a compra com sua
-                                         loja? </p>',
-                            'image' => [
-                                'src' => $page->baseUrl.'/assets/images/home/reduziu-preco-site.png',
-                                'alt' => '',
-                                'title' => '',
-                            ],
-                            'highlights' => [
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '9,6 MM',
-                                    'description' => 'envios mensais',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 20%',
-                                    'description' => 'de abertura',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 27%',
-                                    'description' => 'de conversão',
-                                ]
-                            ]
-                        ],
-                        [
-                            'ico' => 'ico-baixo-custo',
-                            'name' => 'Reconquista',
-                            'title' => 'Conheça mais sobre a <strong>Reconquista</strong>',
-                            'content' => '<p>Reengajar clientes da base na maioria das vezes é bem mais vantajoso
-                                          financeiramente que trazer novos usuários. Com a régua de Reconquista,
-                                          você pode enviar comunicações automáticas para o cliente que não compra
-                                          a algum tempo na sua loja, incluindo uma mensagem personalizada para que
-                                          ele volte a comprar novamente. </p>',
-                            'image' => [
-                                'src' => $page->baseUrl.'/assets/images/home/reconquista-site.png',
-                                'alt' => '',
-                                'title' => '',
-                            ],
-                            'highlights' => [
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '2,1 MM',
-                                    'description' => 'envios mensais',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 12%',
-                                    'description' => 'de abertura',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 21%',
-                                    'description' => 'de conversão',
-                                ]
-                            ]
-                        ],
-                        [
-                            'ico' => 'ico-baixo-custo',
-                            'name' => 'Indecisos',
-                            'title' => 'Conheça mais sobre o <strong>Indecisos</strong>',
-                            'content' => '<p> Seu cliente está indeciso em qual marca escolher na hora da compra? Nossa
-                                          regra identifica a indecisão e envia uma comunicação com os dois itens mais
-                                          comprados nos últimos 30 dias por outros clientes, ajudando-o a decidir a
-                                          compra.</p>',
-                            'image' => [
-                                'src' => $page->baseUrl.'/assets/images/home/indecisos-site.png',
-                                'alt' => '',
-                                'title' => '',
-                            ],
-                            'highlights' => [
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '4 MM',
-                                    'description' => 'envios mensais',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 28%',
-                                    'description' => 'de abertura',
-                                ],
-                                [
-                                    'ico' => 'ico-letter',
-                                    'name' => '+ 34%',
-                                    'description' => 'de conversão',
-                                ]
-                            ]
-                        ],
-                    ],
-                    'see_more' => "/e-mail-remarketing/",
-                ])
-            </div>
-            <div class="statistics-list-inline ignore-container mt-5">
-                <div class="container-fluid py-4">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pl-xl-5">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="800">0</i>x mais</strong>
-                            envolvimento com
-                            conteúdo preditivo e
-                            engajado
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="1100">0</i>x mais</strong>
-                            receitas geradas por<br class="d-md-block d-none">
-                            personalização de<br class="d-md-block d-none">
-                            mensagem
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="2" data-animation-init-time="1400">0</i>x mais</strong>
-                            conversão via<br class="d-md-block d-none">
-                            segmentação e<br class="d-md-block d-none">
-                            mensagens relevantes
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="1700">0</i>x mais</strong>
-                            envolvimento com<br class="d-md-block d-none">
-                            conteúdo preditivo e<br class="d-md-block d-none">
-                            engajado
-                        </div>
-                        <div class="col-xl-2 col-md-6 col-12 text-center text-md-left pt-3 pt-md-0">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="2000">0</i>x mais</strong>
-                            receitas geradas por<br class="d-md-block d-none">
-                            personalização de<br class="d-md-block d-none">
-                            mensagem
-                        </div>
-                    </div>
+                        <li class="slider--item">
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
+                            <p>Abandono de carrinho</p>
+                        </li>
+
+                        <li class="slider--item">
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
+                            <p>Abandono de carrinho</p>
+                        </li>
+
+                        <li class="slider--item">
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
+                            <p>Abandono de carrinho</p>
+                        </li>
+                        <li>
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
+                            <p>Abandono de carrinho</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="article-simple bg-grafismos">
-            <article class="article-workflow-transacional-personalize">
+            <article class="article-workflow-transacional-personalize space-y pb-0">
                 <div class="row no-gutters pb-5">
                     <div class="col-xl-5 col-12">
                         <div class="col-12">
@@ -328,7 +157,7 @@
                         </p>
                     </div>
                     <div class="col-xl-7 col-12 px-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/personalize/workflow-transacional.gif" />
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                     </div>
                 </div>
                 <div class="row no-gutters pt-5 mt-5">
@@ -351,7 +180,7 @@
                         </p>
                     </div>
                     <div class="col-xl-7 col-12 px-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/personalize/automacao-marketing.gif" />
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                     </div>
                 </div>
             </article>

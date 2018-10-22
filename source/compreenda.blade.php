@@ -42,7 +42,7 @@
                             </a>
                         </li>
                         <li class="col-4 d-flex justify-content-center pb-3" style="border-left: .15rem solid #fa4616;border-right: .15rem solid #fa4616;">
-                            <a href="/presonalize" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1300">
+                            <a href="/personalize" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1300">
                                 <div class="banner-internal--footer--highlight--image">
                                     <img src="{{ $page->baseUrl }}/assets/images/icons/ico-personalidade.png" />
                                 </div>
@@ -75,14 +75,14 @@
                     <h3 class="section-ideais--title mt-3">Power <strong>Segmentador</strong></h3>
                     <div class="section-ideais--text">
                         <p>
-                            Com o Power Segmentador da All iN você pode descobrir em poucos cliques o comportamento
-                            do seu consumidor e disparar campanhas altamente assertivas e personalizadas.<br>
+                            Com o Power Segmentador da All iN você pode descobrir <strong>em poucos cliques o comportamento
+                                do seu consumidor e disparar campanhas altamente assertivas e personalizadas.</strong><br>
                             São inúmeras possibilidades de segmentação como:
                         </p>
                         <ul class="pl-5">
-                            <li>Descubra quais clientes mais engajados nas suas comunicações;</li>
-                            <li>Saiba quem mais compra na sua loja, seja por número de compras ou ticket médio;</li>
-                            <li>Múltiplas segmentações: por departamento, categoria ou produto;</li>
+                            <li>Descubra quais clientes <strong>mais engajados</strong> nas suas comunicações;</li>
+                            <li>Saiba <strong>quem mais compra na sua loja</strong>, seja por número de compras ou ticket médio;</li>
+                            <li>Múltiplas segmentações: <strong>por departamento, categoria ou produto;</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -102,10 +102,10 @@
                     <h3 class="section-optimizacao-publico--title mt-3 has-animation">Otimização <strong>de Públicos</strong></h3>
                     <div class="section-optimizacao-publico--text has-animation">
                         <p>
-                            A All iN ajuda você a otimizar os públicos do seu negócio. Afinal, sabemos que ter várias
+                            A All iN ajuda você a <strong>otimizar os públicos</strong> do seu negócio. Afinal, sabemos que ter várias
                             listas pode complicar a organização dos seus clientes. Fazendo a otimização de públicos,
-                            você consegue filtrar todos os usuários que correspondem a um mesmo perfil: homens,
-                            mulheres, residentes de São Paulo, data de última compra e muito mais!
+                            você consegue filtrar todos os usuários que correspondem a um mesmo perfil: <strong>homens,
+                            mulheres, residentes de São Paulo, data de última compra e muito mais!</strong>
                         </p>
                         <span class="section-optimizacao-publico--recorte-superior d-none d-xl-block"></span>
                         <div class="row">
@@ -141,8 +141,8 @@
                     <h3 class="section-jornada-cliente--title mt-3">Workflow <strong>Transacional</strong></h3>
                     <div class="section-jornada-cliente--text">
                         <p>
-                            Perfeito para comunicações de boas-vindas para guiar o cliente até o momento da conversão.
-                            Você também pode usar nosso recurso para envios transacionais de compra, aproveitando
+                            Perfeito para comunicações <strong>de boas-vindas</strong> para guiar o cliente até o momento da conversão.
+                            Você também pode usar nosso recurso para <strong>envios transacionais de compra,</strong> aproveitando
                             a alta taxa de abertura desse tipo de e-mail para fazer cross-sell de produtos ou serviços.
                         </p>
                         <p class="d-xl-block d-none">
@@ -195,7 +195,7 @@
                     <h3 class="section-remarketing--title mt-3">Remar<strong>keting</strong></h3>
                     <div class="section-remarketing--text">
                         <p>
-                            Regras automáticas que são disparadas a partir do comportamento do seu cliente no seu
+                            <strong>Regras automáticas</strong> que são disparadas a partir do comportamento do seu cliente no seu
                             e-commerce, como:
                         </p>
                         <ul class="pl-5">
@@ -341,6 +341,36 @@
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/celulares.png" class="has-animation" />
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-banner article-simple py-5">
+            <div class="col-12">
+                <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Marisa: Como a otimização de públicos rendeu
+                    <strong class="orange d-block">+38% de cliques</strong>
+                </h3>
+                <p>
+                    Com a ajuda dos especialistas da área de Estratégia e Operações, a Marisa, conseguiu <strong>aumento
+                    de 38% no volume de cliques,</strong> aumentando a participação do canal e-mail no e-commerce.
+                </p>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                    <div class="col-sm-auto col-12">
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-marisa.png" class="mx-4 mt-4" />
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
+                    </div>
+                </div>
+                <div class="d-flex">
                 </div>
             </div>
         </section>
