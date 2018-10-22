@@ -157,7 +157,7 @@
                         </p>
                     </div>
                     <div class="col-xl-7 col-12 px-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
+                        <img src="{{ $page->baseUrl }}/assets/images/personalize/workflow-transacional.gif" />
                     </div>
                 </div>
                 <div class="row no-gutters pt-5 mt-5">
@@ -180,7 +180,7 @@
                         </p>
                     </div>
                     <div class="col-xl-7 col-12 px-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
+                        <img src="{{ $page->baseUrl }}/assets/images/personalize/automacao-marketing.gif" />
                     </div>
                 </div>
             </article>
@@ -259,6 +259,38 @@
                     </p>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="footer-banner article-simple py-5" style="background-image: url({{$page->baseUrl}}/assets/images/personalize/banner-footer.png)">
+            <div class="col-12">
+                <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Hotel Urbano: e-mail otimizados com o
+                    <strong class="orange">preço dinâmico</strong>
+                </h3>
+                <p>
+                    A variação cambial do dólar e de outras moedas impacta diretamente na estratégia de vendas de um dos
+                    maiores sites de viagens do Brasil, fazendo com que os <strong>e-mails precisassem passar por ajustes
+                    constantes.</strong> Foi aí que a marca começou a <strong>otimizar os envios com o preço dinâmico!</strong>
+                </p>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                    <div class="col-sm-auto col-12">
+                        <img src="{{ $page->baseUrl }}/assets/images/personalize/hotel-urbano.png" style="max-height: 4.5rem" class="mx-4 mt-2" />
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
+                    </div>
+                </div>
+                <div class="d-flex">
+                </div>
             </div>
         </section>
         @include('_layouts._partials.form-contact')
