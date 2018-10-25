@@ -399,6 +399,8 @@ main ul:not(.list-unstyled) {
     color: white;
     @media(min-width: 1200px) {
         position: relative;
+        background-position-x: right;
+
         &:before {
             content: '';
             background-image: url(../../../assets/images/compreenda/grafismo-footer.png);
@@ -647,5 +649,73 @@ main ul:not(.list-unstyled) {
 
 .screen-block {
     display: none !important;
+}
+
+hr {
+    @extend .ignore-container;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border: none;
+    position: relative;
+
+    &:after {
+        content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABDCAYAAACRHFUFAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4goZFDslnGAgTgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAMjSURBVFjDjZg9a1VBEIafWQ6xCSksbPIPbIyCEP+AEQtryQ/QytRiJYpYiQSRYK2QXhRS24Q0guIHlrZBCLlX82kci5zcc3Z3Zs5duNxzzt0zs/vOzDvvXtm9jgIggALCDsp5hG5o+3sx5jZ0cp0KI6DMTu7JnuejuE8TT933nvnSmTEt5k8MaeGd3sQzA31n1uqApPXWqPAprw1jjYgDpodJuLXcw0G1pf69RGDnxg4zYJ0Xy9EMLdnFpdoaRVSsyWI4UsuQ93LpWfwsbwwvf6oVqGM4M1Qv+28FsgQYZuEvgFUrEQei11hZLBYuFl4VRupktDh1aG6tjtauW7T4oNcl4n0TFLOVR0pBGYD2jbpFW3CNGIQmhvGKRoxaO8k8D2yprrXO028vxFGGpyoiRZRUjVWItyItgOx5logdzPDLQMUTG0tGzhyapFaG36SRHNADM9QykJDqcY6FW1T9whTtWYYxaqrJald+xrDi1Vq+7z2Lt4WhdlRTw3HIPzItsQW8bDRTh9gkx0QtlpQhhiyyt0wblynNTnvqcRR2WpezpSJ/tVapxImZBkFuwRKJA5JckSU9sKcYqSoN4Z/pdEAvJUO5jk16lSHOFr8dt+/MoKygbAJjhHF7vTK6ITN+g5TM3jzCFrAKLAKz7WcRYRXYGi3JvC20uusZhHfAQiC0FoD3oyU5l4ysPWqN3UVZCLXS6f0lhDuNAeJ++2zZJDQ1c225MSv/9NmVaaUxwuWm2rcG3dXvtsepSrhufHQlT11zX2qdLROM1nHqS+vOst4YtXbUvvTN00KSP/sMvErBiehRpPTbZ59Qbs5t6GHjUMcthGuFA0XZb+++A28Q1uY29CgXWl2eJOCpUcwvEe71V1cfjvOwXgUuFgCPgcdRPlmcfdtgyOcI2xGHp0pPKxeKEP0Cng1luE0jeSY/QRi5ZxOT/OtU+AmshQzgtqN8Cw+R3hk3yKkUSLuvCK9DzV1ipDaID1BO3H8gLIykLsxN4K3ZPTQ691eKgfvRIUbDc383+UP7cY/nMqRGWqxeeAFQ4vPazpm2bhXuD0/eSaAD/gNT4lE3vCorNgAAAABJRU5ErkJggg==');
+
+        position: absolute;
+
+        top: 0;
+        left: calc(100% - 2.5rem);
+        @media(min-width: 1200px) { left: calc(100% - 4rem); }
+
+    }
+
+    &:before {
+        content: '';
+
+        display: inline-block;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: calc(100% - 2.5rem);
+        @media(min-width: 1200px) { width: calc(100% - 4rem); }
+
+        border-bottom: 5px solid #fa4616;
+    }
+
+    &.bottom:after {
+        top: auto;
+        bottom: 0;
+
+        transform: scaleY(-1);
+    }
+
+    &.bottom:before {
+        bottom: 0;
+        top: auto;
+    }
+
+    &.right:after {
+        right: calc(100% - 2.5rem);
+        @media(min-width: 1200px) { right: calc(100% - 4rem); }
+
+        left: auto;
+
+        transform: scaleX(-1);
+    }
+    &.right:before {
+        right: 0;
+        left: auto;
+    }
+
+    &.bottom.right:after {
+        transform: scaleY(-1) scaleX(-1);
+    }
+
+    &.hr-ignore-container {
+
+    }
 }
 /* [END] INTERNAL PAGES */

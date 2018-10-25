@@ -1,7 +1,7 @@
 @extends('_layouts.master', ['subheader' => [
     ['/compreenda', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-compreenda.png"],
-    ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png", 'is-active'  ],
-    ['/engaje', 'Engaje', $page->baseUrl."/assets/images/icons/ico-engaje.png" ],
+    ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png"],
+    ['/engaje', 'Engaje', $page->baseUrl."/assets/images/icons/ico-compreenda.png", 'is-active' ],
 ]])
 @section('content')
     <main class="page-content page-engaje" id="engaje">
@@ -164,7 +164,7 @@
                     </p>
                 </div>
                 <div class="col-xl-7 col-12">
-                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
+                    <img src="{{ $page->baseUrl }}/assets/images/engaje/workflow-transacional.gif" />
                 </div>
             </article>
             <div class="statistics-list-inline ignore-container mt-5">
@@ -279,7 +279,7 @@
                     utilizar os recursos de E-mail Remarketing da All iN, <strong>atingindo 196% mais em conversão.</strong>
                 </p>
             </div>
-            <div class="col-md-9 col-12">
+            <div class="col-md-8 col-12">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-12">
                         <a href="#" class="btn"> <i class="ico ico-go"></i>

@@ -159,8 +159,10 @@
                     <div class="col-xl-7 col-12 px-5">
                         <img src="{{ $page->baseUrl }}/assets/images/personalize/workflow-transacional.gif" />
                     </div>
+
+                    <hr class="right">
                 </div>
-                <div class="row no-gutters pt-5 mt-5">
+                <div class="row no-gutters">
                     <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" />
@@ -263,7 +265,7 @@
         </section>
 
         <section class="footer-banner article-simple py-5" style="background-image: url({{$page->baseUrl}}/assets/images/personalize/banner-footer.png)">
-            <div class="col-12">
+            <div class="col-12 pt-5">
                 <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
             </div>
             <div class="col-md-8 col-12">
@@ -277,7 +279,7 @@
                     constantes.</strong> Foi aí que a marca começou a <strong>otimizar os envios com o preço dinâmico!</strong>
                 </p>
             </div>
-            <div class="col-md-9 col-12">
+            <div class="col-md-8 col-12">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-12">
                         <a href="#" class="btn"> <i class="ico ico-go"></i>

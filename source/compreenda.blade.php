@@ -129,7 +129,8 @@
                 Sua marca precisa estar em todos os pontos de contato do cliente, impactando-o durante toda a jornada de compra. <br><br class="d-block d-md-none">
                 <strong>Por isso, a All iN oferece uma gama de soluções que te ajudam a automatizar</strong> campanhas inteligentes e direcionadas.
             </p>
-            <span class="section-jornada-cliente--recorte-inferior d-none d-xl-block mb-3"></span>
+
+            <hr>
 
             <div class="row mx-0 space-y pb-0">
                 <div class="col-12 col-xl-5">
@@ -186,7 +187,7 @@
                 </div>
             </div>
         </div>
-        <section class="section-remarketing space-y container-fluid pt-0">
+        <section class="section-remarketing container-fluid">
             <div class="row space-y">
                 <div class="col-md-12 col-3">
                     <img src="{{ $page->baseUrl }}/assets/images/icons/ico-research.png" />
@@ -244,6 +245,8 @@
                         </div>
                     </div>
                 </div>
+
+                <hr class="right">
             </div>
         </section>
         <section class="section-integrations container-fluid">
@@ -358,7 +361,7 @@
                     de 38% no volume de cliques,</strong> aumentando a participação do canal e-mail no e-commerce.
                 </p>
             </div>
-            <div class="col-md-9 col-12">
+            <div class="col-md-8 col-12">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-12">
                         <a href="#" class="btn"> <i class="ico ico-go"></i>

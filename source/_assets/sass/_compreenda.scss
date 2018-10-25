@@ -200,11 +200,11 @@
 
     .section-remarketing {
         background-color: white;
-        background-image: url(../../../assets/images/compreenda/bg-remarketing.png), url(../../../assets/images/compreenda/remarketing-footer.png);
-        background-repeat: no-repeat, no-repeat;
-        background-position-x: right, right;
-        background-position-y: 20px, calc(100% - 4rem);
-        background-size: calc(54%), calc(100% - 4rem);
+        background-image: url(../../../assets/images/compreenda/bg-remarketing.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 20px;
+        background-size: calc(54%);
 
         @media(max-width: 1199px) {
             background: white;
