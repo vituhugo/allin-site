@@ -1,5 +1,8 @@
 /* [SECTION] MAIN */
 #home {
+    .section-recomende--subtitle {
+        max-width: 70%;
+    }
     .section-main {
         height: 100vh;
         min-height: 55em;
@@ -305,8 +308,8 @@
     font-size: 1.6rem;
     text-align: center;
     margin: 0 auto 4rem;
-    max-width: 70%;
 }
+
 
 .section-recomende--list {
     font-size: 1.35rem;

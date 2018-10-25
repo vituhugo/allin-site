@@ -63,12 +63,12 @@
             </footer>
         </section>
 
-        <section class="article-simple bg-grafismos">
-            <article class="row no-gutters">
-                <div class="col-3 col-md-12 pl-4 block-text-image--icon" >
-                    <img src="{{ $page->baseUrl }}/assets/images/icons/ico-power-segmentador.png"/>
-                </div>
+        <section class="article-simple py-0 bg-grafismos">
+            <article class="row no-gutters space-y pb-0">
                 <div class="col-12 col-xl-5 pl-4 pr-xl-0">
+                    <div>
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-letter-opened-orange.png"/>
+                    </div>
                     <h3 class="article-simple--title mt-3">E-mail <strong class="d-block">Marketing</strong></h3>
                     <p>
                         A All iN é a empresa brasileira líder em <strong>e-mail marketing</strong>. Além dos
@@ -76,36 +76,39 @@
                         sua forma de comunicar.
                     </p>
                     <ul class="pl-5">
-                        <li>Envie mensagens automáticas de aniversário e por data;</li>
-                        <li>Fatie seu HTML e crie diferentes mensagens a depender dos dados disponíveis na sua base;</li>
-                        <li>Gerencie links mesmo após o envio das campanhas;</li>
-                        <li>Teste conteúdo, remetente, assunto, HTML e mais no nosso Teste ABCDE</li>
-                        <li>Descubra quais áreas do seu e-mail foram mais clicadas através do Mapa de Calor.</li>
+                        <li>Envie <strong>mensagens automáticas</strong> de aniversário e por data;</li>
+                        <li>Fatie seu HTML e <strong>crie diferentes mensagens</strong> a depender dos dados disponíveis na sua base;</li>
+                        <li><strong>Gerencie links</strong> mesmo após o envio das campanhas;</li>
+                        <li>Teste conteúdo, remetente, assunto, HTML e mais no nosso <strong>Teste ABCDE</strong></li>
+                        <li>Descubra quais áreas do seu e-mail <strong>foram mais clicadas</strong> através do Mapa de Calor.</li>
                     </ul>
                 </div>
-                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
-                    <div class="block-text-image--image mt-5 text-right">
-                        <img src="{{ $page->baseUrl }}/assets/images/engaje/bg-telas.png" class="has-animation">
+                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center">
+                    <div class="block-text-image--image text-right">
+                        <img src="{{ $page->baseUrl }}/assets/images/engaje/img-email-marketing.png" class="has-animation">
                     </div>
                 </div>
             </article>
-        </section>
-        <section class="bg-cinza article-center">
-            <h3 class="article-center--title">
-                Gatilhos <strong>Comportamentais</strong>
-            </h3>
-            <p class="article-center--subtitle">
-                O E-mail Remarketing da All iN capta o comportamento do visitante no seu site e possibilita o
-                envio de comunicações personalizadas e automatizadas, aumentando a propensão de compra. Através do
-                nosso exclusivo algoritmo de recomendação, o sistema sugere produtos / serviços mais assertivos para
-                cada tipo de cliente que navega no seu e-commerce.Nossa tecnologia possui mais de 20 regras de
-                comportamento entre Abandono de Carrinho, Redução de Preços e Reconquista, que podem ser combinados
-                em cinco módulos como Similares, Mais Vendidos, Cross-Sell, Quem viu, viu também, dentre outros,
-                gerando mais de 100 combinações possíveis.
-            </p>
+            <article class="row no-gutters flex-xl-row-reverse space-y">
+                <div class="col-12 col-xl-6 pl-4 pr-xl-0">
+                    <div>
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-letter-opened-orange.png"/>
+                    </div>
+                    <h3 class="article-simple--title mt-3">E-mail <strong class="d-block">Remarketing</strong></h3>
+                    <p>
+                        A O E-mail Remarketing da All iN capta o comportamento do visitante no seu site e possibilita o
+                        envio de comunicações personalizadas e automatizadas, aumentando a propensão de compra. Através
+                        do nosso exclusivo algoritmo de recomendação, o sistema sugere produtos/serviços mais assertivos
+                        para cada tipo de cliente que navega no seu e-commerce.
+                    </p>
+                    <p>
+                        Nossa tecnologia possui mais de 20 regras de comportamento entre Abandono de Carrinho, Redução
+                        de Preços e Reconquista, que podem ser combinados em cinco módulos como Similares, Mais Vendidos,
+                        Cross-Sell, Quem viu, viu também, dentre outros, gerando mais de 100 combinações possíveis.
+                    </p>
+                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-9 col-12 mt-5">
+                <div class="col-xl-6 col-12 mt-5 pr-5">
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
@@ -132,41 +135,64 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </section>
-        <section class="section-workflow-transacional">
-            <article class="article-simple article-workflow-transacional">
-                <div class="row pt-4 no-gutters">
-                    <div class="col-xl-5 col-12">
-                        <div class="col-12">
-                            <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" />
-                        </div>
-                        <h3 class="article-simple--title">
-                            Workflow <strong>Transacional</strong>
-                        </h3>
-                        <p>
-                            Precisa enviar mensagens transacionais para os seus clientes? É fácil. Com a All iN, você pode
-                            criar um fluxo automático que começa toda a vez que um cliente faz uma solicitação (como troca
-                            de senha) ou realiza alguma ação no seu site (como uma compra ou um novo cadastro).
-                        </p>
-                        <p>
-                            Esse fluxo pode ser criado a partir de reações nos envios como abertura e clique, permitindo que
-                            você interaja com o cliente em todos os canais. O melhor é que ele também pode ser usado para
-                            Inbound Marketing, permitindo que você envie mensagens para quem solicita o download do seu
-                            e-book ou assiste um webinar, por exemplo.
-                        </p>
+        <section class="article-simple bg-cinza">
+            <article class="row no-gutters">
+                <div class="col-xl-5 col-12">
+                    <div class="col-12">
+                        <img src="{{ $page->baseUrl }}/assets/images/icons/ico-tasks.png" class="ico-orange"/>
                     </div>
-                    <div class="col-xl-7 col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
-                    </div>
+                    <h3 class="article-simple--title">
+                        Workflow <strong>Transacional</strong>
+                    </h3>
+                    <p>
+                        Precisa enviar mensagens transacionais para os seus clientes? É fácil. Com a All iN, você pode
+                        criar um fluxo automático que começa toda a vez que um cliente faz uma solicitação (como troca
+                        de senha) ou realiza alguma ação no seu site (como uma compra ou um novo cadastro).
+                    </p>
+                    <p>
+                        Esse fluxo pode ser criado a partir de reações nos envios como abertura e clique, permitindo que
+                        você interaja com o cliente em todos os canais. O melhor é que ele também pode ser usado para
+                        Inbound Marketing, permitindo que você envie mensagens para quem solicita o download do seu
+                        e-book ou assiste um webinar, por exemplo.
+                    </p>
+                    <p>
+                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </p>
+                </div>
+                <div class="col-xl-7 col-12">
+                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow-1a-site.gif" />
                 </div>
             </article>
-            <article class="article-simple article-web">
-                <div class="row no-gutters flex-xl-row flex-column-reverse">
-                    <div class="col-xl-6 col-auto pt-xl-5">
-                        <img src="{{ $page->baseUrl }}/assets/images/engaje/note-loja.png" class="xl-pull-container" />
+            <div class="statistics-list-inline ignore-container mt-5">
+                <div class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-12 pl-5">
+                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="30" data-animation-init-time="800">0</i>% de</strong>
+                            Conversão
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="25" data-animation-init-time="1100">0</i>% de</strong>
+                            Cliques
+                        </div>
+                        <div class="col-md-3 col-12">
+                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="20" data-animation-init-time="1400">0</i>% de</strong>
+                            Abertura
+                        </div>
                     </div>
-                    <div class="col-xl-6 col-auto">
+                </div>
+            </div>
+        </section>
+        <section class="section-workflow-transacional pt-5">
+            <article class="article-simple article-web">
+                <div class="row no-gutters">
+                    <div class="col-6 pt-5">
+                        <img src="{{ $page->baseUrl }}/assets/images/engaje/note-loja.png" class="pull-container" />
+                    </div>
+                    <div class="col-6">
                         <div class="col-12 px-0">
                             <img src="{{$page->baseUrl}}/assets/images/icons/ico-mac-click.png" />
                         </div>
@@ -174,13 +200,13 @@
                             <strong>Web</strong>
                         </h3>
                         <p>
-                            Aumente mais de 28% sua taxa de conversão e retenha 3x mais o cliente na sua loja virtual com o
-                            módulo Web da All iN.
+                            <strong>Aumente mais de 28% sua taxa de conversão e retenha 3x mais o cliente na sua loja virtual</strong>
+                            com o módulo Web da All iN.
                         </p>
                         <p>
                             Com ele, você recomenda produtos em real time no seu e-commerce através da nossa vitrine web.
-                            Usando a mesma inteligência do remarketing, você pode escolher entre os 6 módulos disponíveis
-                            como Similares, Cross-Sell, Mais Vendidos, Mais Visitados, dentre outros.
+                            Usando a mesma inteligência do remarketing, você pode escolher entre <strong>os 6 módulos disponíveis
+                            como Similares, Cross-Sell, Mais Vendidos, Mais Visitados, dentre outros.</strong>
                         </p>
                         <p>
                             Dessa forma, você deixa sua loja virtual mais personalizada para cada cliente.
@@ -210,14 +236,14 @@
                         você (como novo cadastro, troca de senha, pedido enviado, etc);
                     </p>
                 </div>
-                <div class="col-xl-7 col-12 pl-5">
+                <div class="col-xl-7 col-12 pl-5 text-center">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-compra.png" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row flex-xl-row flex-column-reverse no-gutters">
-                <div class="col-xl-6 col-auto px-5">
+                <div class="col-xl-6 col-auto px-5 text-center">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-mensagem.png" />
                 </div>
                 <div class="col-xl-6 col-auto">
@@ -235,6 +261,37 @@
                         Em parceria com a Zenvia, disponibilizamos envios de SMS Marketing e SMS Transacional para
                         sua base, potencializando sua comunicação em múltiplos canais.
                     </p>
+                </div>
+            </div>
+        </section>
+        <section class="footer-banner article-simple py-5" style="background-image: url({{$page->baseUrl}}/assets/images/engaje/banner-footer.jpg);color: white">
+            <div class="col-12 pt-5">
+                <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Adcos aumenta <strong class="orange">196% na conversão</strong> com
+                    <nobr>E-mail Remarketing</nobr>
+                </h3>
+                <p>
+                    A ADCOS, grande empresa do setor de dermocosméticos, percebeu que precisava analisar as informações
+                    mais de perto, entregando ao seu cliente o melhor produto. Foi quando iniciou uma parceria para
+                    utilizar os recursos de E-mail Remarketing da All iN, <strong>atingindo 196% mais em conversão.</strong>
+                </p>
+            </div>
+            <div class="col-md-9 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                    <div class="col-sm-auto col-12">
+                        <img src="{{ $page->baseUrl }}/assets/images/engaje/adcos-logo.png" class="mx-4 mt-4" />
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
+                    </div>
+                </div>
+                <div class="d-flex">
                 </div>
             </div>
         </section>
