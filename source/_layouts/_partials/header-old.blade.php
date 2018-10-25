@@ -27,10 +27,16 @@
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page has-submenu">
                                     <a href="/#plataforma">
                                         Plataforma
                                     </a>
+
+                                    <ul style="position: absolute;">
+                                        <li><a href="/compreenda">Compreenda</a></li>
+                                        <li><a href="/personalize">Personalize</a></li>
+                                        <li><a href="/engaje">Engaje</a></li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="https://allin.com.br/solucoes/">
@@ -154,6 +160,38 @@
             padding: 14px 0;
             font-weight: 400;
             font-size: 14px;
+        }
+
+        .old .menu-item.has-submenu:after {
+            content: "";
+            height: .8em;
+            width: .8em;
+            border-left: 2px solid #fa4616;
+            border-bottom: 2px solid #fa4616;
+            display: inline-block;
+            transform: rotate(-45deg);
+            position: relative;
+            left: -0.5em;
+            top: -.2em;
+        }
+
+        .old .menu-item.has-submenu > ul {
+            position: absolute;
+            left: -1em;
+            top: 120%;
+            padding: 1em 1em 1em;
+            text-align: left;
+            background: black;
+            font-size: 1.6em;
+            font-weight: normal;
+            display: none;
+        }
+        .old .menu-item.has-submenu > ul li a {
+            color: white;
+        }
+
+        .old .menu-item.has-submenu:hover > ul {
+            display: block !important;
         }
 
         .old #cabecalho_extra .icone-teste {

@@ -80,9 +80,9 @@
                             São inúmeras possibilidades de segmentação como:
                         </p>
                         <ul class="pl-5">
-                            <li>Descubra quais clientes mais engajados nas suas comunicações;</li>
-                            <li>Saiba quem mais compra na sua loja, seja por número de compras ou ticket médio;</li>
-                            <li>Múltiplas segmentações: por departamento, categoria ou produto;</li>
+                            <li>Descubra quais clientes mais engajados nas suas comunicações.</li>
+                            <li>Saiba quem mais compra na sua loja, seja por número de compras ou ticket médio.</li>
+                            <li>Múltiplas segmentações: por departamento, categoria ou produto.</li>
                         </ul>
                     </div>
                 </div>
@@ -111,10 +111,10 @@
                         <div class="row">
                             <div class="col-12 pl-4">
                                 <ul class="pl-5 mt-4 white-icon row no-gutters has-animation">
-                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Gênero, Idade e Data&nbsp;de&nbsp;Nascimento;</strong></li>
-                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Data&nbsp;de&nbsp;Cadastro, Data&nbsp;da&nbsp;última&nbsp;compra;</strong></li>
-                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Cidades, Estados ou&nbsp;Países;</strong></li>
-                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Comportamento e Páginas&nbsp;Visitadas;</strong></li>
+                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Gênero, Idade e Data&nbsp;de&nbsp;Nascimento.</strong></li>
+                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Data&nbsp;de&nbsp;Cadastro, Data&nbsp;da&nbsp;última&nbsp;compra.</strong></li>
+                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Cidades, Estados ou&nbsp;Países.</strong></li>
+                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Comportamento e Páginas&nbsp;Visitadas.</strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>%% mais</strong>
+                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>% mais</strong>
                             abertura
                         </div>
                     </div>
@@ -199,11 +199,11 @@
                             e-commerce, como:
                         </p>
                         <ul class="pl-5">
-                            <li>Abandono de Carrinho;</li>
-                            <li>Compra de Determinado Produto;</li>
-                            <li>Navegação em uma Categoria;</li>
-                            <li>Inclusão de produto na Wish List;</li>
-                            <li>Ticket médio, dentre outros;</li>
+                            <li>Abandono de Carrinho.</li>
+                            <li>Compra de Determinado Produto.</li>
+                            <li>Navegação em uma Categoria.</li>
+                            <li>Inclusão de produto na Wish List.</li>
+                            <li>Ticket médio, dentre outros.</li>
                         </ul>
                         <p class="pt-4">
                             <a href="#" class="btn"> <i class="ico ico-go"></i>
@@ -322,15 +322,15 @@
                                         </p>
                                         <ul class="px-5">
                                             <li class="">
-                                                Descubra quais regiões do seu e-mail são mais clicadas;
+                                                Descubra quais regiões do seu e-mail são mais clicadas.
                                             </li>
 
                                             <li>
-                                                Saiba os assuntos que geraram maior taxa de abertura;
+                                                Saiba os assuntos que geraram maior taxa de abertura.
                                             </li>
 
                                             <li>
-                                                Veja quais campanhas geraram maiores taxas de clique nos últimos meses;
+                                                Veja quais campanhas geraram maiores taxas de clique nos últimos meses.
                                             </li>
                                         </ul>
                                     </div>

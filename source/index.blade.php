@@ -59,10 +59,10 @@
             <div class="row no-gutters justify-content-end flex-lg-row-reverse py-5">
                 <ul class="offset-2 col-10 offset-md-0 col-md-6 col-lg-5 list-unstyled section-compreenda--items py-4">
                     <li>
-                        <div class="section-compreenda--ico mb-2">
+                        <div class="section-compreenda--ico">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-brain.png" />
                         </div>
-                        <h3 class="section-compreenda--title">
+                        <h3 class="section-compreenda--title mb-2 mt-3">
                             <strong>Compr</strong>eenda
                         </h3>
                         <ul class="list-unstyled section-compreenda--list">
@@ -73,12 +73,15 @@
                             <li>Data Analytics</li>
                             <li>Integrações</li>
                         </ul>
+                        <p class="mb-5">
+                            <a href="/compreenda" class="btn large ml-5"><i class="ico ico-go"></i>Saiba mais</a>
+                        </p>
                     </li>
                     <li>
-                        <div class="section-compreenda--ico mb-2">
+                        <div class="section-compreenda--ico">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-personalidade.png" />
                         </div>
-                        <h3 class="section-compreenda--title">
+                        <h3 class="section-compreenda--title mb-2 mt-3">
                             <strong>Perso</strong>nalize
                         </h3>
                         <ul class="list-unstyled section-compreenda--list">
@@ -89,12 +92,15 @@
                             <li>Editor de Templates</li>
                             <li>E-mail Inteligente</li>
                         </ul>
+                        <p class="mb-5">
+                            <a href="/personalize" class="btn large ml-5"><i class="ico ico-go"></i>Saiba mais</a>
+                        </p>
                     </li>
                     <li>
-                        <div class="section-compreenda--ico mb-2">
+                        <div class="section-compreenda--ico">
                             <img src="{{ $page->baseUrl }}/assets/images/icons/ico-circuito.png" />
                         </div>
-                        <h3 class="section-compreenda--title">
+                        <h3 class="section-compreenda--title mb-2 mt-3">
                             <strong>Eng</strong>aje
                         </h3>
                         <ul class="list-unstyled section-compreenda--list">
@@ -106,15 +112,14 @@
                             <li>Web</li>
                         </ul>
                     </li>
+
+                    <p class="mb-5">
+                        <a href="/engaje" class="btn large ml-5"><i class="ico ico-go"></i>Saiba mais</a>
+                    </p>
                 </ul>
                 <div class="col-md-7 text-right d-none d-lg-block">
                     <img src="{{ $page->baseUrl }}/assets/images/home/bg-2-first-block.png" class="mt-3 img-phone has-animation" data-animation-direction="left">
                     <img src="{{ $page->baseUrl }}/assets/images/home/bg-2-secound-block.png" class="mt-5 img-phone has-animation" data-animation-direction="left" data-animation-init-time="600">
-                </div>
-                <div class="col-md-5 col-12 offset-0 offset-md-2 col-md-6 offset-md-7">
-                    <div class="col-md-auto col-10 offset-1 offset-md-0 px-0">
-                        <a href="/solucoes/" class="btn large ml-5"><i class="ico ico-go"></i>Saiba mais</a>
-                    </div>
                 </div>
             </div>
         </section>
