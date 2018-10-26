@@ -15,7 +15,7 @@
                 </strong>
             </h4>
             <p class="section-contact--form--subtitle mb-4">
-                Venha conhecer mais do nosso Marketing Orange :)
+                Venha conhecer mais do nosso Orange Marketing :)
             </p>
             <p class="section-contact--form--info has-animation" data-animation-init-time="600">
                 <i class="ico ico-letter"></i>

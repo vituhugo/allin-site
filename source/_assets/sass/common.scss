@@ -509,7 +509,28 @@ main ul:not(.list-unstyled) {
         font-weight: bold;
     }
 }
+.slick-prev, .slick-next {
+    background: url("../../../assets/images/seta-direita.png") no-repeat;
+    background-size: cover;
+    width: 3rem;
+    height: 3rem;
+    &:before, &:after {
+        content: none;
+    }
+}
 
+.bg-grafismo-laranja {
+    @media(min-width: 1200px) {
+        background: url(/assets/images/comum/grafismo-laranja-2.png) no-repeat;
+    }
+    background-position-x: right;
+    &.bg-esquerda {
+        background-position-x: left;
+    }
+}
+.slick-prev {
+    transform: scaleX(-1);
+}
 
 .slick-slide {
     height: auto;

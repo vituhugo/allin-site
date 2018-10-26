@@ -124,7 +124,7 @@ $('.slider').slick({
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '10px',
-    dotsClass: 'list-unstyled slick-dots'
+    dotsClass: 'list-unstyled slick-dots',
     // autoplay: true,
 })
 

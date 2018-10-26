@@ -80,9 +80,9 @@
                             São inúmeras possibilidades de segmentação como:
                         </p>
                         <ul class="pl-5">
-                            <li>Descubra quais clientes <strong>mais engajados</strong> nas suas comunicações.</li>
+                            <li>Descubra quais clientes <strong>são os mais engajados</strong> nas suas comunicações.</li>
                             <li>Saiba <strong>quem mais compra na sua loja</strong>, seja por número de compras ou ticket médio.</li>
-                            <li>Múltiplas segmentações: <strong>por departamento, categoria ou produto.</strong></li>
+                            <li>Múltiplas segmentações por: <strong>departamento, categoria ou produto.</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -146,11 +146,11 @@
                             Você também pode usar nosso recurso para <strong>envios transacionais de compra,</strong> aproveitando
                             a alta taxa de abertura desse tipo de e-mail para fazer cross-sell de produtos ou serviços.
                         </p>
-                        <p class="d-xl-block d-none">
-                            <a href="#" class="btn"> <i class="ico ico-go"></i>
-                                Saiba mais
-                            </a>
-                        </p>
+                        {{--<p class="d-xl-block d-none">--}}
+                            {{--<a href="#" class="btn"> <i class="ico ico-go"></i>--}}
+                                {{--Saiba mais--}}
+                            {{--</a>--}}
+                        {{--</p>--}}
                     </div>
                 </div>
                 <div class="col-xl-7 col-12 px-0 px-md-4 text-right justify-content-xl-start px-5 justify-content-center">
@@ -168,19 +168,19 @@
                 <div class="row">
                     <div class="col-12 py-4 py-lg-0 offset-lg-1 col-lg-3 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="8">0</i>x mais</strong>
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="8">0</i>x mais</strong>
                             cliques
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4  justify-content-center text-center text-xl-left">
                         <div class=" pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="34">0</i>% de</strong>
-                            aumento&nbsp;em&nbsp;receita
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="34">0</i>% aumento de</strong>
+                            em&nbsp;receita
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>% mais</strong>
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>% mais</strong>
                             abertura
                         </div>
                     </div>
@@ -206,11 +206,11 @@
                             <li>Inclusão de produto na Wish List.</li>
                             <li>Ticket médio, dentre outros.</li>
                         </ul>
-                        <p class="pt-4">
-                            <a href="#" class="btn"> <i class="ico ico-go"></i>
-                                Saiba mais
-                            </a>
-                        </p>
+                        {{--<p class="pt-4">--}}
+                            {{--<a href="#" class="btn"> <i class="ico ico-go"></i>--}}
+                                {{--Saiba mais--}}
+                            {{--</a>--}}
+                        {{--</p>--}}
                     </div>
                 </div>
                 <div class="col-12 col-xl-7 pt-4">
@@ -348,8 +348,9 @@
             </div>
         </section>
         <section class="footer-banner article-simple py-5">
-            <div class="col-12">
-                <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
+            <div class="col-12 mb-3">
+                <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-marisa.png" class="mt-4" />
+                <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
             </div>
             <div class="col-md-8 col-12">
                 <h3 class="article-simple--title">
@@ -364,13 +365,9 @@
             <div class="col-md-8 col-12">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-12">
-                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                        <a href="/news/veja-como-marisa-cresceu-38-no-volume-de-cliques/" class="btn"> <i class="ico ico-go"></i>
                             Saiba mais
                         </a>
-                    </div>
-                    <div class="col-sm-auto col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-marisa.png" class="mx-4 mt-4" />
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
                     </div>
                 </div>
                 <div class="d-flex">

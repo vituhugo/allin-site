@@ -1,5 +1,5 @@
 @extends('_layouts.master', ['subheader' => [
-    ['/compreenda', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-compreenda.png"],
+    ['/compreenda', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-brain-black.png"],
     ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png"],
     ['/engaje', 'Engaje', $page->baseUrl."/assets/images/icons/ico-compreenda.png", 'is-active' ],
 ]])
@@ -63,8 +63,8 @@
             </footer>
         </section>
 
-        <section class="article-simple py-0 bg-grafismos">
-            <article class="row no-gutters space-y pb-0">
+        <section class="article-simple bg-grafismos">
+            <article class="row no-gutters">
                 <div class="col-12 col-xl-5 pl-4 pr-xl-0">
                     <div>
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-letter-opened-orange.png"/>
@@ -80,7 +80,7 @@
                         <li>Fatie seu HTML e <strong>crie diferentes mensagens</strong> a depender dos dados disponíveis na sua base;</li>
                         <li><strong>Gerencie links</strong> mesmo após o envio das campanhas;</li>
                         <li>Teste conteúdo, remetente, assunto, HTML e mais no nosso <strong>Teste ABCDE</strong></li>
-                        <li>Descubra quais áreas do seu e-mail <strong>foram mais clicadas</strong> através do Mapa de Calor.</li>
+                        <li>Descubra quais áreas do seu e-mail <strong>foram mais clicadas</strong> através do <strong class="orange">Mapa de Calor.</strong></li>
                     </ul>
                 </div>
                 <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center">
@@ -88,8 +88,9 @@
                         <img src="{{ $page->baseUrl }}/assets/images/engaje/img-email-marketing.png" class="has-animation">
                     </div>
                 </div>
+                <hr>
             </article>
-            <article class="row no-gutters flex-xl-row-reverse space-y">
+            <article class="row no-gutters flex-xl-row-reverse pt-5">
                 <div class="col-12 col-xl-6 pl-4 pr-xl-0">
                     <div>
                         <img src="{{ $page->baseUrl }}/assets/images/icons/ico-letter-opened-orange.png"/>
@@ -97,13 +98,13 @@
                     <h3 class="article-simple--title mt-3">E-mail <strong class="d-block">Remarketing</strong></h3>
                     <p>
                         A O E-mail Remarketing da All iN capta o comportamento do visitante no seu site e possibilita o
-                        envio de comunicações personalizadas e automatizadas, aumentando a propensão de compra. Através
-                        do nosso exclusivo algoritmo de recomendação, o sistema sugere produtos/serviços mais assertivos
+                        envio de <strong class="orange">comunicações personalizadas e automatizadas</strong>, aumentando a propensão de compra. Através
+                        do nosso exclusivo <strong class="orange">algoritmo de recomendação</strong>, o sistema <strong class="orange">sugere produtos/serviços mais assertivos</strong>
                         para cada tipo de cliente que navega no seu e-commerce.
                     </p>
                     <p>
-                        Nossa tecnologia possui mais de 20 regras de comportamento entre Abandono de Carrinho, Redução
-                        de Preços e Reconquista, que podem ser combinados em cinco módulos como Similares, Mais Vendidos,
+                        Nossa tecnologia possui mais de <strong class="orange">20 regras</strong> de comportamento entre Abandono de Carrinho, Redução
+                        de Preços e Reconquista, que podem ser combinados em <strong class="orange">cinco módulos</strong> como Similares, Mais Vendidos,
                         Cross-Sell, Quem viu, viu também, dentre outros, gerando mais de 100 combinações possíveis.
                     </p>
                 </div>
@@ -116,22 +117,22 @@
                         </li>
 
                         <li class="slider--item">
-                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/abandono-de-navegacao.jpg" />
+                            <p>Abandono de Navegação</p>
                         </li>
 
                         <li class="slider--item">
-                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/recomendacoes.jpg" />
+                            <p>Recomendações</p>
                         </li>
 
                         <li class="slider--item">
-                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/reconquista.jpg" />
+                            <p>Reconquista</p>
                         </li>
-                        <li>
-                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                        <li class="slider--item">
+                            <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/reducao-de-preco.jpg" />
+                            <p>Redução de Preço</p>
                         </li>
                     </ul>
                 </div>
@@ -147,21 +148,21 @@
                         Workflow <strong>Transacional</strong>
                     </h3>
                     <p>
-                        Precisa enviar mensagens transacionais para os seus clientes? É fácil. Com a All iN, você pode
-                        criar um fluxo automático que começa toda a vez que um cliente faz uma solicitação (como troca
+                        Precisa enviar <strong class="orange">mensagens transacionais</strong> para os seus clientes? É fácil. Com a All iN, você pode
+                        criar um <strong class="orange">fluxo automático</strong> que começa toda a vez que um cliente faz uma solicitação (como troca
                         de senha) ou realiza alguma ação no seu site (como uma compra ou um novo cadastro).
                     </p>
                     <p>
-                        Esse fluxo pode ser criado a partir de reações nos envios como abertura e clique, permitindo que
-                        você interaja com o cliente em todos os canais. O melhor é que ele também pode ser usado para
-                        Inbound Marketing, permitindo que você envie mensagens para quem solicita o download do seu
+                        Esse <strong class="orange">fluxo</strong> pode ser criado <strong class="orange">a partir de reações nos envios</strong> como abertura e clique, permitindo que
+                        você interaja com o cliente em todos os canais. O melhor é que ele também pode ser <strong class="orange">usado para
+                            Inbound Marketing</strong>, permitindo que você envie mensagens para quem solicita o download do seu
                         e-book ou assiste um webinar, por exemplo.
                     </p>
-                    <p>
-                        <a href="#" class="btn"> <i class="ico ico-go"></i>
-                            Saiba mais
-                        </a>
-                    </p>
+                    {{--<p>--}}
+                        {{--<a href="#" class="btn"> <i class="ico ico-go"></i>--}}
+                            {{--Saiba mais--}}
+                        {{--</a>--}}
+                    {{--</p>--}}
                 </div>
                 <div class="col-xl-7 col-12">
                     <img src="{{ $page->baseUrl }}/assets/images/engaje/workflow-transacional.gif" />
@@ -200,13 +201,14 @@
                             <strong>Web</strong>
                         </h3>
                         <p>
-                            <strong>Aumente mais de 28% sua taxa de conversão e retenha 3x mais o cliente na sua loja virtual</strong>
-                            com o módulo Web da All iN.
+                            Aumente <strong>mais de 28% sua taxa de conversão</strong> e <strong>retenha 3x mais o cliente na sua loja virtual</strong>
+                            com o <strong>módulo Web da All iN</strong>.
                         </p>
                         <p>
-                            Com ele, você recomenda produtos em real time no seu e-commerce através da nossa vitrine web.
-                            Usando a mesma inteligência do remarketing, você pode escolher entre <strong>os 6 módulos disponíveis
-                            como Similares, Cross-Sell, Mais Vendidos, Mais Visitados, dentre outros.</strong>
+                            Com ele, você <strong>recomenda produtos em real time</strong> no seu e-commerce através da nossa vitrine web.
+                            Usando a mesma <strong>inteligência do remarketing</strong>, você pode escolher entre os
+                            <strong>6 módulos disponíveis</strong> como <strong>Similares, Cross-Sell, Mais Vendidos,
+                            Mais Visitados, dentre outros.</strong>
                         </p>
                         <p>
                             Dessa forma, você deixa sua loja virtual mais personalizada para cada cliente.
@@ -227,13 +229,13 @@
                     </h3>
                     <p>
                         Mais de 78% dos jovens brasileiros compram on-line por isso, é fundamental que sua marca esteja
-                        cada vez mais perto do seu consumidor. Para que isso aconteça, oferecemos o envio de Push pelo
-                        seu aplicativo.
+                        cada vez mais perto do seu consumidor. Para que isso aconteça, oferecemos o envio de <strong>Push pelo
+                        seu aplicativo</strong>.
                     </p>
                     <p>
-                        Ele pode ser feito por campanhas, subindo uma lista de ID’s coletados ou via transacional,
-                        através da criação de um fluxo automatizado que se inicia a partir de eventos criados por
-                        você (como novo cadastro, troca de senha, pedido enviado, etc);
+                        Ele pode ser feito por <strong>campanhas</strong>, subindo uma lista de ID’s coletados ou via
+                        <strong>transacional</strong>, através da criação de um fluxo automatizado que se inicia a partir
+                        de eventos criados por você (como novo cadastro, troca de senha, pedido enviado, etc).
                     </p>
                 </div>
                 <div class="col-xl-7 col-12 pl-5 text-center">
@@ -254,19 +256,20 @@
                         SMS
                     </h3>
                     <p>
-                        Mais de 98% das mensagens enviadas por SMS são lidas pelos usuários, o que traz uma grande
+                        Mais de <strong>98% das mensagens enviadas por SMS são lidas</strong> pelos usuários, o que traz uma grande
                         oportunidade para sua empresa engajar e converter mais.
                     </p>
                     <p>
-                        Em parceria com a Zenvia, disponibilizamos envios de SMS Marketing e SMS Transacional para
-                        sua base, potencializando sua comunicação em múltiplos canais.
+                        Em parceria com a Zenvia, disponibilizamos <strong>envios de SMS Marketing e SMS Transacional</strong>
+                        para sua base, potencializando sua comunicação em múltiplos canais.
                     </p>
                 </div>
             </div>
         </section>
         <section class="footer-banner article-simple py-5" style="background-image: url({{$page->baseUrl}}/assets/images/engaje/banner-footer.jpg);color: white">
             <div class="col-12 pt-5">
-                <img src="{{ $page->baseUrl }}/assets/images/icons/ico-blog.png" style="filter: invert(100%)"/>
+                <img src="{{ $page->baseUrl }}/assets/images/engaje/adcos-logo.png" class="mt-4" />
+                <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
             </div>
             <div class="col-md-8 col-12">
                 <h3 class="article-simple--title">
@@ -282,13 +285,9 @@
             <div class="col-md-8 col-12">
                 <div class="row justify-content-between">
                     <div class="col-sm-4 col-12">
-                        <a href="#" class="btn"> <i class="ico ico-go"></i>
+                        <a href="/news/adcos-aumentou-sua-taxa-de-conversao-em-196-utilizando-o-remarketing-da-veja-como/" class="btn"> <i class="ico ico-go"></i>
                             Saiba mais
                         </a>
-                    </div>
-                    <div class="col-sm-auto col-12">
-                        <img src="{{ $page->baseUrl }}/assets/images/engaje/adcos-logo.png" class="mx-4 mt-4" />
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/logo-case.png"  class="mx-4" />
                     </div>
                 </div>
                 <div class="d-flex">
