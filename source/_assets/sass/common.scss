@@ -296,6 +296,13 @@ main ul:not(.list-unstyled) {
     background-position: 80% 100%;
     background-size: cover;
 
+    @media(min-width: 768px) {
+        min-height: 33rem;
+        padding-top: 5.8rem;
+        background-position: right;
+    }
+
+
     @media(min-width: 1200px) {
         &:before {
             content: '';
@@ -308,12 +315,6 @@ main ul:not(.list-unstyled) {
             width: 15rem;
             z-index: 99;
         }
-    }
-    @media(min-width: 768px) {
-        min-height: 33rem;
-        padding-top: 5.8rem;
-        background-size: auto 100%;
-        background-position: right;
     }
 
     .banner-internal--main {
@@ -514,6 +515,11 @@ main ul:not(.list-unstyled) {
     background-size: cover;
     width: 3rem;
     height: 3rem;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background: url("../../../assets/images/seta-direita.png") no-repeat;
+        background-size: contain;
+    }
     &:before, &:after {
         content: none;
     }
@@ -522,6 +528,8 @@ main ul:not(.list-unstyled) {
 .bg-grafismo-laranja {
     @media(min-width: 1200px) {
         background: url(/assets/images/comum/grafismo-laranja-2.png) no-repeat;
+        background-position: right;
+        background-size: contain;
     }
     background-position-x: right;
     &.bg-esquerda {

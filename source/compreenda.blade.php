@@ -215,31 +215,31 @@
                 </div>
                 <div class="col-12 col-xl-7 pt-4">
                     <div class="row">
+
                         <div class="offset-xl-1 col-xl-11 col-12 px-0 px-sm-5">
-                            <ul class="list-unstyled slider">
-
+                            <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                                 <li class="slider--item">
                                     <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
                                     <p>Abandono de carrinho</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/abandono-de-navegacao.jpg" />
+                                    <p>Abandono de Navegação</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/recomendacoes.jpg" />
+                                    <p>Recomendações</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/reconquista.jpg" />
+                                    <p>Reconquista</p>
                                 </li>
-                                <li>
-                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                <li class="slider--item">
+                                    <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/reducao-de-preco.jpg" />
+                                    <p>Redução de Preço</p>
                                 </li>
                             </ul>
                         </div>

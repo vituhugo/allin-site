@@ -86,7 +86,7 @@
                     </p>
                 </div>
                 <div class="col-xl-7 col-12">
-                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.png" class="ml-xl-5" />
+                    <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.gif" class="ml-xl-5" />
                 </div>
             </div>
         </section>
@@ -101,7 +101,7 @@
                 São mais de 20 regras possíveis com 5 módulos de recomendação feitos para o seu negócio.
             </h4>
             <div class="row justify-content-center">
-                <div class="col-xl-7 col-12 pr-5">
+                <div class="col-xl-10 col-12 pr-5">
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
