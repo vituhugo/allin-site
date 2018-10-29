@@ -239,14 +239,14 @@
                     </p>
                 </div>
                 <div class="col-xl-7 col-12 pl-5 text-center">
-                    <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-compra.png" class="col-10" />
+                    <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-compra.png" class="col-xl-8" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row flex-xl-row flex-column-reverse no-gutters">
                 <div class="col-xl-6 col-auto px-5 text-center">
-                    <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-mensagem.png" class="col-10" />
+                    <img src="{{ $page->baseUrl }}/assets/images/engaje/celular-mensagem.png" class="col-xl-10" />
                 </div>
                 <div class="col-xl-6 col-auto">
                     <div class="col-12">
