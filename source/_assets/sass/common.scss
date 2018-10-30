@@ -516,7 +516,8 @@ main ul:not(.list-unstyled) {
     width: 3rem;
     height: 3rem;
     transition: all .5s ease-in-out;
-    &:hover {
+    z-index: 99;
+    &:hover, &:visited, &:active, &:focus {
         background: url("../../../assets/images/seta-direita.png") no-repeat;
         background-size: contain;
     }

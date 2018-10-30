@@ -7,7 +7,7 @@
     "dev": "npm run local",
     "watch": "npm run local -- --watch",
     "deploy": ".\\vendor\\bin\\jigsaw build production && git add build_production && git commit -m \"Build for production\" && git subtree push --prefix build_production allin Build",
-    "homol": ".\\vendor\\bin\\jigsaw build homolog && git add build_homolog && git commit -m \"Build for homolog\" && git subtree push --prefix build_homolog git@bitbucket.org:vituhugo/vituhugo.bitbucket.io.git master && rm -rf build_homolog"
+    "homol": ".\\vendor\\bin\\jigsaw build homolog && git add build_homolog && git commit -m \"Build for homolog\" && git subtree push --prefix build_homolog git@bitbucket.org:vituhugo/vituhugo.bitbucket.io.git master"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",

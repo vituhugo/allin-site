@@ -1,6 +1,6 @@
 @extends('_layouts.master', ['subheader' => [
     ['/compreenda', 'Compreenda', $page->baseUrl."/assets/images/icons/ico-brain-black.png"],
-    ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-personalize.png", 'is-active'],
+    ['/personalize', 'Personalize', $page->baseUrl."/assets/images/icons/ico-compreenda.png", 'is-active'],
     ['/engaje', 'Engaje', $page->baseUrl."/assets/images/icons/ico-engaje.png" ],
 ]])
 @section('content')
