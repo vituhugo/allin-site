@@ -201,8 +201,8 @@
                         </p>
                         <ul class="pl-5">
                             <li>Abandono de Carrinho.</li>
-                            <li>Compra de Determinado Produto.</li>
-                            <li>Navegação em uma Categoria.</li>
+                            <li>Compra de determinado produto.</li>
+                            <li>Navegação em uma categoria.</li>
                             <li>Inclusão de produto na Wish List.</li>
                             <li>Ticket médio, dentre outros.</li>
                         </ul>
@@ -220,7 +220,7 @@
                             <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                                 <li class="slider--item">
                                     <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <p>Abandono de Carrinho</p>
                                 </li>
 
                                 <li class="slider--item">

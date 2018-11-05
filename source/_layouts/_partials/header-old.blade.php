@@ -162,7 +162,7 @@
             font-size: 14px;
         }
 
-        .old .menu-item.has-submenu:after {
+        .old .menu-item.has-submenu:before {
             content: "";
             height: .8em;
             width: .8em;
@@ -173,19 +173,23 @@
             position: relative;
             left: -0.5em;
             top: -.2em;
+            background: black;
         }
 
         .old .menu-item.has-submenu > ul {
             position: absolute;
-            left: -1em;
-            top: 120%;
-            padding: 1em 1em 1em;
+            left: -.8rem;
+            top: 30%;
+            padding: 1.8em 1em 0;
             text-align: left;
             background: black;
             font-size: 1.6em;
             font-weight: normal;
             display: none;
+            z-index: -1;
+            border-left: #fa4616 1.4rem solid;
         }
+
         .old .menu-item.has-submenu > ul li a {
             color: white;
         }
@@ -831,6 +835,20 @@
             .old .navbar-toggle {
                 display: none;
             }
+        }
+
+        .old .menu-item>ul>li {
+            padding: .5em 2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        .old .menu-item>ul>li:hover {
+            background-color: #fa4616;
+        }
+
+        .old .menu-item>ul {
+            list-style: none;
         }
     </style>
 </section>

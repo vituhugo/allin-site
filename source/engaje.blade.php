@@ -113,7 +113,7 @@
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <p>Abandono de Carrinho</p>
                         </li>
 
                         <li class="slider--item">
@@ -171,17 +171,23 @@
             <div class="statistics-list-inline ignore-container mt-5">
                 <div class="container-fluid py-4">
                     <div class="row justify-content-center">
-                        <div class="col-md-3 col-12 pl-5">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="30" data-animation-init-time="800">0</i>% de</strong>
-                            Conversão
+                        <div class="col-md-3 col-12 pl-5 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="30" data-animation-init-time="800">0</i>% de</strong>
+                                Conversão
+                            </div>
                         </div>
-                        <div class="col-md-3 col-12">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="25" data-animation-init-time="1100">0</i>% de</strong>
-                            Cliques
+                        <div class="col-md-3 col-12 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="25" data-animation-init-time="1100">0</i>% de</strong>
+                                Cliques
+                            </div>
                         </div>
-                        <div class="col-md-3 col-12">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="20" data-animation-init-time="1400">0</i>% de</strong>
-                            Abertura
+                        <div class="col-md-3 col-12 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="20" data-animation-init-time="1400">0</i>% de</strong>
+                                Abertura
+                            </div>
                         </div>
                     </div>
                 </div>

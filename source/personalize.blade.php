@@ -105,7 +105,7 @@
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="{{ $page->baseUrl }}/assets/images/compreenda/carousel/geladeira-vazia.jpg" width="375" />
-                            <p>Abandono de carrinho</p>
+                            <p>Abandono de Carrinho</p>
                         </li>
 
                         <li class="slider--item">
@@ -159,7 +159,6 @@
                     <div class="col-xl-7 col-12 px-5 bg-grafismo-laranja">
                         <img src="{{ $page->baseUrl }}/assets/images/personalize/workflow-transacional.gif" class="mt-xl-5" />
                     </div>
-
                     <hr class="right">
                 </div>
                 <div class="row no-gutters">
