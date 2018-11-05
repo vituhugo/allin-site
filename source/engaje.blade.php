@@ -195,11 +195,12 @@
         </section>
         <section class="section-workflow-transacional pt-5">
             <article class="article-simple article-web">
-                <div class="row no-gutters">
-                    <div class="col-6 pt-5">
+                <div class="row no-gutters flex-column-reverse flex-lg-row ">
+                    <div class="col-lg-6 col-auto pt-lg-5">
                         <img src="{{ $page->baseUrl }}/assets/images/engaje/note-loja.png" class="pull-container" />
                     </div>
-                    <div class="col-6">
+
+                    <div class="col-lg-6 col-auto">
                         <div class="col-12 px-0">
                             <img src="{{$page->baseUrl}}/assets/images/icons/ico-mac-click.png" />
                         </div>

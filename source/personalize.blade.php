@@ -81,9 +81,9 @@
                         , o que permite que sua recomendação aconteça via <nobr>e-mail</nobr> marketing ou em real time no seu
                         e-commerce em formato de vitrines em carrossel.
                     </p>
-                    <p>
-                        <a class="btn"><i class="ico ico-go"></i>Saiba Mais</a>
-                    </p>
+                    {{--<p>--}}
+                        {{--<a class="btn"><i class="ico ico-go"></i>Saiba Mais</a>--}}
+                    {{--</p>--}}
                 </div>
                 <div class="col-xl-7 col-12">
                     <img src="{{ $page->baseUrl }}/assets/images/personalize/recomendacao-produtos.gif" class="ml-xl-5" />

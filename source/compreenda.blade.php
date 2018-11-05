@@ -156,7 +156,7 @@
                 <div class="col-xl-7 col-12 px-0 px-md-4 text-right justify-content-xl-start px-5 justify-content-center">
                     <img src="{{ $page->baseUrl }}/assets/images/compreenda/workflow.gif" />
                 </div>
-                <div class="col-12 d-xl-none">
+                <div class="col-12 d-none">
                     <a href="#" class="btn"> <i class="ico ico-go"></i>
                         Saiba mais
                     </a>
