@@ -306,7 +306,7 @@
             position: absolute;
             left: -.8rem;
             top: 30%;
-            padding: 1.8em 1em 0;
+            padding: 1.55em 1em 0;
             text-align: left;
             background: black;
             font-size: 1.6em;
@@ -976,6 +976,18 @@
         .old .menu-item>ul {
             list-style: none;
         }
+
+        @media(max-width: 1200px) {
+
+            .old .menu-item.has-submenu > ul {
+                position: static !important;
+                padding-top: 0;
+                margin-top: 1em;
+                text-align: center;
+                background: #fa4616;
+                overflow: hidden;
+            }
+        }
     </style>
 </section>
 
@@ -1062,7 +1074,7 @@
                 </div>
                 <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
                     <div class="section-ideais--mozaico mt-2">
-                        <img src="/assets/images/compreenda/power-segmentador-image.jpg" style="width: 100%" class="has-animation">
+                        <img src="/assets/images/compreenda/power-segmentador-image.gif" style="width: 100%" class="has-animation">
                     </div>
                 </div>
             </div>
@@ -1130,7 +1142,7 @@
                 <div class="col-xl-7 col-12 px-0 px-md-4 text-right justify-content-xl-start px-5 justify-content-center">
                     <img src="/assets/images/compreenda/workflow.gif" />
                 </div>
-                <div class="col-12 d-xl-none">
+                <div class="col-12 d-none">
                     <a href="#" class="btn"> <i class="ico ico-go"></i>
                         Saiba mais
                     </a>
