@@ -33,9 +33,6 @@
 <link rel="alternate" type="application/json+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F"/>
 <link rel="alternate" type="text/xml+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F&#038;format=xml"/>
 
-<script src="https://www.google.com/recaptcha/api.js?hl=pt_BR" async defer></script>
-<meta name="google-site-verification" content="hPGIpOmsAQ7uTIhmWOd85AkFy2znJaCiJD3mcox_0FE"/>
-
 <script type="text/javascript">window.smartlook || (function (d) {
         var o = smartlook = function () {
             o.api.push(arguments)
@@ -101,13 +98,23 @@
     fbq('init', '974850635903136'); // Insert your pixel ID here. fbq('track', 'PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=974850635903136&ev=PageView&noscript=1"/></noscript>    <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
-<body>
+<body id="body">
 
 <style>
+    .screen-block {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
     .fade {
         opacity: 0;
     }
 </style>
+<div class="screen-block"></div>
 <section class="old">
     <header id="masthead" class="site-header" role="banner">
         <div class="container">
@@ -137,10 +144,16 @@
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page has-submenu">
                                     <a href="/#plataforma">
                                         Plataforma
                                     </a>
+
+                                    <ul style="position: absolute;">
+                                        <li><a href="/compreenda">Compreenda</a></li>
+                                        <li><a href="/personalize">Personalize</a></li>
+                                        <li><a href="/engaje">Engaje</a></li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="https://allin.com.br/solucoes/">
@@ -201,21 +214,21 @@
                 <ul class="sub-header--container container list-unstyled d-flex justify-content-center">
                                             <li class=" px-3 px-md-0 d-flex flex-column justify-content-center">
                             <a href="/compreenda" class="d-block">
-                                <img src="/new_site/assets/images/icons/ico-compreenda.png">                                <span class="d-md-inline d-none">
+                                <img src="/new_site/assets/images/icons/ico-brain-black.png">                                <span class="d-md-inline d-none">
                                 Compreenda
                                 </span>
                             </a>
                         </li>
-                                            <li class="is-active px-3 px-md-0 d-flex flex-column justify-content-center">
+                                            <li class=" px-3 px-md-0 d-flex flex-column justify-content-center">
                             <a href="/personalize" class="d-block">
                                 <img src="/new_site/assets/images/icons/ico-personalize.png">                                <span class="d-md-inline d-none">
                                 Personalize
                                 </span>
                             </a>
                         </li>
-                                            <li class=" px-3 px-md-0 d-flex flex-column justify-content-center">
+                                            <li class="is-active px-3 px-md-0 d-flex flex-column justify-content-center">
                             <a href="/engaje" class="d-block">
-                                <img src="/new_site/assets/images/icons/ico-engaje.png">                                <span class="d-md-inline d-none">
+                                <img src="/new_site/assets/images/icons/ico-compreenda.png">                                <span class="d-md-inline d-none">
                                 Engaje
                                 </span>
                             </a>
@@ -273,6 +286,42 @@
             padding: 14px 0;
             font-weight: 400;
             font-size: 14px;
+        }
+
+        .old .menu-item.has-submenu:before {
+            content: "";
+            height: .8em;
+            width: .8em;
+            border-left: 2px solid #fa4616;
+            border-bottom: 2px solid #fa4616;
+            display: inline-block;
+            transform: rotate(-45deg);
+            position: relative;
+            left: -0.5em;
+            top: -.2em;
+            background: black;
+        }
+
+        .old .menu-item.has-submenu > ul {
+            position: absolute;
+            left: -.8rem;
+            top: 30%;
+            padding: 1.55em 1em 0;
+            text-align: left;
+            background: black;
+            font-size: 1.6em;
+            font-weight: normal;
+            display: none;
+            z-index: -1;
+            border-left: #fa4616 1.4rem solid;
+        }
+
+        .old .menu-item.has-submenu > ul li a {
+            color: white;
+        }
+
+        .old .menu-item.has-submenu:hover > ul {
+            display: block !important;
         }
 
         .old #cabecalho_extra .icone-teste {
@@ -913,6 +962,32 @@
                 display: none;
             }
         }
+
+        .old .menu-item>ul>li {
+            padding: .5em 2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        .old .menu-item>ul>li:hover {
+            background-color: #fa4616;
+        }
+
+        .old .menu-item>ul {
+            list-style: none;
+        }
+
+        @media(max-width: 1200px) {
+
+            .old .menu-item.has-submenu > ul {
+                position: static !important;
+                padding-top: 0;
+                margin-top: 1em;
+                text-align: center;
+                background: #fa4616;
+                overflow: hidden;
+            }
+        }
     </style>
 </section>
 
@@ -977,10 +1052,10 @@
 
         <section class="article-simple bg-grafismos">
             <article class="row no-gutters">
-                <div class="col-3 col-md-12 pl-4 block-text-image--icon" >
-                    <img src="/new_site/assets/images/icons/ico-power-segmentador.png"/>
-                </div>
                 <div class="col-12 col-xl-5 pl-4 pr-xl-0">
+                    <div>
+                        <img src="/new_site/assets/images/icons/ico-letter-opened-orange.png"/>
+                    </div>
                     <h3 class="article-simple--title mt-3">E-mail <strong class="d-block">Marketing</strong></h3>
                     <p>
                         A All iN é a empresa brasileira líder em <strong>e-mail marketing</strong>. Além dos
@@ -988,97 +1063,131 @@
                         sua forma de comunicar.
                     </p>
                     <ul class="pl-5">
-                        <li>Envie mensagens automáticas de aniversário e por data;</li>
-                        <li>Fatie seu HTML e crie diferentes mensagens a depender dos dados disponíveis na sua base;</li>
-                        <li>Gerencie links mesmo após o envio das campanhas;</li>
-                        <li>Teste conteúdo, remetente, assunto, HTML e mais no nosso Teste ABCDE</li>
-                        <li>Descubra quais áreas do seu e-mail foram mais clicadas através do Mapa de Calor.</li>
+                        <li>Envie <strong>mensagens automáticas</strong> de aniversário e por data;</li>
+                        <li>Fatie seu HTML e <strong>crie diferentes mensagens</strong> a depender dos dados disponíveis na sua base;</li>
+                        <li><strong>Gerencie links</strong> mesmo após o envio das campanhas;</li>
+                        <li>Teste conteúdo, remetente, assunto, HTML e mais no nosso <strong>Teste ABCDE</strong></li>
+                        <li>Descubra quais áreas do seu e-mail <strong>foram mais clicadas</strong> através do <strong class="orange">Mapa de Calor.</strong></li>
                     </ul>
                 </div>
-                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
-                    <div class="block-text-image--image mt-5 text-right">
-                        <img src="/new_site/assets/images/engaje/bg-telas.png" class="has-animation">
+                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center">
+                    <div class="block-text-image--image text-right">
+                        <img src="/new_site/assets/images/engaje/img-email-marketing.png" class="has-animation">
                     </div>
                 </div>
+                <hr>
             </article>
-        </section>
-        <section class="bg-cinza article-center">
-            <h3 class="article-center--title">
-                Gatilhos <strong>Comportamentais</strong>
-            </h3>
-            <p class="article-center--subtitle">
-                O E-mail Remarketing da All iN capta o comportamento do visitante no seu site e possibilita o
-                envio de comunicações personalizadas e automatizadas, aumentando a propensão de compra. Através do
-                nosso exclusivo algoritmo de recomendação, o sistema sugere produtos / serviços mais assertivos para
-                cada tipo de cliente que navega no seu e-commerce.Nossa tecnologia possui mais de 20 regras de
-                comportamento entre Abandono de Carrinho, Redução de Preços e Reconquista, que podem ser combinados
-                em cinco módulos como Similares, Mais Vendidos, Cross-Sell, Quem viu, viu também, dentre outros,
-                gerando mais de 100 combinações possíveis.
-            </p>
+            <article class="row no-gutters flex-xl-row-reverse pt-5">
+                <div class="col-12 col-xl-6 pl-4 pr-xl-0">
+                    <div>
+                        <img src="/new_site/assets/images/icons/ico-letter-opened-orange.png"/>
+                    </div>
+                    <h3 class="article-simple--title mt-3">E-mail <strong class="d-block">Remarketing</strong></h3>
+                    <p>
+                        A O E-mail Remarketing da All iN capta o comportamento do visitante no seu site e possibilita o
+                        envio de <strong class="orange">comunicações personalizadas e automatizadas</strong>, aumentando a propensão de compra. Através
+                        do nosso exclusivo <strong class="orange">algoritmo de recomendação</strong>, o sistema <strong class="orange">sugere produtos/serviços mais assertivos</strong>
+                        para cada tipo de cliente que navega no seu e-commerce.
+                    </p>
+                    <p>
+                        Nossa tecnologia possui mais de <strong class="orange">20 regras</strong> de comportamento entre Abandono de Carrinho, Redução
+                        de Preços e Reconquista, que podem ser combinados em <strong class="orange">cinco módulos</strong> como Similares, Mais Vendidos,
+                        Cross-Sell, Quem viu, viu também, dentre outros, gerando mais de 100 combinações possíveis.
+                    </p>
+                </div>
 
-            <div class="row justify-content-center">
-                <div class="col-7 mt-5">
+                <div class="col-xl-6 col-12 mt-5 pr-5">
                     <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                         <li class="slider--item">
                             <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <p>Abandono de Carrinho</p>
                         </li>
 
                         <li class="slider--item">
-                            <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="/new_site/assets/images/compreenda/carousel/abandono-de-navegacao.jpg" />
+                            <p>Abandono de Navegação</p>
                         </li>
 
                         <li class="slider--item">
-                            <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="/new_site/assets/images/compreenda/carousel/recomendacoes.jpg" />
+                            <p>Recomendações</p>
                         </li>
 
                         <li class="slider--item">
-                            <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                            <img src="/new_site/assets/images/compreenda/carousel/reconquista.jpg" />
+                            <p>Reconquista</p>
                         </li>
-                        <li>
-                            <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                            <p>Abandono de carrinho</p>
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/reducao-de-preco.jpg" />
+                            <p>Redução de Preço</p>
                         </li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </section>
-        <section class="section-workflow-transacional">
-            <article class="article-simple article-workflow-transacional">
-                <div class="row no-gutters">
-                    <div class="col-5">
-                        <div class="col-12">
-                            <img src="/new_site/assets/images/icons/ico-tasks.png" />
-                        </div>
-                        <h3 class="article-simple--title">
-                            Workflow <strong>Transacional</strong>
-                        </h3>
-                        <p>
-                            Precisa enviar mensagens transacionais para os seus clientes? É fácil. Com a All iN, você pode
-                            criar um fluxo automático que começa toda a vez que um cliente faz uma solicitação (como troca
-                            de senha) ou realiza alguma ação no seu site (como uma compra ou um novo cadastro).
-                        </p>
-                        <p>
-                            Esse fluxo pode ser criado a partir de reações nos envios como abertura e clique, permitindo que
-                            você interaja com o cliente em todos os canais. O melhor é que ele também pode ser usado para
-                            Inbound Marketing, permitindo que você envie mensagens para quem solicita o download do seu
-                            e-book ou assiste um webinar, por exemplo.
-                        </p>
+        <section class="article-simple bg-cinza">
+            <article class="row no-gutters">
+                <div class="col-xl-5 col-12">
+                    <div class="col-12">
+                        <img src="/new_site/assets/images/icons/ico-tasks.png" class="ico-orange"/>
                     </div>
-                    <div class="col-7">
-                        <img src="/new_site/assets/images/compreenda/workflow-1a-site.gif" />
-                    </div>
+                    <h3 class="article-simple--title">
+                        Workflow <strong>Transacional</strong>
+                    </h3>
+                    <p>
+                        Precisa enviar <strong class="orange">mensagens transacionais</strong> para os seus clientes? É fácil. Com a All iN, você pode
+                        criar um <strong class="orange">fluxo automático</strong> que começa toda a vez que um cliente faz uma solicitação (como troca
+                        de senha) ou realiza alguma ação no seu site (como uma compra ou um novo cadastro).
+                    </p>
+                    <p>
+                        Esse <strong class="orange">fluxo</strong> pode ser criado <strong class="orange">a partir de reações nos envios</strong> como abertura e clique, permitindo que
+                        você interaja com o cliente em todos os canais. O melhor é que ele também pode ser <strong class="orange">usado para
+                            Inbound Marketing</strong>, permitindo que você envie mensagens para quem solicita o download do seu
+                        e-book ou assiste um webinar, por exemplo.
+                    </p>
+                    
+                        
+                            
+                        
+                    
+                </div>
+                <div class="col-xl-7 col-12">
+                    <img src="/new_site/assets/images/engaje/workflow-transacional.gif" />
                 </div>
             </article>
+            <div class="statistics-list-inline ignore-container mt-5">
+                <div class="container-fluid py-4">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3 col-12 pl-5 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="30" data-animation-init-time="800">0</i>% de</strong>
+                                Conversão
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="25" data-animation-init-time="1100">0</i>% de</strong>
+                                Cliques
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-12 d-flex justify-content-center">
+                            <div>
+                                <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="20" data-animation-init-time="1400">0</i>% de</strong>
+                                Abertura
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-workflow-transacional pt-5">
             <article class="article-simple article-web">
-                <div class="row no-gutters">
-                    <div class="col-6 pt-5">
+                <div class="row no-gutters flex-column-reverse flex-lg-row ">
+                    <div class="col-lg-6 col-auto pt-lg-5">
                         <img src="/new_site/assets/images/engaje/note-loja.png" class="pull-container" />
                     </div>
-                    <div class="col-6">
+
+                    <div class="col-lg-6 col-auto">
                         <div class="col-12 px-0">
                             <img src="/new_site/assets/images/icons/ico-mac-click.png" />
                         </div>
@@ -1086,13 +1195,14 @@
                             <strong>Web</strong>
                         </h3>
                         <p>
-                            Aumente mais de 28% sua taxa de conversão e retenha 3x mais o cliente na sua loja virtual com o
-                            módulo Web da All iN.
+                            Aumente <strong>mais de 28% sua taxa de conversão</strong> e <strong>retenha 3x mais o cliente na sua loja virtual</strong>
+                            com o <strong>módulo Web da All iN</strong>.
                         </p>
                         <p>
-                            Com ele, você recomenda produtos em real time no seu e-commerce através da nossa vitrine web.
-                            Usando a mesma inteligência do remarketing, você pode escolher entre os 6 módulos disponíveis
-                            como Similares, Cross-Sell, Mais Vendidos, Mais Visitados, dentre outros.
+                            Com ele, você <strong>recomenda produtos em real time</strong> no seu e-commerce através da nossa vitrine web.
+                            Usando a mesma <strong>inteligência do remarketing</strong>, você pode escolher entre os
+                            <strong>6 módulos disponíveis</strong> como <strong>Similares, Cross-Sell, Mais Vendidos,
+                            Mais Visitados, dentre outros.</strong>
                         </p>
                         <p>
                             Dessa forma, você deixa sua loja virtual mais personalizada para cada cliente.
@@ -1104,7 +1214,7 @@
 
         <section class="article-simple bg-cinza">
             <div class="row no-gutters">
-                <div class="col-5">
+                <div class="col-xl-5 col-12">
                     <div class="col-12">
                         <img src="/new_site/assets/images/icons/ico-pin.png" />
                     </div>
@@ -1113,26 +1223,26 @@
                     </h3>
                     <p>
                         Mais de 78% dos jovens brasileiros compram on-line por isso, é fundamental que sua marca esteja
-                        cada vez mais perto do seu consumidor. Para que isso aconteça, oferecemos o envio de Push pelo
-                        seu aplicativo.
+                        cada vez mais perto do seu consumidor. Para que isso aconteça, oferecemos o envio de <strong>Push pelo
+                        seu aplicativo</strong>.
                     </p>
                     <p>
-                        Ele pode ser feito por campanhas, subindo uma lista de ID’s coletados ou via transacional,
-                        através da criação de um fluxo automatizado que se inicia a partir de eventos criados por
-                        você (como novo cadastro, troca de senha, pedido enviado, etc);
+                        Ele pode ser feito por <strong>campanhas</strong>, subindo uma lista de ID’s coletados ou via
+                        <strong>transacional</strong>, através da criação de um fluxo automatizado que se inicia a partir
+                        de eventos criados por você (como novo cadastro, troca de senha, pedido enviado, etc).
                     </p>
                 </div>
-                <div class="col-7 pl-5">
-                    <img src="/new_site/assets/images/engaje/celular-compra.png" />
+                <div class="col-xl-7 col-12 pl-5 text-center">
+                    <img src="/new_site/assets/images/engaje/celular-compra.png" class="col-xl-8" />
                 </div>
             </div>
         </section>
         <section class="article-simple bg-grafismos">
-            <div class="row no-gutters">
-                <div class="col-6">
-                    <img src="/new_site/assets/images/engaje/celular-mensagem.png" />
+            <div class="row flex-xl-row flex-column-reverse no-gutters">
+                <div class="col-xl-6 col-auto px-5 text-center">
+                    <img src="/new_site/assets/images/engaje/celular-mensagem.png" class="col-xl-10" />
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-auto">
                     <div class="col-12">
                         <img src="/new_site/assets/images/icons/ico-sms.png" />
                     </div>
@@ -1140,13 +1250,41 @@
                         SMS
                     </h3>
                     <p>
-                        Mais de 98% das mensagens enviadas por SMS são lidas pelos usuários, o que traz uma grande
+                        Mais de <strong>98% das mensagens enviadas por SMS são lidas</strong> pelos usuários, o que traz uma grande
                         oportunidade para sua empresa engajar e converter mais.
                     </p>
                     <p>
-                        Em parceria com a Zenvia, disponibilizamos envios de SMS Marketing e SMS Transacional para
-                        sua base, potencializando sua comunicação em múltiplos canais.
+                        Em parceria com a Zenvia, disponibilizamos <strong>envios de SMS Marketing e SMS Transacional</strong>
+                        para sua base, potencializando sua comunicação em múltiplos canais.
                     </p>
+                </div>
+            </div>
+        </section>
+        <section class="footer-banner article-simple py-5" style="background-image: url(/new_site/assets/images/engaje/banner-footer.jpg);color: white">
+            <div class="col-12 pt-5">
+                <img src="/new_site/assets/images/engaje/adcos-logo.png" class="mt-4" />
+                <img src="/new_site/assets/images/compreenda/logo-case.png"  class="mx-4" />
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Adcos aumenta <strong class="orange">196% na conversão</strong> com
+                    <nobr>E-mail Remarketing</nobr>
+                </h3>
+                <p>
+                    A ADCOS, grande empresa do setor de dermocosméticos, percebeu que precisava analisar as informações
+                    mais de perto, entregando ao seu cliente o melhor produto. Foi quando iniciou uma parceria para
+                    utilizar os recursos de E-mail Remarketing da All iN, <strong>atingindo 196% mais em conversão.</strong>
+                </p>
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="/news/adcos-aumentou-sua-taxa-de-conversao-em-196-utilizando-o-remarketing-da-veja-como/" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex">
                 </div>
             </div>
         </section>
@@ -1167,7 +1305,8 @@
                 </strong>
             </h4>
             <p class="section-contact--form--subtitle mb-4">
-                Venha conhecer mais do nosso Marketing Orange :)
+                Venha conhecer mais do nosso Orange Marketing 😊
+
             </p>
             <p class="section-contact--form--info has-animation" data-animation-init-time="600">
                 <i class="ico ico-letter"></i>
@@ -1182,10 +1321,10 @@
                 </strong>
             </p>
         </div>
-        <form id="form-contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
+        <form id="form-contato" action="/contato.php" onsubmit="ga('send', 'event', 'enviar_mensagem', document.getElementById('ddl-assunto').value, document.getElementById('txt-email'))" class="col-lg-6 has-animation" method="post">
             <div class="row">
                 <div class="form-group col-sm-6 col-12">
-                    <select id="ddl-assunto" class="form-control" title="Assunto" name="assunto" required>
+                    <select class="form-control" id="ddl-assunto" title="Assunto" name="assunto" required>
                         <option selected="">Qual o assunto?</option>
                         <option value="Financeiro">Financeiro</option>
                         <option value="Spam">Spam</option>
@@ -1198,18 +1337,18 @@
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="text" placeholder="NOME" title="Nome" name="nome" required>
+                    <input class="form-control" id="txt-nome" type="text" placeholder="NOME" title="Nome" name="nome" required>
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
+                    <input class="form-control" id="txt-email" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
                 </div>
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
+                    <input class="form-control" id="txt-tel" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
                 </div>
 
                 <div class="form-group col-12">
-                    <textarea class="form-control" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
+                    <textarea class="form-control" id="txa-mensagem" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
                 </div>
 
                 <div class="col-lg-12">
@@ -1223,7 +1362,7 @@
     <div class="row mx-0 px-3">
         <div class="col-md-3 col-12 text-md-left text-center">
             <div class="footer--logo mb-4">
-                <img src="/new_site/assets/images/logo-locaweb.png" />
+                <img src="/new_site/assets/images/logo-allin.png" />
             </div>
             <p class="footer--paragraph">
                 Plataforma brasileira líder em marketing
@@ -1270,7 +1409,7 @@
             <!--</div>-->
 
             <div class="row justify-content-md-end justify-content-center mx-0">
-                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#home">
+                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#body">
                     <span>Topo </span>
                     <i class="icone icone-topo"></i>
                 </a>
@@ -1299,7 +1438,12 @@
         </div>
     </div>
 </footer><section id="external-scripts">
-    <!-- v1.0.3 -->
+    <!-- v1.0.4 -->
+
+    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
+    <script src="/new_site/assets/build/js/main.js"></script>
+
+    
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
@@ -1313,28 +1457,9 @@
         </div>
     </noscript>
 
-    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
-    <script src="/new_site/assets/build/js/main.js"></script>
-    
-<!-- HUBSPOT LEGACY CODE -->
-    <script>
-        (function (d, w) {
-            w._hsq = w._hsq || [];
-            var match = d.cookie.match('(^|;) ?hubspotutk=([^;]*)(;|$)');
-            if (match && match[2] == "7583a6df01ba2497388c640348a21a70") {
-                w._hsq.push(["identify", {
-                    "email": "mayara.oliveira@allin.com.br",
-                    "name": "May",
-                    "id": "33be9d9190599c080befc313734c352c"
-                }]);
-            }
-            w._hsq.push(["setContentType", "standard-page"]);
-        })(document, window);
-    </script>
-    <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/4037989.js"></script>
-    <script src="//js.hs-analytics.net/analytics/1538822400000/4037989.js" type="text/javascript" id="hs-analytics"></script>
-    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-4037989" crossorigin="anonymous" data-leadin-portal-id="4037989" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4037989" data-hsjs-env="prod"></script>
-    <!-- [END HUBSPOT LEGACY CODE] -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4037989.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <script src="//i.btg360.com.br/wf.js" type="text/javascript"></script> <!-- Integração TAG envio de contato allin -->
     <script>

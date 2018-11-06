@@ -33,9 +33,6 @@
 <link rel="alternate" type="application/json+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F"/>
 <link rel="alternate" type="text/xml+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F&#038;format=xml"/>
 
-<script src="https://www.google.com/recaptcha/api.js?hl=pt_BR" async defer></script>
-<meta name="google-site-verification" content="hPGIpOmsAQ7uTIhmWOd85AkFy2znJaCiJD3mcox_0FE"/>
-
 <script type="text/javascript">window.smartlook || (function (d) {
         var o = smartlook = function () {
             o.api.push(arguments)
@@ -101,13 +98,23 @@
     fbq('init', '974850635903136'); // Insert your pixel ID here. fbq('track', 'PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=974850635903136&ev=PageView&noscript=1"/></noscript>    <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
-<body>
+<body id="body">
 
 <style>
+    .screen-block {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
     .fade {
         opacity: 0;
     }
 </style>
+<div class="screen-block"></div>
 <section class="old">
     <header id="masthead" class="site-header" role="banner">
         <div class="container">
@@ -137,10 +144,16 @@
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page has-submenu">
                                     <a href="/#plataforma">
                                         Plataforma
                                     </a>
+
+                                    <ul style="position: absolute;">
+                                        <li><a href="/compreenda">Compreenda</a></li>
+                                        <li><a href="/personalize">Personalize</a></li>
+                                        <li><a href="/engaje">Engaje</a></li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="https://allin.com.br/solucoes/">
@@ -273,6 +286,42 @@
             padding: 14px 0;
             font-weight: 400;
             font-size: 14px;
+        }
+
+        .old .menu-item.has-submenu:before {
+            content: "";
+            height: .8em;
+            width: .8em;
+            border-left: 2px solid #fa4616;
+            border-bottom: 2px solid #fa4616;
+            display: inline-block;
+            transform: rotate(-45deg);
+            position: relative;
+            left: -0.5em;
+            top: -.2em;
+            background: black;
+        }
+
+        .old .menu-item.has-submenu > ul {
+            position: absolute;
+            left: -.8rem;
+            top: 30%;
+            padding: 1.55em 1em 0;
+            text-align: left;
+            background: black;
+            font-size: 1.6em;
+            font-weight: normal;
+            display: none;
+            z-index: -1;
+            border-left: #fa4616 1.4rem solid;
+        }
+
+        .old .menu-item.has-submenu > ul li a {
+            color: white;
+        }
+
+        .old .menu-item.has-submenu:hover > ul {
+            display: block !important;
         }
 
         .old #cabecalho_extra .icone-teste {
@@ -913,6 +962,32 @@
                 display: none;
             }
         }
+
+        .old .menu-item>ul>li {
+            padding: .5em 2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        .old .menu-item>ul>li:hover {
+            background-color: #fa4616;
+        }
+
+        .old .menu-item>ul {
+            list-style: none;
+        }
+
+        @media(max-width: 1200px) {
+
+            .old .menu-item.has-submenu > ul {
+                position: static !important;
+                padding-top: 0;
+                margin-top: 1em;
+                text-align: center;
+                background: #fa4616;
+                overflow: hidden;
+            }
+        }
     </style>
 </section>
 
@@ -953,7 +1028,7 @@
                             </a>
                         </li>
                         <li class="col-4 d-flex justify-content-center pb-3" style="border-left: .15rem solid #fa4616;border-right: .15rem solid #fa4616;">
-                            <a href="/presonalize" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1300">
+                            <a href="/personalize" class="banner-internal--footer--highlight has-animation" data-animation-init-time="1300">
                                 <div class="banner-internal--footer--highlight--image">
                                     <img src="/new_site/assets/images/icons/ico-personalidade.png" />
                                 </div>
@@ -986,20 +1061,20 @@
                     <h3 class="section-ideais--title mt-3">Power <strong>Segmentador</strong></h3>
                     <div class="section-ideais--text">
                         <p>
-                            Com o Power Segmentador da All iN você pode descobrir em poucos cliques o comportamento
-                            do seu consumidor e disparar campanhas altamente assertivas e personalizadas.<br>
+                            Com o Power Segmentador da All iN você pode descobrir <strong>em poucos cliques o comportamento
+                                do seu consumidor e disparar campanhas altamente assertivas e personalizadas.</strong><br>
                             São inúmeras possibilidades de segmentação como:
                         </p>
                         <ul class="pl-5">
-                            <li>Descubra quais clientes mais engajados nas suas comunicações;</li>
-                            <li>Saiba quem mais compra na sua loja, seja por número de compras ou ticket médio;</li>
-                            <li>Múltiplas segmentações: por departamento, categoria ou produto;</li>
+                            <li>Descubra quais clientes <strong>são os mais engajados</strong> nas suas comunicações.</li>
+                            <li>Saiba <strong>quem mais compra na sua loja</strong>, seja por número de compras ou ticket médio.</li>
+                            <li>Múltiplas segmentações por: <strong>departamento, categoria ou produto.</strong></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
                     <div class="section-ideais--mozaico mt-2">
-                        <img src="/new_site/assets/images/compreenda/power-segmentador-image.jpg" style="width: 100%" class="has-animation">
+                        <img src="/new_site/assets/images/compreenda/power-segmentador-image.gif" style="width: 100%" class="has-animation">
                     </div>
                 </div>
             </div>
@@ -1013,19 +1088,19 @@
                     <h3 class="section-optimizacao-publico--title mt-3 has-animation">Otimização <strong>de Públicos</strong></h3>
                     <div class="section-optimizacao-publico--text has-animation">
                         <p>
-                            A All iN ajuda você a otimizar os públicos do seu negócio. Afinal, sabemos que ter várias
+                            A All iN ajuda você a <strong>otimizar os públicos</strong> do seu negócio. Afinal, sabemos que ter várias
                             listas pode complicar a organização dos seus clientes. Fazendo a otimização de públicos,
-                            você consegue filtrar todos os usuários que correspondem a um mesmo perfil: homens,
-                            mulheres, residentes de São Paulo, data de última compra e muito mais!
+                            você consegue filtrar todos os usuários que correspondem a um mesmo perfil: <strong>homens,
+                            mulheres, residentes de São Paulo, data de última compra e muito mais!</strong>
                         </p>
                         <span class="section-optimizacao-publico--recorte-superior d-none d-xl-block"></span>
                         <div class="row">
                             <div class="col-12 pl-4">
                                 <ul class="pl-5 mt-4 white-icon row no-gutters has-animation">
-                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Gênero, Idade e Data&nbsp;de&nbsp;Nascimento;</strong></li>
-                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Data&nbsp;de&nbsp;Cadastro, Data&nbsp;da&nbsp;última&nbsp;compra;</strong></li>
-                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Cidades, Estados ou&nbsp;Países;</strong></li>
-                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Comportamento e Páginas&nbsp;Visitadas;</strong></li>
+                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Gênero, Idade e Data&nbsp;de&nbsp;Nascimento.</strong></li>
+                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Data&nbsp;de&nbsp;Cadastro, Data&nbsp;da&nbsp;última&nbsp;compra.</strong></li>
+                                    <li class="col-12 col-sm-5">Otimize por <strong class="d-sm-block">Cidades, Estados ou&nbsp;Países.</strong></li>
+                                    <li class="col-12 col-sm-6 offset-sm-1">Otimize por <strong class="d-sm-block">Comportamento e Páginas&nbsp;Visitadas.</strong></li>
                                 </ul>
                             </div>
                         </div>
@@ -1034,15 +1109,16 @@
             </div>
         </section>
 
-        <section class="section-jornada-cliente space-y separator orange container-fluid">
+        <section class="section-jornada-cliente space-y separator orange container-fluid pb-0">
             <h3 class="section-jornada-cliente--header--title generic-title">Jornada <strong>do Cliente</strong></h3>
             <p class="section-jornada-cliente--header--text generic-subtitle">
                 Sua marca precisa estar em todos os pontos de contato do cliente, impactando-o durante toda a jornada de compra. <br><br class="d-block d-md-none">
                 <strong>Por isso, a All iN oferece uma gama de soluções que te ajudam a automatizar</strong> campanhas inteligentes e direcionadas.
             </p>
-            <span class="section-jornada-cliente--recorte-inferior d-none d-xl-block mb-3"></span>
 
-            <div class="row mx-0 space-y">
+            <hr>
+
+            <div class="row mx-0 space-y pb-0">
                 <div class="col-12 col-xl-5">
                     <div class="row">
                         <div class="col-3 col-sm-12">
@@ -1052,21 +1128,21 @@
                     <h3 class="section-jornada-cliente--title mt-3">Workflow <strong>Transacional</strong></h3>
                     <div class="section-jornada-cliente--text">
                         <p>
-                            Perfeito para comunicações de boas-vindas para guiar o cliente até o momento da conversão.
-                            Você também pode usar nosso recurso para envios transacionais de compra, aproveitando
+                            Perfeito para comunicações <strong>de boas-vindas</strong> para guiar o cliente até o momento da conversão.
+                            Você também pode usar nosso recurso para <strong>envios transacionais de compra,</strong> aproveitando
                             a alta taxa de abertura desse tipo de e-mail para fazer cross-sell de produtos ou serviços.
                         </p>
-                        <p class="d-xl-block d-none">
-                            <a href="#" class="btn"> <i class="ico ico-go"></i>
-                                Saiba mais
-                            </a>
-                        </p>
+                        
+                            
+                                
+                            
+                        
                     </div>
                 </div>
-                <div class="col-xl-7 col-12 px-0 px-md-4 text-right justify-content-xl-start justify-content-center">
-                    <img src="/new_site/assets/images/compreenda/workflow-1a-site.gif" />
+                <div class="col-xl-7 col-12 px-0 px-md-4 text-right justify-content-xl-start px-5 justify-content-center">
+                    <img src="/new_site/assets/images/compreenda/workflow.gif" />
                 </div>
-                <div class="col-12 d-xl-none">
+                <div class="col-12 d-none">
                     <a href="#" class="btn"> <i class="ico ico-go"></i>
                         Saiba mais
                     </a>
@@ -1078,26 +1154,26 @@
                 <div class="row">
                     <div class="col-12 py-4 py-lg-0 offset-lg-1 col-lg-3 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="8">0</i>x mais</strong>
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="8">0</i>x mais</strong>
                             cliques
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4  justify-content-center text-center text-xl-left">
                         <div class=" pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="34">0</i>% de</strong>
-                            aumento&nbsp;em&nbsp;receita
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="34">0</i>% aumento de</strong>
+                            em&nbsp;receita
                         </div>
                     </div>
                     <div class="col-12 py-4 py-lg-0 col-lg-4 justify-content-center text-center text-xl-left">
                         <div class="pl-lg-4">
-                            <strong><span>+</span><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>%% mais</strong>
+                            <strong><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="45">0</i>% mais</strong>
                             abertura
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="section-remarketing space-y container-fluid">
+        <section class="section-remarketing container-fluid">
             <div class="row space-y">
                 <div class="col-md-12 col-3">
                     <img src="/new_site/assets/images/icons/ico-research.png" />
@@ -1106,55 +1182,57 @@
                     <h3 class="section-remarketing--title mt-3">Remar<strong>keting</strong></h3>
                     <div class="section-remarketing--text">
                         <p>
-                            Regras automáticas que são disparadas a partir do comportamento do seu cliente no seu
+                            <strong>Regras automáticas</strong> que são disparadas a partir do comportamento do seu cliente no seu
                             e-commerce, como:
                         </p>
                         <ul class="pl-5">
-                            <li>Abandono de Carrinho;</li>
-                            <li>Compra de Determinado Produto;</li>
-                            <li>Navegação em uma Categoria;</li>
-                            <li>Inclusão de produto na Wish List;</li>
-                            <li>Ticket médio, dentre outros;</li>
+                            <li>Abandono de Carrinho.</li>
+                            <li>Compra de determinado produto.</li>
+                            <li>Navegação em uma categoria.</li>
+                            <li>Inclusão de produto na Wish List.</li>
+                            <li>Ticket médio, dentre outros.</li>
                         </ul>
-                        <p class="pt-4">
-                            <a href="#" class="btn"> <i class="ico ico-go"></i>
-                                Saiba mais
-                            </a>
-                        </p>
+                        
+                            
+                                
+                            
+                        
                     </div>
                 </div>
                 <div class="col-12 col-xl-7 pt-4">
                     <div class="row">
+
                         <div class="offset-xl-1 col-xl-11 col-12 px-0 px-sm-5">
-                            <ul class="list-unstyled slider">
-
+                            <ul class="list-unstyled slider slider-gatilhos-comportamentais">
                                 <li class="slider--item">
                                     <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <p>Abandono de Carrinho</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="/new_site/assets/images/compreenda/carousel/abandono-de-navegacao.jpg" />
+                                    <p>Abandono de Navegação</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="/new_site/assets/images/compreenda/carousel/recomendacoes.jpg" />
+                                    <p>Recomendações</p>
                                 </li>
 
                                 <li class="slider--item">
-                                    <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                    <img src="/new_site/assets/images/compreenda/carousel/reconquista.jpg" />
+                                    <p>Reconquista</p>
                                 </li>
-                                <li>
-                                    <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" />
-                                    <p>Abandono de carrinho</p>
+                                <li class="slider--item">
+                                    <img src="/new_site/assets/images/compreenda/carousel/reducao-de-preco.jpg" />
+                                    <p>Redução de Preço</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+
+                <hr class="right">
             </div>
         </section>
         <section class="section-integrations container-fluid">
@@ -1233,15 +1311,15 @@
                                         </p>
                                         <ul class="px-5">
                                             <li class="">
-                                                Descubra quais regiões do seu e-mail são mais clicadas;
+                                                Descubra quais regiões do seu e-mail são mais clicadas.
                                             </li>
 
                                             <li>
-                                                Saiba os assuntos que geraram maior taxa de abertura;
+                                                Saiba os assuntos que geraram maior taxa de abertura.
                                             </li>
 
                                             <li>
-                                                Veja quais campanhas geraram maiores taxas de clique nos últimos meses;
+                                                Veja quais campanhas geraram maiores taxas de clique nos últimos meses.
                                             </li>
                                         </ul>
                                     </div>
@@ -1252,6 +1330,33 @@
                             <img src="/new_site/assets/images/compreenda/celulares.png" class="has-animation" />
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-banner article-simple py-5">
+            <div class="col-12 mb-3">
+                <img src="/new_site/assets/images/compreenda/logo-marisa.png" class="mt-4" />
+                <img src="/new_site/assets/images/compreenda/logo-case.png"  class="mx-4" />
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Marisa: Como a otimização de públicos rendeu
+                    <strong class="orange d-block">+38% de cliques</strong>
+                </h3>
+                <p>
+                    Com a ajuda dos especialistas da área de Estratégia e Operações, a Marisa, conseguiu <strong>aumento
+                    de 38% no volume de cliques,</strong> aumentando a participação do canal e-mail no e-commerce.
+                </p>
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="/news/veja-como-marisa-cresceu-38-no-volume-de-cliques/" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex">
                 </div>
             </div>
         </section>
@@ -1272,7 +1377,8 @@
                 </strong>
             </h4>
             <p class="section-contact--form--subtitle mb-4">
-                Venha conhecer mais do nosso Marketing Orange :)
+                Venha conhecer mais do nosso Orange Marketing 😊
+
             </p>
             <p class="section-contact--form--info has-animation" data-animation-init-time="600">
                 <i class="ico ico-letter"></i>
@@ -1287,10 +1393,10 @@
                 </strong>
             </p>
         </div>
-        <form id="form-contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
+        <form id="form-contato" action="/contato.php" onsubmit="ga('send', 'event', 'enviar_mensagem', document.getElementById('ddl-assunto').value, document.getElementById('txt-email'))" class="col-lg-6 has-animation" method="post">
             <div class="row">
                 <div class="form-group col-sm-6 col-12">
-                    <select id="ddl-assunto" class="form-control" title="Assunto" name="assunto" required>
+                    <select class="form-control" id="ddl-assunto" title="Assunto" name="assunto" required>
                         <option selected="">Qual o assunto?</option>
                         <option value="Financeiro">Financeiro</option>
                         <option value="Spam">Spam</option>
@@ -1303,18 +1409,18 @@
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="text" placeholder="NOME" title="Nome" name="nome" required>
+                    <input class="form-control" id="txt-nome" type="text" placeholder="NOME" title="Nome" name="nome" required>
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
+                    <input class="form-control" id="txt-email" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
                 </div>
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
+                    <input class="form-control" id="txt-tel" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
                 </div>
 
                 <div class="form-group col-12">
-                    <textarea class="form-control" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
+                    <textarea class="form-control" id="txa-mensagem" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
                 </div>
 
                 <div class="col-lg-12">
@@ -1328,7 +1434,7 @@
     <div class="row mx-0 px-3">
         <div class="col-md-3 col-12 text-md-left text-center">
             <div class="footer--logo mb-4">
-                <img src="/new_site/assets/images/logo-locaweb.png" />
+                <img src="/new_site/assets/images/logo-allin.png" />
             </div>
             <p class="footer--paragraph">
                 Plataforma brasileira líder em marketing
@@ -1375,7 +1481,7 @@
             <!--</div>-->
 
             <div class="row justify-content-md-end justify-content-center mx-0">
-                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#home">
+                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#body">
                     <span>Topo </span>
                     <i class="icone icone-topo"></i>
                 </a>
@@ -1404,7 +1510,12 @@
         </div>
     </div>
 </footer><section id="external-scripts">
-    <!-- v1.0.3 -->
+    <!-- v1.0.4 -->
+
+    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
+    <script src="/new_site/assets/build/js/main.js"></script>
+
+    
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
@@ -1418,28 +1529,9 @@
         </div>
     </noscript>
 
-    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
-    <script src="/new_site/assets/build/js/main.js"></script>
-    
-<!-- HUBSPOT LEGACY CODE -->
-    <script>
-        (function (d, w) {
-            w._hsq = w._hsq || [];
-            var match = d.cookie.match('(^|;) ?hubspotutk=([^;]*)(;|$)');
-            if (match && match[2] == "7583a6df01ba2497388c640348a21a70") {
-                w._hsq.push(["identify", {
-                    "email": "mayara.oliveira@allin.com.br",
-                    "name": "May",
-                    "id": "33be9d9190599c080befc313734c352c"
-                }]);
-            }
-            w._hsq.push(["setContentType", "standard-page"]);
-        })(document, window);
-    </script>
-    <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/4037989.js"></script>
-    <script src="//js.hs-analytics.net/analytics/1538822400000/4037989.js" type="text/javascript" id="hs-analytics"></script>
-    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-4037989" crossorigin="anonymous" data-leadin-portal-id="4037989" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4037989" data-hsjs-env="prod"></script>
-    <!-- [END HUBSPOT LEGACY CODE] -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4037989.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <script src="//i.btg360.com.br/wf.js" type="text/javascript"></script> <!-- Integração TAG envio de contato allin -->
     <script>

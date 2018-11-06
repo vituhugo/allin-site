@@ -3899,7 +3899,7 @@ body, html {
 
 @media (max-width: 1400px) {
   body, html {
-    font-size: 11px;
+    font-size: 10px;
   }
 }
 
@@ -4019,6 +4019,11 @@ a:hover {
   border-style: solid;
 }
 
+.ico-orange {
+  -webkit-filter: invert(50%) sepia(100%) brightness(50%) saturate(100) hue-rotate(43deg) brightness(166%) grayscale(4%);
+          filter: invert(50%) sepia(100%) brightness(50%) saturate(100) hue-rotate(43deg) brightness(166%) grayscale(4%);
+}
+
 main ul:not(.list-unstyled) {
   list-style: none;
 }
@@ -4070,7 +4075,18 @@ main ul:not(.list-unstyled).white-icon li:before {
   right: -4rem;
 }
 
-.ignore-container {
+@media (min-width: 1200px) {
+  .xl-pull-container {
+    position: relative;
+    left: -4rem;
+  }
+  .xl-push-container {
+    position: relative;
+    right: -4rem;
+  }
+}
+
+.ignore-container, hr {
   width: calc(100% + 8rem);
   margin-left: -4rem;
   margin-right: -4rem;
@@ -4086,6 +4102,18 @@ main ul:not(.list-unstyled).white-icon li:before {
 
 .text-left {
   text-align: left;
+}
+
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left;
+  }
+  .text-md-center {
+    text-align: center;
+  }
+  .text-md-right {
+    text-align: right;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -4135,6 +4163,7 @@ main ul:not(.list-unstyled).white-icon li:before {
 
 /* INTERNAL PAGES */
 .banner-internal {
+  font-size: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4161,10 +4190,23 @@ main ul:not(.list-unstyled).white-icon li:before {
 
 @media (min-width: 768px) {
   .banner-internal {
-    min-height: 600px;
-    padding-top: 100px;
-    background-size: auto 100%;
+    min-height: 33rem;
+    padding-top: 5.8rem;
     background-position: right;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner-internal:before {
+    content: '';
+    background-image: url(../../../assets/images/compreenda/grafismo-banner.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 15rem;
+    z-index: 99;
   }
 }
 
@@ -4183,6 +4225,10 @@ main ul:not(.list-unstyled).white-icon li:before {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 6em 0;
+}
+
+.banner-internal .banner-internal--main img {
+  max-height: 7rem;
 }
 
 .banner-internal .banner-internal--main .banner-internal--main--title {
@@ -4213,7 +4259,7 @@ main ul:not(.list-unstyled).white-icon li:before {
 }
 
 .banner-internal .banner-internal--main .banner-internal--main--breadcrumb {
-  font-size: 1.52em;
+  font-size: 1.32em;
   font-weight: bold;
   color: #fa4616;
 }
@@ -4252,9 +4298,38 @@ main ul:not(.list-unstyled).white-icon li:before {
   }
 }
 
+.footer-banner {
+  background-position: left;
+  background-size: cover;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .footer-banner {
+    position: relative;
+    background-position-x: right;
+  }
+  .footer-banner:before {
+    content: '';
+    background-image: url(../../../assets/images/compreenda/grafismo-footer.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    height: calc(100% + 4rem);
+    width: 13rem;
+    top: 0;
+    z-index: 99;
+  }
+}
+
 .article-simple {
   font-size: 1.8rem;
   line-height: 1.3;
+}
+
+.article-simple strong.orange, .article-simple strong.article-center {
+  color: #fa4616;
 }
 
 .article-simple .article-simple--title {
@@ -4327,6 +4402,47 @@ main ul:not(.list-unstyled).white-icon li:before {
   font-weight: bold;
 }
 
+.slick-prev,
+.slick-next {
+  background: url("../../../assets/images/seta-direita.png") no-repeat;
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  z-index: 99;
+}
+
+.slick-prev:hover, .slick-prev:visited, .slick-prev:active, .slick-prev:focus, .slick-next:hover, .slick-next:visited, .slick-next:active, .slick-next:focus {
+  background: url("../../../assets/images/seta-direita.png") no-repeat;
+  background-size: contain;
+}
+
+.slick-prev:before, .slick-prev:after, .slick-next:before, .slick-next:after {
+  content: none;
+}
+
+.bg-grafismo-laranja {
+  background-position-x: right;
+}
+
+@media (min-width: 1200px) {
+  .bg-grafismo-laranja {
+    background: url(/assets/images/comum/grafismo-laranja-2.png) no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+}
+
+.bg-grafismo-laranja.bg-esquerda {
+  background-position-x: left;
+}
+
+.slick-prev {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 .slick-slide {
   height: auto;
   padding-bottom: 4rem;
@@ -4386,11 +4502,6 @@ main ul:not(.list-unstyled).white-icon li:before {
   text-align: center;
   border-radius: 5px;
   font-size: 1.4em;
-}
-
-.slick-slide img {
-  -webkit-box-shadow: 0px 30px 50px #000000;
-          box-shadow: 0px 30px 50px #000000;
 }
 
 .slick-dots {
@@ -4459,10 +4570,93 @@ main ul:not(.list-unstyled).white-icon li:before {
 
 .statistics-list-inline strong:before {
   content: '+';
-  position: absolute;
-  left: -.6em;
   font-size: 2em;
   line-height: .45;
+  position: relative;
+  top: .15em;
+}
+
+@media (min-width: 768px) {
+  .statistics-list-inline strong:before {
+    position: absolute;
+    left: -.6em;
+    top: auto;
+  }
+}
+
+.screen-block {
+  display: none !important;
+}
+
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  border: none;
+  position: relative;
+}
+
+hr:after {
+  content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABDCAYAAACRHFUFAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4goZFDslnGAgTgAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAMjSURBVFjDjZg9a1VBEIafWQ6xCSksbPIPbIyCEP+AEQtryQ/QytRiJYpYiQSRYK2QXhRS24Q0guIHlrZBCLlX82kci5zcc3Z3Zs5duNxzzt0zs/vOzDvvXtm9jgIggALCDsp5hG5o+3sx5jZ0cp0KI6DMTu7JnuejuE8TT933nvnSmTEt5k8MaeGd3sQzA31n1uqApPXWqPAprw1jjYgDpodJuLXcw0G1pf69RGDnxg4zYJ0Xy9EMLdnFpdoaRVSsyWI4UsuQ93LpWfwsbwwvf6oVqGM4M1Qv+28FsgQYZuEvgFUrEQei11hZLBYuFl4VRupktDh1aG6tjtauW7T4oNcl4n0TFLOVR0pBGYD2jbpFW3CNGIQmhvGKRoxaO8k8D2yprrXO028vxFGGpyoiRZRUjVWItyItgOx5logdzPDLQMUTG0tGzhyapFaG36SRHNADM9QykJDqcY6FW1T9whTtWYYxaqrJald+xrDi1Vq+7z2Lt4WhdlRTw3HIPzItsQW8bDRTh9gkx0QtlpQhhiyyt0wblynNTnvqcRR2WpezpSJ/tVapxImZBkFuwRKJA5JckSU9sKcYqSoN4Z/pdEAvJUO5jk16lSHOFr8dt+/MoKygbAJjhHF7vTK6ITN+g5TM3jzCFrAKLAKz7WcRYRXYGi3JvC20uusZhHfAQiC0FoD3oyU5l4ysPWqN3UVZCLXS6f0lhDuNAeJ++2zZJDQ1c225MSv/9NmVaaUxwuWm2rcG3dXvtsepSrhufHQlT11zX2qdLROM1nHqS+vOst4YtXbUvvTN00KSP/sMvErBiehRpPTbZ59Qbs5t6GHjUMcthGuFA0XZb+++A28Q1uY29CgXWl2eJOCpUcwvEe71V1cfjvOwXgUuFgCPgcdRPlmcfdtgyOcI2xGHp0pPKxeKEP0Cng1luE0jeSY/QRi5ZxOT/OtU+AmshQzgtqN8Cw+R3hk3yKkUSLuvCK9DzV1ipDaID1BO3H8gLIykLsxN4K3ZPTQ691eKgfvRIUbDc383+UP7cY/nMqRGWqxeeAFQ4vPazpm2bhXuD0/eSaAD/gNT4lE3vCorNgAAAABJRU5ErkJggg==");
+  position: absolute;
+  top: 0;
+  left: calc(100% - 2.5rem);
+}
+
+@media (min-width: 1200px) {
+  hr:after {
+    left: calc(100% - 4rem);
+  }
+}
+
+hr:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2.5rem);
+  border-bottom: 5px solid #fa4616;
+}
+
+@media (min-width: 1200px) {
+  hr:before {
+    width: calc(100% - 4rem);
+  }
+}
+
+hr.bottom:after {
+  top: auto;
+  bottom: 0;
+  -webkit-transform: scaleY(-1);
+          transform: scaleY(-1);
+}
+
+hr.bottom:before {
+  bottom: 0;
+  top: auto;
+}
+
+hr.right:after {
+  right: calc(100% - 2.5rem);
+  left: auto;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+@media (min-width: 1200px) {
+  hr.right:after {
+    right: calc(100% - 4rem);
+  }
+}
+
+hr.right:before {
+  right: 0;
+  left: auto;
+}
+
+hr.bottom.right:after {
+  -webkit-transform: scaleY(-1) scaleX(-1);
+          transform: scaleY(-1) scaleX(-1);
 }
 
 /* [END] INTERNAL PAGES */
@@ -4766,6 +4960,10 @@ a:hover .ico, a.ico:hover {
 }
 
 /* [SECTION] MAIN */
+#home .section-recomende--subtitle {
+  max-width: 70%;
+}
+
 #home .section-main {
   height: 100vh;
   min-height: 55em;
@@ -4872,6 +5070,7 @@ a:hover .ico, a.ico:hover {
 }
 
 .section-compreenda--title {
+  margin-top: 1em;
   position: relative;
   padding-left: 3rem;
   margin-bottom: -.7rem;
@@ -4886,7 +5085,7 @@ a:hover .ico, a.ico:hover {
   display: block;
   height: 3rem;
   left: 1.5rem;
-  top: 1rem;
+  top: .75rem;
   border-left: .4rem solid #fa4616;
 }
 
@@ -5056,7 +5255,6 @@ a:hover .ico, a.ico:hover {
   font-size: 1.6rem;
   text-align: center;
   margin: 0 auto 4rem;
-  max-width: 70%;
 }
 
 .section-recomende--list {
@@ -5663,6 +5861,24 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
+@media (min-width: 1200px) {
+  #compreenda .section-optimizacao-publico {
+    position: relative;
+  }
+  #compreenda .section-optimizacao-publico:before {
+    content: '';
+    background-image: url(../../../assets/images/compreenda/grafismo-escuro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 19rem;
+    z-index: 99;
+    top: -10em;
+  }
+}
+
 #compreenda .section-optimizacao-publico--title {
   color: white;
 }
@@ -5684,10 +5900,14 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 #compreenda .section-optimizacao-publico--recorte-superior:after, #compreenda .section-integrations--recorte-superior:after {
+  content: "";
   position: absolute;
-  content: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
-  left: -.5em;
-  bottom: -2.30em;
+  background-image: url(../../../assets/images/compreenda/optimize-recorte-superior-direito.png);
+  background-size: cover;
+  width: 15px;
+  height: 47px;
+  left: -13px;
+  bottom: -43px;
 }
 
 #compreenda .section-jornada-cliente {
@@ -5754,11 +5974,11 @@ select.form-control:not([size]):not([multiple]) {
 
 #compreenda .section-remarketing {
   background-color: white;
-  background-image: url("../../../assets/images/compreenda/bg-remarketing.png");
+  background-image: url(../../../assets/images/compreenda/bg-remarketing.png);
   background-repeat: no-repeat;
-  background-position-x: 2rem;
-  background-position-y: 60px;
-  background-size: calc(100% - 4rem);
+  background-position-x: right;
+  background-position-y: 20px;
+  background-size: calc(54%);
 }
 
 @media (max-width: 1199px) {
@@ -5834,8 +6054,10 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 #compreenda .section-integrations--recorte-superior:after {
-  left: -14px;
-  bottom: -63px;
+  width: 16px;
+  height: 51px;
+  left: -11px;
+  bottom: -51px;
 }
 
 #compreenda .section-data-analytics {
@@ -5851,9 +6073,14 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 
+#compreenda .footer-banner {
+  background-image: url("../../../assets/images/compreenda/banner-footer.jpg");
+}
+
 #engaje .slider-gatilhos-comportamentais {
-  margin-bottom: -19rem;
-  padding-top: 5rem;
+  font-size: 1rem;
+  margin-bottom: -15rem;
+  padding-top: 8rem;
   background: url(../../../assets/images/comum/grafismo-laranja.png);
   background-repeat: no-repeat;
   background-position: 4rem 0px;
@@ -5862,18 +6089,11 @@ select.form-control:not([size]):not([multiple]) {
 
 #engaje .section-workflow-transacional {
   padding-top: 12rem;
-  background: url("../../../assets/images/engaje/bg-grafismos.jpg") center center repeat-y;
-  background-size: contain;
 }
 
-#engaje .article-workflow-transacional {
-  background: url("../../../assets/images/engaje/bg-superior-direito.png") top right no-repeat;
-  background-position-x: 2rem;
-}
-
-#engaje .article-web {
-  background: url("../../../assets/images/engaje/bg-inferior-esquerdo.png") top left no-repeat;
-  background-position-x: calc(100vw - 1920px);
+#engaje .statistics-list-inline {
+  font-size: 2.55rem;
+  line-height: 1;
 }
 
 .personalize-responsive-image {

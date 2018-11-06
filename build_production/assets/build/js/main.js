@@ -13576,9 +13576,7 @@ window.lib_animation = {
     }
 };
 
-window.addEventListener('load', function () {
-    return lib_animation.init();
-});
+lib_animation.init();
 /* HEADER FUNCTIONS */
 
 /***** LEGACY *****/
@@ -13601,25 +13599,23 @@ window.toggleMenu = function toggleMenu() {
     header.classList.toggle('show');
 };
 
-window.addEventListener('load', function () {
-    document.querySelectorAll('.section-recomende--list--item, .section-recomende--anchor').forEach(function (el) {
+document.querySelectorAll('.section-recomende--list--item, .section-recomende--anchor').forEach(function (el) {
 
-        el.addEventListener('click', function (event) {
-            document.querySelectorAll('.section-recomende--list--item, .section-recomende--anchor').forEach(function (el) {
-                el.classList.remove('current');
-            });
-
-            this.classList.add('current');
-
-            var content_id = this.getAttribute('data-for');
-            var content = document.getElementById(content_id);
-
-            document.querySelectorAll('.section-recomende--container--content').forEach(function (el) {
-                el.classList.add('hide');
-            });
-
-            content.classList.remove('hide');
+    el.addEventListener('click', function (event) {
+        document.querySelectorAll('.section-recomende--list--item, .section-recomende--anchor').forEach(function (el) {
+            el.classList.remove('current');
         });
+
+        this.classList.add('current');
+
+        var content_id = this.getAttribute('data-for');
+        var content = document.getElementById(content_id);
+
+        document.querySelectorAll('.section-recomende--container--content').forEach(function (el) {
+            el.classList.add('hide');
+        });
+
+        content.classList.remove('hide');
     });
 });
 

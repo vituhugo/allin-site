@@ -33,9 +33,6 @@
 <link rel="alternate" type="application/json+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F"/>
 <link rel="alternate" type="text/xml+oembed" href="https://allin.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fallin.com.br%2F&#038;format=xml"/>
 
-<script src="https://www.google.com/recaptcha/api.js?hl=pt_BR" async defer></script>
-<meta name="google-site-verification" content="hPGIpOmsAQ7uTIhmWOd85AkFy2znJaCiJD3mcox_0FE"/>
-
 <script type="text/javascript">window.smartlook || (function (d) {
         var o = smartlook = function () {
             o.api.push(arguments)
@@ -101,13 +98,23 @@
     fbq('init', '974850635903136'); // Insert your pixel ID here. fbq('track', 'PageView');</script>
 <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=974850635903136&ev=PageView&noscript=1"/></noscript>    <title>All iN Marketing Cloud | E-mail Marketing e Remarketing</title>
 </head>
-<body>
+<body id="body">
 
 <style>
+    .screen-block {
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: white;
+    }
     .fade {
         opacity: 0;
     }
 </style>
+<div class="screen-block"></div>
 <section class="old">
     <header id="masthead" class="site-header" role="banner">
         <div class="container">
@@ -137,10 +144,16 @@
                         <div class="menu-menu-principal-container">
                             <ul id="menu-menu-principal" class="nav navbar-nav">
 
-                                <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page has-submenu">
                                     <a href="/#plataforma">
                                         Plataforma
                                     </a>
+
+                                    <ul style="position: absolute;">
+                                        <li><a href="/compreenda">Compreenda</a></li>
+                                        <li><a href="/personalize">Personalize</a></li>
+                                        <li><a href="/engaje">Engaje</a></li>
+                                    </ul>
                                 </li>
                                 <li class="menu-item menu-item-type-post_type menu-item-object-page">
                                     <a href="https://allin.com.br/solucoes/">
@@ -201,14 +214,14 @@
                 <ul class="sub-header--container container list-unstyled d-flex justify-content-center">
                                             <li class=" px-3 px-md-0 d-flex flex-column justify-content-center">
                             <a href="/compreenda" class="d-block">
-                                <img src="/new_site/assets/images/icons/ico-compreenda.png">                                <span class="d-md-inline d-none">
+                                <img src="/new_site/assets/images/icons/ico-brain-black.png">                                <span class="d-md-inline d-none">
                                 Compreenda
                                 </span>
                             </a>
                         </li>
                                             <li class="is-active px-3 px-md-0 d-flex flex-column justify-content-center">
                             <a href="/personalize" class="d-block">
-                                <img src="/new_site/assets/images/icons/ico-personalize.png">                                <span class="d-md-inline d-none">
+                                <img src="/new_site/assets/images/icons/ico-compreenda.png">                                <span class="d-md-inline d-none">
                                 Personalize
                                 </span>
                             </a>
@@ -273,6 +286,42 @@
             padding: 14px 0;
             font-weight: 400;
             font-size: 14px;
+        }
+
+        .old .menu-item.has-submenu:before {
+            content: "";
+            height: .8em;
+            width: .8em;
+            border-left: 2px solid #fa4616;
+            border-bottom: 2px solid #fa4616;
+            display: inline-block;
+            transform: rotate(-45deg);
+            position: relative;
+            left: -0.5em;
+            top: -.2em;
+            background: black;
+        }
+
+        .old .menu-item.has-submenu > ul {
+            position: absolute;
+            left: -.8rem;
+            top: 30%;
+            padding: 1.55em 1em 0;
+            text-align: left;
+            background: black;
+            font-size: 1.6em;
+            font-weight: normal;
+            display: none;
+            z-index: -1;
+            border-left: #fa4616 1.4rem solid;
+        }
+
+        .old .menu-item.has-submenu > ul li a {
+            color: white;
+        }
+
+        .old .menu-item.has-submenu:hover > ul {
+            display: block !important;
         }
 
         .old #cabecalho_extra .icone-teste {
@@ -913,6 +962,32 @@
                 display: none;
             }
         }
+
+        .old .menu-item>ul>li {
+            padding: .5em 2rem;
+            margin-left: -2rem;
+            margin-right: -2rem;
+        }
+
+        .old .menu-item>ul>li:hover {
+            background-color: #fa4616;
+        }
+
+        .old .menu-item>ul {
+            list-style: none;
+        }
+
+        @media(max-width: 1200px) {
+
+            .old .menu-item.has-submenu > ul {
+                position: static !important;
+                padding-top: 0;
+                margin-top: 1em;
+                text-align: center;
+                background: #fa4616;
+                overflow: hidden;
+            }
+        }
     </style>
 </section>
 
@@ -976,7 +1051,7 @@
         </section>
         <section class="article-simple bg-grafismos">
             <div class="row no-gutters">
-                <div class="col-5">
+                <div class="col-xl-5 col-12">
                     <div class="col-12">
                         <img src="/new_site/assets/images/icons/ico-cart.png" class="has-animation" />
                     </div>
@@ -990,15 +1065,15 @@
                     </p>
                     <p>
                         Essa inteligência está disponível nos módulos de <strong> <nobr>E&#45;mail</nobr> Remarketing e Vitrine Web</strong>
-                        , o que permite que sua recomendação aconteça via E-mail marketing ou em real time no seu
+                        , o que permite que sua recomendação aconteça via <nobr>e-mail</nobr> marketing ou em real time no seu
                         e-commerce em formato de vitrines em carrossel.
                     </p>
-                    <p>
-                        <a class="btn"><i class="ico ico-go"></i>Saiba Mais</a>
-                    </p>
+                    
+                        
+                    
                 </div>
-                <div class="col-7">
-                    <img src="/new_site/assets/images/personalize/recomendacao-produtos.png" class="ml-xl-5" />
+                <div class="col-xl-7 col-12">
+                    <img src="/new_site/assets/images/personalize/recomendacao-produtos.gif" class="ml-xl-5" />
                 </div>
             </div>
         </section>
@@ -1008,270 +1083,45 @@
                 Gatilhos <strong>Comportamentais</strong>
             </h3>
             <h4 class="section-recomende--subtitle">
-                Para garantir a personalização da mensagem para cada ação realizada no seu site, oferecemos mais de 20
-                regras de comportamento para impactar seu cliente em diversos momentos da jornada de compra. Confira
-                algumas delas:
-
+                Impacte quem <strong>abandonou o carrinho, fechou a navegação</strong> de uma página, <strong>não compra há determinado período</strong>
+                ou está em <strong>dúvida em um produto</strong> através de <strong>100 combinações</strong> do nosso exclusivo algoritmo de recomendação.
+                São mais de 20 regras possíveis com 5 módulos de recomendação feitos para o seu negócio.
             </h4>
-            <div class="row no-gutters justify-content-center pb-5">
-                <ul class="section-recomende--list col-12 col-lg-3 d-none d-lg-block list-unstyled">
-            <li class="section-recomende--list--item  current " data-for="abandono-de-carinho">
-            <i class="ico ico-cart-2"></i>
-            Abandono de carinho
-        </li>
-            <li class="section-recomende--list--item " data-for="abandono-de-navegacao">
-            <i class="ico ico-click"></i>
-            Abandono de Navegação
-        </li>
-            <li class="section-recomende--list--item " data-for="reducao-de-precos">
-            <i class="ico ico-baixo-custo"></i>
-            Redução de preços
-        </li>
-            <li class="section-recomende--list--item " data-for="reconquista">
-            <i class="ico ico-baixo-custo"></i>
-            Reconquista
-        </li>
-            <li class="section-recomende--list--item " data-for="indecisos">
-            <i class="ico ico-baixo-custo"></i>
-            Indecisos
-        </li>
-            <li class="section-recomende--list--item-white-space">
-        <a href="/e-mail-remarketing/" class="btn large"><i class="ico ico-go"></i>Saiba mais</a>
-    </li>
-    </ul>
-<ul class="section-recomende--container col-12 col-lg-8 list-unstyled">
-    
-        <li class="row mx-0 section-recomende--anchor d-block d-lg-none  current " data-for="abandono-de-carinho">
-            <i class="ico ico-cart-2"></i>
-            Abandono de carinho
-        </li>
-        <li id="abandono-de-carinho" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0 ">
-            <div class="section-recomende--container--img col-md-6 col-12">
-                <img src="/new_site/assets/images/home/abando-de-carrinho-site.png" alt="1" title="1" class="ml-md-3" />
-            </div>
-            <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
-                <i class="ico ico-cart-2"></i>
-                <h4 class="section-recomende--container--title my-3">
-                    Conheça mais sobre o <strong>abandono de carrinho</strong>
-                </h4>
-                <p>Envie comunicações para os clientes que abandonaram os produtos do seu
-                                          e-commerce no carrinho.</p><p>Além do produto abandonado, você pode enviar
-                                          sugestões de similares, cross sell, quem viu, viu também e mais.</p>
-                                <ul class="section-recomende--container--text--list list-unstyled d-flex mt-4">
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> 1,5 MM</strong>
-                                envios mensais
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 25%</strong>
-                                de cliques
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 45%</strong>
-                                de conversão
-                            </li>
-                                            </ul>
-                            </div>
-        </li>
-    
-        <li class="row mx-0 section-recomende--anchor d-block d-lg-none " data-for="abandono-de-navegacao">
-            <i class="ico ico-click"></i>
-            Abandono de Navegação
-        </li>
-        <li id="abandono-de-navegacao" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0  hide ">
-            <div class="section-recomende--container--img col-md-6 col-12">
-                <img src="/new_site/assets/images/home/abandono-de-navegacao-site.png" alt="1" title="1" class="ml-md-3" />
-            </div>
-            <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
-                <i class="ico ico-click"></i>
-                <h4 class="section-recomende--container--title my-3">
-                    Conheça mais sobre o <strong>Abandono de navegação</strong>
-                </h4>
-                <p> O cliente navegou em uma categoria ou em páginas de produtos do seu site e abandonou
-                                         a navegação? Com esse recurso, você pode enviar os itens vistos em um e-mail
-                                         personalizado e tentar a conversão através dos módulos de similares, quem viu,
-                                         comprou e mais!</p>
-                                <ul class="section-recomende--container--text--list list-unstyled d-flex mt-4">
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> 8,5 MM</strong>
-                                envios mensais
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 20%</strong>
-                                de cliques
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 18%</strong>
-                                de conversão
-                            </li>
-                                            </ul>
-                            </div>
-        </li>
-    
-        <li class="row mx-0 section-recomende--anchor d-block d-lg-none " data-for="reducao-de-precos">
-            <i class="ico ico-baixo-custo"></i>
-            Redução de preços
-        </li>
-        <li id="reducao-de-precos" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0  hide ">
-            <div class="section-recomende--container--img col-md-6 col-12">
-                <img src="/new_site/assets/images/home/reduziu-preco-site.png" alt="" title="" class="ml-md-3" />
-            </div>
-            <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
-                <i class="ico ico-baixo-custo"></i>
-                <h4 class="section-recomende--container--title my-3">
-                    Conheça mais sobre o <strong>Redução de preços</strong>
-                </h4>
-                <p> Com esse recurso, você pode avisar seu cliente quando o produto
-                                         navegado ou item similar sofrer alguma alteração de preço. Quem sabe assim,
-                                         ele não desiste de pesquisar na concorrência e fecha a compra com sua
-                                         loja? </p>
-                                <ul class="section-recomende--container--text--list list-unstyled d-flex mt-4">
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> 9,6 MM</strong>
-                                envios mensais
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 20%</strong>
-                                de abertura
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 27%</strong>
-                                de conversão
-                            </li>
-                                            </ul>
-                            </div>
-        </li>
-    
-        <li class="row mx-0 section-recomende--anchor d-block d-lg-none " data-for="reconquista">
-            <i class="ico ico-baixo-custo"></i>
-            Reconquista
-        </li>
-        <li id="reconquista" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0  hide ">
-            <div class="section-recomende--container--img col-md-6 col-12">
-                <img src="/new_site/assets/images/home/reconquista-site.png" alt="" title="" class="ml-md-3" />
-            </div>
-            <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
-                <i class="ico ico-baixo-custo"></i>
-                <h4 class="section-recomende--container--title my-3">
-                    Conheça mais sobre a <strong>Reconquista</strong>
-                </h4>
-                <p>Reengajar clientes da base na maioria das vezes é bem mais vantajoso
-                                          financeiramente que trazer novos usuários. Com a régua de Reconquista,
-                                          você pode enviar comunicações automáticas para o cliente que não compra
-                                          a algum tempo na sua loja, incluindo uma mensagem personalizada para que
-                                          ele volte a comprar novamente. </p>
-                                <ul class="section-recomende--container--text--list list-unstyled d-flex mt-4">
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> 2,1 MM</strong>
-                                envios mensais
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 12%</strong>
-                                de abertura
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 21%</strong>
-                                de conversão
-                            </li>
-                                            </ul>
-                            </div>
-        </li>
-    
-        <li class="row mx-0 section-recomende--anchor d-block d-lg-none " data-for="indecisos">
-            <i class="ico ico-baixo-custo"></i>
-            Indecisos
-        </li>
-        <li id="indecisos" class="section-recomende--container--content row mx-0 p-sm-5 p-3 p-lg-0  hide ">
-            <div class="section-recomende--container--img col-md-6 col-12">
-                <img src="/new_site/assets/images/home/indecisos-site.png" alt="" title="" class="ml-md-3" />
-            </div>
-            <div class="section-recomende--container--text col-md-6 col-12 pl-md-5 mt-4 mt-md-0">
-                <i class="ico ico-baixo-custo"></i>
-                <h4 class="section-recomende--container--title my-3">
-                    Conheça mais sobre o <strong>Indecisos</strong>
-                </h4>
-                <p> Seu cliente está indeciso em qual marca escolher na hora da compra? Nossa
-                                          regra identifica a indecisão e envia uma comunicação com os dois itens mais
-                                          comprados nos últimos 30 dias por outros clientes, ajudando-o a decidir a
-                                          compra.</p>
-                                <ul class="section-recomende--container--text--list list-unstyled d-flex mt-4">
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> 4 MM</strong>
-                                envios mensais
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 28%</strong>
-                                de abertura
-                            </li>
-                                                    <li class="section-recomende--container--text--list--item text-center col-4">
-                                <i class="ico ico-letter"></i>
-                                <strong class="d-block"> + 34%</strong>
-                                de conversão
-                            </li>
-                                            </ul>
-                            </div>
-        </li>
-                <li class="row mx-0 section-recomende--anchor current d-block d-lg-none" data-for="indecisos">
-            <i class="ico ico-baixo-custo"></i>
-            Indecisos
-        </li>
-    </ul>            </div>
-            <div class="statistics-list-inline ignore-container mt-5">
-                <div class="container-fluid py-4">
-                    <div class="row justify-content-center">
-                        <div class="col-2 pl-5">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="800">0</i>x mais</strong>
-                            envolvimento com
-                            conteúdo preditivo e
-                            engajado
-                        </div>
-                        <div class="col-2">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="1100">0</i>x mais</strong>
-                            receitas geradas por<br>
-                            personalização de<br>
-                            mensagem
-                        </div>
-                        <div class="col-2">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="2" data-animation-init-time="1400">0</i>x mais</strong>
-                            conversão via<br>
-                            segmentação e<br>
-                            mensagens relevantes
-                        </div>
-                        <div class="col-2">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="3" data-animation-init-time="1700">0</i>x mais</strong>
-                            envolvimento com<br>
-                            conteúdo preditivo e<br>
-                            engajado
-                        </div>
-                        <div class="col-2">
-                            <strong class="d-block"><i class="number-shake has-animation" data-animation-style="counter" data-animation-number="6" data-animation-init-time="2000">0</i>x mais</strong>
-                            receitas geradas por<br>
-                            personalização de<br>
-                            mensagem
-                        </div>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-12 pr-5">
+                    <ul class="list-unstyled slider slider-gatilhos-comportamentais">
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/geladeira-vazia.jpg" width="375" />
+                            <p>Abandono de Carrinho</p>
+                        </li>
+
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/abandono-de-navegacao.jpg" width="375" />
+                            <p>Abandono de Navegação</p>
+                        </li>
+
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/recomendacoes.jpg" width="375" />
+                            <p>Recomendações</p>
+                        </li>
+
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/reconquista.jpg" width="375" />
+                            <p>Reconquista</p>
+                        </li>
+                        <li class="slider--item">
+                            <img src="/new_site/assets/images/compreenda/carousel/reducao-de-preco.jpg" width="375" />
+                            <p>Redução de Preço</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
         <section class="article-simple bg-grafismos">
-            <article class="article-workflow-transacional-personalize">
+            <article class="article-workflow-transacional-personalize space-y pb-0">
                 <div class="row no-gutters pb-5">
-                    <div class="col-5">
+                    <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="/new_site/assets/images/icons/ico-tasks.png" />
                         </div>
@@ -1279,9 +1129,9 @@
                             Workflow <strong>Transacional</strong>
                         </h3>
                         <p>
-                            Envie comunicações transacionais com nosso worfklow por múltiplos canais como e-mail, sms,
+                            Envie comunicações transacionais com nosso worfklow por múltiplos canais como <nobr></nobr>e-mail, sms,
                             push e social. Crie fluxos personalizados seja por perfil de usuário (gênero, idade, região)
-                            ou por comportamento no e-mail (banner clicado). Com esse recurso você pode:
+                            ou por comportamento no <nobr>e-mail</nobr> (banner clicado). Com esse recurso você pode:
                         </p>
                         <ul>
                             <li>Enviar comunicações de boas-vindas.</li>
@@ -1289,16 +1139,17 @@
                             <li>Enviar mensagens transacionais como troca de senha.</li>
                             <li>Pagamento aprovado e pedido enviado;</li>
                         </ul>
-                        <p>
-                            <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
-                        </p>
+                        
+                            
+                        
                     </div>
-                    <div class="col-7">
-                        <img src="/new_site/assets/images/compreenda/workflow-1a-site.gif" />
+                    <div class="col-xl-7 col-12 px-5 bg-grafismo-laranja">
+                        <img src="/new_site/assets/images/personalize/workflow-transacional.gif" class="mt-xl-5" />
                     </div>
+                    <hr class="right">
                 </div>
-                <div class="row no-gutters pt-5 mt-5">
-                    <div class="col-5">
+                <div class="row no-gutters">
+                    <div class="col-xl-5 col-12">
                         <div class="col-12">
                             <img src="/new_site/assets/images/icons/ico-tasks.png" />
                         </div>
@@ -1308,16 +1159,16 @@
                         <p>
                             Nossa palavra de lei é <strong>personalização</strong> e por isso, temos diversas features
                             para te ajudar a <strong>automatizar suas campanhas</strong> e se preocupar com o que
-                            realmente importa: a estratégia do seu negócio. Com a All iN você pode automatizar desde o
-                            upload de bases, mensagens de aniversário, fluxos de boas-vindas até e-mails para quem
+                            realmente importa: a <strong>estratégia do seu negócio</strong>. Com a All iN você pode automatizar desde o
+                            upload de bases, mensagens de aniversário, fluxos de boas-vindas até <nobr>e-mails</nobr> para quem
                             navegar em determinada sessão no seu e-commerce.
                         </p>
-                        <p>
-                            <a href="#" class="btn"><i class="ico ico-go"></i>Saiba mais</a>
-                        </p>
+                        
+                            
+                        
                     </div>
-                    <div class="col-7">
-                        <img src="/new_site/assets/images/compreenda/workflow-1a-site.gif" />
+                    <div class="col-xl-7 col-12 px-5 bg-grafismo-laranja">
+                        <img src="/new_site/assets/images/personalize/automacao-marketing.gif" />
                     </div>
                 </div>
             </article>
@@ -1331,32 +1182,32 @@
                     Com nosso editor de templates, conhecido como <strong>Templatize</strong> é possível de forma simples, criar
                     rapidamente layouts de qualidade para entregar o melhor HTML e conteúdo aos seus clientes. São mais
                     de 100 diferentes layouts divididos em diversas categorias de negócio que vão facilitar a
-                    programação e criação dos seus e-mails.
+                    programação e criação dos seus <nobr>e-mails</nobr>.
                 </h4>
                 <div class="col-12">
                     <ul class="list-unstyled row text-center my-5 article-center--highglights">
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="/new_site/assets/images/icons/ico-praticidade.png" />
                             </div>
                             <h5 class="article-center--highglights--title">Praticidade</h5>
                             <p>
-                                Os modelos de e-mail são fundamentais para quem deseja aumentar a produtividade. Afinal,
+                                Os modelos de <nobr>e-mail</nobr> são fundamentais para quem deseja aumentar a produtividade. Afinal,
                                 você não precisa programar nada e ainda pode fazer o download do código para usar em outras
                                 comunicações.
                             </p>
                         </li>
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="/new_site/assets/images/icons/ico-maior-taxa.png" />
                             </div>
                             <h5 class="article-center--highglights--title">Maior taxa de Abertura</h5>
                             <p>
                                 Com o template clean e responsivo, suas taxas de engajamento podem aumentar consideravelmente.
-                                Afinal, estima-se que mais de 71% dos usuários apaguem e-mails desconfigurados.
+                                Afinal, estima-se que mais de 71% dos usuários apaguem <nobr>e-mails</nobr> desconfigurados.
                             </p>
                         </li>
-                        <li class="col-4 d-flex flex-column">
+                        <li class="col-lg-4 col-12 d-flex flex-column">
                             <div class="text-center">
                                 <img src="/new_site/assets/images/icons/ico-personalização.png" />
                             </div>
@@ -1375,11 +1226,11 @@
             </div>
         </section>
         <section class="article-simple bg-grafismos">
-            <div class="row mt-5">
-                <div class="col-6 pr-5">
+            <div class="row flex-xl-row flex-column-reverse mt-5">
+                <div class="col-xl-6 col-auto pr-5 bg-grafismo-laranja bg-esquerda">
                     <img src="/new_site/assets/images/personalize/xml.png" class="has-animation" data-animation-direction="left" />
                 </div>
-                <div class="col-6">
+                <div class="col-xl-6 col-auto">
                     <div class="col-12">
                         <img src="/new_site/assets/images/icons/ico-preço-dinamico.png" />
                     </div>
@@ -1387,15 +1238,44 @@
                         Preço <strong class="d-block">Dinâmico</strong>
                     </h3>
                     <p>
-                        Sua loja altera a todo o momento o preço dos produtos e isso faz com que seus e-mails acabem
+                        Sua loja altera a todo o momento o preço dos produtos e isso faz com que seus <nobr>e-mails</nobr> acabem
                         ficando desatualizados? Com o <strong>Preço Dinâmico</strong>, você é capaz de adicionar uma
                         variável em todos os seus produtos que <strong>altera os valores de forma automática sempre que um
                         produto sofrer alteração de preço no seu XML.</strong><br>
-                        A melhor coisa é que isso funciona inclusive para
-                        quem já abriu e clicou na sua mensagem.
+                        A melhor coisa é que isso <strong class="orange">funciona inclusive para
+                            quem já abriu e clicou na sua mensagem</strong>.
                     </p>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="footer-banner article-simple py-5" style="background-image: url(/new_site/assets/images/personalize/banner-footer.png)">
+            <div class="col-12 mb-3">
+                <img src="/new_site/assets/images/personalize/hotel-urbano.png" style="max-height: 4.5rem" class="mt-2" />
+                <img src="/new_site/assets/images/compreenda/logo-case.png"  class="mx-4" />
+            </div>
+            <div class="col-md-8 col-12">
+                <h3 class="article-simple--title">
+                    Hotel Urbano: <nobr>e-mail</nobr> otimizados com o
+                    <strong class="orange">preço dinâmico</strong>
+                </h3>
+                <p>
+                    A variação cambial do dólar e de outras moedas impacta diretamente na estratégia de vendas de um dos
+                    maiores sites de viagens do Brasil, fazendo com que os <strong><nobr>e-mails</nobr> precisassem passar por ajustes
+                    constantes.</strong> Foi aí que a marca começou a <strong>otimizar os envios com o preço dinâmico!</strong>
+                </p>
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="row justify-content-between">
+                    <div class="col-sm-4 col-12">
+                        <a href="/news/veja-como-o-hotel-urbano-conseguiu-otimizar-o-envio-de-suas-campanhas-utilizando-o-e-mail-inteligente/" class="btn"> <i class="ico ico-go"></i>
+                            Saiba mais
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex">
+                </div>
             </div>
         </section>
         <section class="section-contact article-simple" id="contato">
@@ -1415,7 +1295,8 @@
                 </strong>
             </h4>
             <p class="section-contact--form--subtitle mb-4">
-                Venha conhecer mais do nosso Marketing Orange :)
+                Venha conhecer mais do nosso Orange Marketing 😊
+
             </p>
             <p class="section-contact--form--info has-animation" data-animation-init-time="600">
                 <i class="ico ico-letter"></i>
@@ -1430,10 +1311,10 @@
                 </strong>
             </p>
         </div>
-        <form id="form-contato" action="/contato.php" class="col-lg-6 has-animation" method="post">
+        <form id="form-contato" action="/contato.php" onsubmit="ga('send', 'event', 'enviar_mensagem', document.getElementById('ddl-assunto').value, document.getElementById('txt-email'))" class="col-lg-6 has-animation" method="post">
             <div class="row">
                 <div class="form-group col-sm-6 col-12">
-                    <select id="ddl-assunto" class="form-control" title="Assunto" name="assunto" required>
+                    <select class="form-control" id="ddl-assunto" title="Assunto" name="assunto" required>
                         <option selected="">Qual o assunto?</option>
                         <option value="Financeiro">Financeiro</option>
                         <option value="Spam">Spam</option>
@@ -1446,18 +1327,18 @@
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="text" placeholder="NOME" title="Nome" name="nome" required>
+                    <input class="form-control" id="txt-nome" type="text" placeholder="NOME" title="Nome" name="nome" required>
                 </div>
 
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
+                    <input class="form-control" id="txt-email" type="email" placeholder="E-MAIL" title="E-mail" name="email" required>
                 </div>
                 <div class="form-group col-sm-6 col-12">
-                    <input class="form-control" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
+                    <input class="form-control" id="txt-tel" type="tel" placeholder="TELEFONE" title="Telefone" name="tel">
                 </div>
 
                 <div class="form-group col-12">
-                    <textarea class="form-control" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
+                    <textarea class="form-control" id="txa-mensagem" placeholder="MENSAGEM" rows="6" name="mensagem" required></textarea>
                 </div>
 
                 <div class="col-lg-12">
@@ -1471,7 +1352,7 @@
     <div class="row mx-0 px-3">
         <div class="col-md-3 col-12 text-md-left text-center">
             <div class="footer--logo mb-4">
-                <img src="/new_site/assets/images/logo-locaweb.png" />
+                <img src="/new_site/assets/images/logo-allin.png" />
             </div>
             <p class="footer--paragraph">
                 Plataforma brasileira líder em marketing
@@ -1518,7 +1399,7 @@
             <!--</div>-->
 
             <div class="row justify-content-md-end justify-content-center mx-0">
-                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#home">
+                <a id="rodape_link_topo" class="btn btn-simples btn-topo" href="#body">
                     <span>Topo </span>
                     <i class="icone icone-topo"></i>
                 </a>
@@ -1547,7 +1428,12 @@
         </div>
     </div>
 </footer><section id="external-scripts">
-    <!-- v1.0.3 -->
+    <!-- v1.0.4 -->
+
+    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
+    <script src="/new_site/assets/build/js/main.js"></script>
+
+    
     <script>
         var google_conversion_id = 993006705;
         var google_custom_params = window.google_tag_params;
@@ -1561,28 +1447,9 @@
         </div>
     </noscript>
 
-    <link rel="stylesheet" href="/new_site/assets/build/css/main.css">
-    <script src="/new_site/assets/build/js/main.js"></script>
-    
-<!-- HUBSPOT LEGACY CODE -->
-    <script>
-        (function (d, w) {
-            w._hsq = w._hsq || [];
-            var match = d.cookie.match('(^|;) ?hubspotutk=([^;]*)(;|$)');
-            if (match && match[2] == "7583a6df01ba2497388c640348a21a70") {
-                w._hsq.push(["identify", {
-                    "email": "mayara.oliveira@allin.com.br",
-                    "name": "May",
-                    "id": "33be9d9190599c080befc313734c352c"
-                }]);
-            }
-            w._hsq.push(["setContentType", "standard-page"]);
-        })(document, window);
-    </script>
-    <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/4037989.js"></script>
-    <script src="//js.hs-analytics.net/analytics/1538822400000/4037989.js" type="text/javascript" id="hs-analytics"></script>
-    <script src="https://js.hscollectedforms.net/collectedforms.js" type="text/javascript" id="CollectedForms-4037989" crossorigin="anonymous" data-leadin-portal-id="4037989" data-leadin-env="prod" data-loader="hs-scriptloader" data-hsjs-portal="4037989" data-hsjs-env="prod"></script>
-    <!-- [END HUBSPOT LEGACY CODE] -->
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4037989.js"></script>
+    <!-- End of HubSpot Embed Code -->
 
     <script src="//i.btg360.com.br/wf.js" type="text/javascript"></script> <!-- Integração TAG envio de contato allin -->
     <script>
