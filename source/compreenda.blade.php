@@ -86,9 +86,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center mt-5">
+                <div class="col-xl-7 col-12 justify-content-xl-end justify-content-center">
                     <div class="section-ideais--mozaico mt-2">
-                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/power-segmentador-image.jpg" style="width: 100%" class="has-animation">
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/power-segmentador-image-title.png" style="float: right;width: 60%" class="has-animation">
+                        <img src="{{ $page->baseUrl }}/assets/images/compreenda/power-segmentador-image.gif" style="width: 100%" class="has-animation">
                     </div>
                 </div>
             </div>
